@@ -15,7 +15,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Inject Tencent key
-        run: sed -i "s|ipKey: ''|ipKey: '${{ secrets.TENCENT_KEY }}'|" config.js
+        run: |
+          sed -i "s|ipKey: ''|ipKey: '${{ secrets.TENCENT_KEY }}'|" config.js
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -23,4 +24,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          exclude_assets: ".github,.gitignore,local-config.js,scripts,.nojekyll"
+          exclude_assets: ".github,.gitignore,local-config.js,scripts"
