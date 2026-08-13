@@ -262,6 +262,30 @@ html, body {
   padding: 12px 14px 10px;
   background: linear-gradient(135deg, #ffd3b5, #ffe7d6);
   border-bottom: 2px solid #ffc49b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hot-back-home {
+  flex: 0 0 auto;
+  background: #fff;
+  border: 1.5px solid #ff9d6f;
+  border-radius: 14px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #e8693a;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.hot-back-home:hover { background: #fff4ec; }
+.hot-titles { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.hot-toggle {
+  flex: 0 0 auto;
+  color: #b06a4a;
+  font-size: 16px;
+  font-weight: 700;
 }
 .hot-title {
   display: block;
