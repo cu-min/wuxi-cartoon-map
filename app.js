@@ -177,7 +177,10 @@ function isCurrentCity(name) {
 async function buildCityPanel(prov, currentCityName) {
   const panel = document.createElement('div');
   panel.className = 'city-panel';
-  panel.innerHTML = `<div class="city-panel-title">🏙️ ${prov.name} · 下辖城市</div><div class="city-list"><div class="city-loading">加载中…</div></div>`;
+  // 直辖市（110000-200000）下辖的是"区县"，其他省是"下辖城市"
+  const isMunicipality = prov.adcode >= 100000 && prov.adcode < 200000;
+  const subtitle = isMunicipality ? '下辖区县' : '下辖城市';
+  panel.innerHTML = `<div class="city-panel-title">🏙️ ${prov.name} · ${subtitle}</div><div class="city-list"><div class="city-loading">加载中…</div></div>`;
   $('#view').appendChild(panel);
   try {
     const geo = await getProvGeo(prov.adcode);
@@ -186,22 +189,38 @@ async function buildCityPanel(prov, currentCityName) {
     const covered = Object.values(getCoveredCities()).filter(c => c.province === prov.key).map(c => c.name);
     const isReady = n => covered.some(c => n.includes(c) || c.includes(n));
 
-    // 分组：已上线城市排前面，筹备中排后面
-    const readyNames = names.filter(isReady);
+    // 已上线：DataV 里名称匹配的 + 直辖市市级 POI 入口（直辖市名不在区名列表里，需手动加入）
+    const matchedReadyNames = names.filter(isReady);
+    const municipalEntries = isMunicipality
+      ? Object.entries(getCoveredCities())
+          .filter(([k, v]) => v.province === prov.key)
+          .filter(([k, v]) => !matchedReadyNames.some(n => n.includes(v.name) || v.name.includes(n)))
+          .map(([k, v]) => ({ key: k, name: v.name }))
+      : [];
     const pendingNames = names.filter(n => !isReady(n));
 
     const itemHtml = n => {
       const isCurrent = matchCityName(n, currentCityName);
       return `<div class="city-item ${isReady(n) ? 'ready' : 'pending'} ${isCurrent ? 'current' : ''}" data-city="${n}">${isCurrent ? '📍 ' : ''}${n}</div>`;
     };
+    const municipalHtml = municipalEntries.map(x => {
+      const isCurrent = matchCityName(x.name, currentCityName);
+      return `<div class="city-item ready ${isCurrent ? 'current' : ''}" data-muni="${x.key}">${isCurrent ? '📍 ' : ''}${x.name} <span class="city-badge">✅ POI 已上线</span></div>`;
+    }).join('');
 
     let html = '';
-    if (readyNames.length) html += `<div class="city-group-title">已上线（${readyNames.length}）</div>` + readyNames.map(itemHtml).join('');
+    if (municipalEntries.length) html += `<div class="city-group-title">已上线 POI（${municipalEntries.length}）</div>` + municipalHtml;
+    if (matchedReadyNames.length) html += `<div class="city-group-title">已上线（${matchedReadyNames.length}）</div>` + matchedReadyNames.map(itemHtml).join('');
     if (pendingNames.length) html += `<div class="city-group-title">筹备中（${pendingNames.length}）</div>` + pendingNames.map(itemHtml).join('');
-    listEl.innerHTML = html || '<div class="city-loading">暂无城市数据</div>';
+    listEl.innerHTML = html || '<div class="city-loading">暂无数据</div>';
 
-    listEl.querySelectorAll('.city-item').forEach(el => {
+    // 普通城市点击
+    listEl.querySelectorAll('.city-item[data-city]').forEach(el => {
       el.onclick = () => enterCity(prov, el.dataset.city);
+    });
+    // 直辖市市级 POI 入口点击
+    listEl.querySelectorAll('.city-item[data-muni]').forEach(el => {
+      el.onclick = () => { location.hash = '#/c/' + el.dataset.muni; };
     });
   } catch (e) {
     panel.querySelector('.city-list').innerHTML = '<div class="city-loading">列表加载失败</div>';
