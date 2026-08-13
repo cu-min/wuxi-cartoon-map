@@ -535,3 +535,94 @@ html, body {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* ============================================================
+   移动端适配（≤768px）
+   ============================================================ */
+@media (max-width: 768px) {
+  html, body {
+    touch-action: manipulation;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* 顶部提示缩小 */
+  .top-notice {
+    top: 12px;
+    font-size: 20px;
+    padding: 12px 24px;
+    max-width: 92%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  /* 返回按钮缩小 */
+  .back-home {
+    top: 12px;
+    left: 10px;
+    padding: 6px 13px;
+    font-size: 12px;
+  }
+
+  /* 省级城市面板 → 底部抽屉 */
+  .city-panel {
+    left: 8px;
+    right: 8px;
+    top: auto;
+    bottom: 8px;
+    width: auto;
+    max-height: 42vh;
+    border-radius: 16px;
+  }
+  .city-panel-title {
+    cursor: pointer;
+    padding: 12px 14px;
+  }
+  .city-panel.collapsed {
+    max-height: 44px;
+    overflow: hidden;
+  }
+
+  /* 城市视图：热度榜 → 底部抽屉（默认折叠成标题条） */
+  .hot-panel {
+    left: 8px;
+    right: 8px;
+    top: auto;
+    bottom: 8px;
+    width: auto;
+    max-height: 42vh;
+    border-radius: 16px;
+  }
+  .hot-header {
+    cursor: pointer;
+  }
+  .hot-panel.collapsed {
+    max-height: 46px;
+    overflow: hidden;
+  }
+
+  /* 城市视图里的"下辖城市"面板在移动端隐藏（切换城市用返回全国） */
+  body[data-view="city"] .city-panel {
+    display: none;
+  }
+
+  /* 图例缩小 + 上移（避开底部抽屉） */
+  .legend {
+    bottom: 8px;
+    gap: 4px;
+  }
+  body[data-view="city"] .legend {
+    bottom: 56px;
+  }
+  .legend button {
+    padding: 4px 10px;
+    font-size: 11px;
+    border-radius: 16px;
+  }
+
+  /* 提示 toast 上移 */
+  .toast {
+    bottom: 20px;
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

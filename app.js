@@ -95,6 +95,7 @@ async function loadGeo(url) {
 // ============================================================
 async function renderOverview() {
   currentView = 'overview';
+  document.body.dataset.view = 'overview';
   getMap();
   clearView();
   setViewUI(); // 全国总览：无标题、无返回按钮
@@ -182,6 +183,8 @@ async function buildCityPanel(prov, currentCityName) {
   const subtitle = isMunicipality ? '下辖区县' : '下辖城市';
   panel.innerHTML = `<div class="city-panel-title">🏙️ ${prov.name} · ${subtitle}</div><div class="city-list"><div class="city-loading">加载中…</div></div>`;
   $('#view').appendChild(panel);
+  // 标题点击折叠/展开（移动端底部抽屉）
+  panel.querySelector('.city-panel-title').onclick = () => panel.classList.toggle('collapsed');
   try {
     const geo = await getProvGeo(prov.adcode);
     const listEl = panel.querySelector('.city-list');
@@ -232,6 +235,7 @@ async function renderProvince(key) {
   if (!prov) { location.hash = '#/'; return; }
 
   currentView = 'province:' + key;
+  document.body.dataset.view = 'province';
   getMap();
   clearView();
   cityLayers = {};
@@ -304,6 +308,7 @@ function renderCity(cityKey) {
   }
 
   currentView = 'city:' + cityKey;
+  document.body.dataset.view = 'city';
   getMap();
   clearView();
   setViewUI(autoLocateNotice || ('📍 ' + data.name));
@@ -451,6 +456,12 @@ function renderCityMap(city) {
     </div>
     <div class="hot-list"></div>`;
   $('#view').appendChild(panel);
+  // 标题点击折叠/展开（移动端底部抽屉）
+  panel.querySelector('.hot-header').onclick = () => panel.classList.toggle('collapsed');
+  // 移动端默认折叠（只显示标题条）
+  if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) {
+    panel.classList.add('collapsed');
+  }
 
   HOT.forEach(item => {
     const shop = SHOPS.find(s => s.name === item.name);
