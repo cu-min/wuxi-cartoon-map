@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>无锡卡通迷你地图 🗺️</title>
+
+  <!-- Leaflet CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- 标题横幅 -->
+  <div class="title-bar">
+    <h1>无锡 · 卡通迷你地图</h1>
+    <p>拖动 · 缩放 · 点点小玩偶看看吧 👋</p>
+  </div>
+
+  <!-- 类型图例 / 筛选 -->
+  <div id="legend" class="legend"></div>
+
+  <!-- 今日热度榜（左侧） -->
+  <aside id="hot-panel" class="hot-panel">
+    <div class="hot-header">
+      <span class="hot-title">🔥 今日热度榜</span>
+      <span class="hot-sub">无锡 · 实时打卡热度</span>
+    </div>
+    <div id="hot-list" class="hot-list"></div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
