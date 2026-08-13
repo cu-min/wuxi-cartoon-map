@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inject Tencent key
+        run: sed -i "s|ipKey: ''|ipKey: '${{ secrets.TENCENT_KEY }}'|" config.js
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          exclude_assets: ".github,.gitignore,local-config.js,scripts,.nojekyll"
