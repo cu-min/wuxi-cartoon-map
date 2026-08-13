@@ -1,1 +1,4 @@
 .DS_Store
+
+# 本地私有配置（含真实 API Key，禁止入库）
+local-config.js

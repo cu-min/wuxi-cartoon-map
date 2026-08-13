@@ -176,3 +176,50 @@ const HOT = [
 
 // name -> HOT 数据，供 popup 查询
 const HOT_MAP = Object.fromEntries(HOT.map(h => [h.name, h]));
+
+// ============================================================
+// 城市专属装饰（可选，仅无锡示例）
+// lake   : 水域示意多边形 + 文字标注
+// decors : 纯视觉装饰元素（云朵/小船/树/飞鸟），不可交互
+// ============================================================
+const WUXI_LAKE = {
+  polygon: [
+    [31.52, 120.10], [31.46, 120.04], [31.36, 120.14],
+    [31.31, 120.29], [31.40, 120.46], [31.50, 120.36],
+  ],
+  label: [31.41, 120.24],
+  labelText: '🌊 太湖',
+};
+
+const WUXI_DECORS = [
+  { html: '☁️', cls: 'decor-cloud', lat: 31.62, lng: 120.18 },
+  { html: '☁️', cls: 'decor-cloud', lat: 31.63, lng: 120.40 },
+  { html: '☁️', cls: 'decor-cloud', lat: 31.60, lng: 120.52 },
+  { html: '⛵', cls: 'decor-ship', lat: 31.45, lng: 120.22 },
+  { html: '🛶', cls: 'decor-ship', lat: 31.42, lng: 120.30 },
+  { html: '🌳', cls: 'decor-tree', lat: 31.50, lng: 120.25 },
+  { html: '🌳', cls: 'decor-tree', lat: 31.58, lng: 120.28 },
+  { html: '🌳', cls: 'decor-tree', lat: 31.55, lng: 120.38 },
+  { html: '🕊️', cls: 'decor-bird', lat: 31.61, lng: 120.30 },
+  { html: '🕊️', cls: 'decor-bird', lat: 31.60, lng: 120.22 },
+];
+
+// ============================================================
+// 注册为城市数据（全国版架构）
+// 每座已覆盖城市一个文件（如 data/jiangsu-wuxi.js），
+// 在文件末尾注册到 window.CITY_DATA，路由 #/c/{cityKey} 按需读取
+// ============================================================
+window.CITY_DATA = window.CITY_DATA || {};
+window.CITY_DATA['jiangsu-wuxi'] = {
+  province: 'jiangsu',      // 所属省 key（对应 cities.js）
+  name: '无锡',
+  coord: [31.49, 120.31],   // 地图中心
+  zoom: 12,                 // 默认缩放
+  minZoom: 10,
+  shops: SHOPS,             // 地点（公仔）
+  hot: HOT,                 // 热度榜（可选）
+  hotMap: HOT_MAP,          // name -> HOT 映射
+  types: TYPES,             // 类型图例
+  lake: WUXI_LAKE,          // 水域装饰（可选）
+  decors: WUXI_DECORS,      // 装饰元素（可选）
+};

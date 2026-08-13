@@ -1,148 +1,437 @@
-// ---------- 初始化地图 ----------
-const map = L.map('map', {
-  center: [31.49, 120.31],   // 无锡市区
-  zoom: 12,
-  minZoom: 10,
-  maxZoom: 18,
-  zoomControl: true,
-});
+// ============================================================
+// 中国 · 卡通迷你地图 — 单页应用
+// 路由：
+//   #/                 全国总览（34 个省级行政区）
+//   #/p/{provinceKey}  省级视图（该省下辖地级市）
+//   #/c/{cityKey}      城市视图（POI 卡通地图，数据来自 window.CITY_DATA）
+// IP 自动跳转：进入网页时若已配置 key，则按 IP 定位到所在省/市
+// ============================================================
 
-// 彩色底图：高德地图瓦片（国内节点、中文标注、加载快）
-L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}', {
-  subdomains: ['1', '2', '3', '4'],
-  attribution: '© 高德地图',
-  maxZoom: 18,
-}).addTo(map);
+// ---------- 工具 ----------
+const $ = s => document.querySelector(s);
 
-// ---------- 场景装饰层 ----------
+// 已覆盖城市索引：从已加载的 CITY_DATA 动态派生（惰性，调用时实时计算）
+// 数据文件被 index.html 引入 → 城市自动上线，无需手动维护注册表
+function getCoveredCities() {
+  return Object.fromEntries(
+    Object.entries(window.CITY_DATA || {}).map(([k, v]) => [k, { province: v.province, name: v.name }])
+  );
+}
 
-// 太湖水域（无锡南部，示意半透明蓝色水面）
-const taihuPoly = L.polygon([
-  [31.52, 120.10], [31.46, 120.04], [31.36, 120.14],
-  [31.31, 120.29], [31.40, 120.46], [31.50, 120.36],
-], {
-  color: '#7fc4e8', weight: 3, opacity: 0.7,
-  fillColor: '#aee0f5', fillOpacity: 0.45,
-}).addTo(map);
+// ---------- Leaflet 地图实例（全局复用） ----------
+let map = null;
+let activeLayers = [];
+let currentView = null;
 
-// 太湖文字标注
-L.marker([31.41, 120.24], {
-  icon: L.divIcon({ className: 'decor', html: '<div class="decor-lake-label">🌊 太湖</div>', iconSize: [0, 0] }),
-  interactive: false,
-}).addTo(map);
-
-// 装饰小元素（云朵 / 小船 / 树 / 飞鸟）——纯视觉，不可交互
-const decors = [
-  { html: '☁️', cls: 'decor-cloud', lat: 31.62, lng: 120.18 },
-  { html: '☁️', cls: 'decor-cloud', lat: 31.63, lng: 120.40 },
-  { html: '☁️', cls: 'decor-cloud', lat: 31.60, lng: 120.52 },
-  { html: '⛵', cls: 'decor-ship', lat: 31.45, lng: 120.22 },
-  { html: '🛶', cls: 'decor-ship', lat: 31.42, lng: 120.30 },
-  { html: '🌳', cls: 'decor-tree', lat: 31.50, lng: 120.25 },
-  { html: '🌳', cls: 'decor-tree', lat: 31.58, lng: 120.28 },
-  { html: '🌳', cls: 'decor-tree', lat: 31.55, lng: 120.38 },
-  { html: '🕊️', cls: 'decor-bird', lat: 31.61, lng: 120.30 },
-  { html: '🕊️', cls: 'decor-bird', lat: 31.60, lng: 120.22 },
-];
-
-decors.forEach(d => {
-  L.marker([d.lat, d.lng], {
-    icon: L.divIcon({ className: 'decor', html: `<span class="${d.cls}">${d.html}</span>`, iconSize: [0, 0] }),
-    interactive: false,
+function getMap() {
+  if (map) return map;
+  map = L.map('map', { zoomControl: true, minZoom: 3, maxZoom: 18 });
+  L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}', {
+    subdomains: ['1', '2', '3', '4'],
+    attribution: '© 高德地图',
+    maxZoom: 18,
   }).addTo(map);
-});
+  return map;
+}
 
-// ---------- 渲染立体小公仔 ----------
-const markers = {};        // type -> marker[]
-const markerByName = {};   // name -> marker
+function clearView() {
+  activeLayers.forEach(l => { if (map) map.removeLayer(l); });
+  activeLayers = [];
+  const v = $('#view');
+  if (v) v.innerHTML = '';
+  if (map) map.closePopup();
+}
 
-function makeDollIcon(shop) {
-  return L.divIcon({
-    className: '',
-    html: `
-      <div class="doll">
-        <div class="doll-head">
-          <span class="doll-emoji">${shop.emoji}</span>
-          <span class="eye eye-l"></span>
-          <span class="eye eye-r"></span>
-          <span class="blush blush-l"></span>
-          <span class="blush blush-r"></span>
+// ---------- 轻提示 ----------
+let toastTimer = null;
+function toast(msg) {
+  const el = $('#toast');
+  if (!el) return;
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 1800);
+}
+
+// ---------- 视图 UI（返回按钮 + 顶部位置提示） ----------
+// 顶部不再固定显示标题栏；进入省/市时在界面正上方弹一个提示，2 秒后自动消失
+let topNoticeTimer = null;
+function showTopNotice(text) {
+  let el = document.getElementById('top-notice');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'top-notice';
+    el.className = 'top-notice';
+    document.body.appendChild(el);
+  }
+  el.textContent = text;
+  el.classList.add('show');
+  clearTimeout(topNoticeTimer);
+  topNoticeTimer = setTimeout(() => el.classList.remove('show'), 1800);
+}
+
+// notice 为空 → 全国总览（无返回按钮）；有值 → 显示返回按钮 + 顶部提示
+function setViewUI(notice) {
+  $('#view').innerHTML = notice
+    ? '<a class="back-home" href="#/" title="返回全国总览">🏠 全国</a>'
+    : '';
+  if (notice) showTopNotice(notice);
+}
+
+// IP 自动跳转的定制提示（跳转后由省/市视图消费）
+let autoLocateNotice = null;
+// IP 定位到的当前城市名（用于省级视图高亮"我在这里"）
+let autoLocateCity = null;
+
+// ---------- geoJSON 加载（阿里 DataV 合规行政区划数据） ----------
+async function loadGeo(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('load geo failed: ' + url);
+  return res.json();
+}
+
+// ============================================================
+// 视图一：全国总览
+// ============================================================
+async function renderOverview() {
+  currentView = 'overview';
+  getMap();
+  clearView();
+  setViewUI(); // 全国总览：无标题、无返回按钮
+
+  // 初始视角（边界加载完成后会自动 fitBounds 最大化中国）
+  map.setView([36, 104], 4);
+
+  try {
+    const geo = await loadGeo('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json');
+    const layer = L.geoJSON(geo, {
+      style: () => ({ color: '#ff9d6f', weight: 1.2, fillColor: '#ffd9c4', fillOpacity: 0.55 }),
+      onEachFeature: (f, l) => {
+        const prov = PROVINCES.find(p => String(p.adcode) === String(f.properties.adcode));
+        l.on('click', () => {
+          if (prov) location.hash = '#/p/' + prov.key;
+          else toast('「' + f.properties.name + '」暂无数据');
+        });
+        l.bindTooltip(f.properties.name, { direction: 'center', className: 'prov-tooltip' });
+        l.on('mouseover', () => l.setStyle({ fillOpacity: 0.85, weight: 2 }));
+        l.on('mouseout', () => l.setStyle({ fillOpacity: 0.55, weight: 1.2 }));
+      },
+    }).addTo(map);
+    activeLayers.push(layer);
+
+    // 视野框选中国主图（排除南海诸岛小框，让中国占满界面；南海诸岛仍在图上渲染）
+    const cnBounds = L.latLngBounds([]);
+    layer.eachLayer(l => {
+      const nm = l.feature && l.feature.properties && l.feature.properties.name;
+      if (nm === '南海诸岛') return;
+      cnBounds.extend(l.getBounds());
+    });
+    if (cnBounds.isValid()) map.fitBounds(cnBounds, { padding: [14, 14] });
+
+    // 省会标注
+    PROVINCES.forEach(p => {
+      const m = L.marker(p.coord, {
+        icon: L.divIcon({ className: 'prov-label', html: `<span>${p.capital}</span>`, iconSize: [0, 0] }),
+        interactive: false,
+      }).addTo(map);
+      activeLayers.push(m);
+    });
+  } catch (e) {
+    toast('行政区划数据加载失败，请检查网络后刷新');
+  }
+}
+
+// ============================================================
+// 视图二：省级视图
+// ============================================================
+let cityLayers = {}; // 省级视图内：城市名 → Leaflet 图层（供未上线城市定位）
+
+// 普通城市边界 / 当前所在城市高亮边界（不起眼但一眼可见）
+const CITY_BORDER_STYLE = { color: '#ff9d6f', weight: 1, fillColor: '#ffe3d1', fillOpacity: 0.6 };
+const CITY_HIGHLIGHT_STYLE = { color: '#e0522f', weight: 3.5, fillColor: '#ffc9b8', fillOpacity: 0.75 };
+
+// 城市视图里的边界：当前城市（粗边框）+ 相邻城市（细线区分），只描边不填充
+const CITY_VIEW_CURRENT_STYLE = { color: '#e8693a', weight: 3, fillColor: '#ffd9c4', fillOpacity: 0 };
+const CITY_VIEW_NEIGHBOR_STYLE = { color: '#d6a890', weight: 0.7, fillColor: '#fff5ee', fillOpacity: 0 };
+
+// 省级 geoJSON 缓存（城市视图和省级视图共用，避免重复请求）
+const provGeoCache = {};
+function getProvGeo(adcode) {
+  if (provGeoCache[adcode]) return Promise.resolve(provGeoCache[adcode]);
+  return loadGeo('https://geo.datav.aliyun.com/areas_v3/bound/' + adcode + '_full.json')
+    .then(geo => { provGeoCache[adcode] = geo; return geo; });
+}
+
+// geoJSON 城市名（"无锡市"） 与 业务城市名（"无锡"）匹配
+function matchCityName(geoName, target) {
+  if (!geoName || !target) return false;
+  return geoName === target || geoName.replace('市', '') === target.replace('市', '');
+}
+
+function isCurrentCity(name) {
+  return autoLocateCity && matchCityName(name, autoLocateCity);
+}
+
+// 左侧"下辖城市"列表面板（省级视图与城市视图共用）
+// currentCityName 高亮当前所在城市；已上线 / 筹备中分组展示
+async function buildCityPanel(prov, currentCityName) {
+  const panel = document.createElement('div');
+  panel.className = 'city-panel';
+  panel.innerHTML = `<div class="city-panel-title">🏙️ ${prov.name} · 下辖城市</div><div class="city-list"><div class="city-loading">加载中…</div></div>`;
+  $('#view').appendChild(panel);
+  try {
+    const geo = await getProvGeo(prov.adcode);
+    const listEl = panel.querySelector('.city-list');
+    const names = geo.features.map(f => f.properties.name);
+    const covered = Object.values(getCoveredCities()).filter(c => c.province === prov.key).map(c => c.name);
+    const isReady = n => covered.some(c => n.includes(c) || c.includes(n));
+
+    // 分组：已上线城市排前面，筹备中排后面
+    const readyNames = names.filter(isReady);
+    const pendingNames = names.filter(n => !isReady(n));
+
+    const itemHtml = n => {
+      const isCurrent = matchCityName(n, currentCityName);
+      return `<div class="city-item ${isReady(n) ? 'ready' : 'pending'} ${isCurrent ? 'current' : ''}" data-city="${n}">${isCurrent ? '📍 ' : ''}${n}</div>`;
+    };
+
+    let html = '';
+    if (readyNames.length) html += `<div class="city-group-title">已上线（${readyNames.length}）</div>` + readyNames.map(itemHtml).join('');
+    if (pendingNames.length) html += `<div class="city-group-title">筹备中（${pendingNames.length}）</div>` + pendingNames.map(itemHtml).join('');
+    listEl.innerHTML = html || '<div class="city-loading">暂无城市数据</div>';
+
+    listEl.querySelectorAll('.city-item').forEach(el => {
+      el.onclick = () => enterCity(prov, el.dataset.city);
+    });
+  } catch (e) {
+    panel.querySelector('.city-list').innerHTML = '<div class="city-loading">列表加载失败</div>';
+  }
+}
+
+async function renderProvince(key) {
+  const prov = PROVINCES.find(p => p.key === key);
+  if (!prov) { location.hash = '#/'; return; }
+
+  currentView = 'province:' + key;
+  getMap();
+  clearView();
+  cityLayers = {};
+  setViewUI(autoLocateNotice || ('📍 ' + prov.fullName));
+  autoLocateNotice = null;
+
+  // 左侧城市列表面板（异步加载，不阻塞边界渲染）
+  buildCityPanel(prov, null);
+
+  try {
+    const geo = await getProvGeo(prov.adcode);
+    const layer = L.geoJSON(geo, {
+      style: () => CITY_BORDER_STYLE,
+      onEachFeature: (f, l) => {
+        const cityName = f.properties.name;
+        cityLayers[cityName] = l; // 保存城市图层，未上线时用来定位
+        l.on('click', () => enterCity(prov, cityName));
+        l.bindTooltip(cityName, { direction: 'center', className: 'prov-tooltip' });
+        l.on('mouseover', () => l.setStyle({ fillOpacity: 0.85, weight: isCurrentCity(cityName) ? 3.5 : 1.6 }));
+        l.on('mouseout', () => l.setStyle(isCurrentCity(cityName) ? CITY_HIGHLIGHT_STYLE : CITY_BORDER_STYLE));
+      },
+    }).addTo(map);
+    activeLayers.push(layer);
+
+    // 高亮当前所在城市（定位到的城市，一眼看出"我在这里"）
+    layer.eachLayer(l => {
+      const nm = l.feature && l.feature.properties && l.feature.properties.name;
+      if (isCurrentCity(nm)) {
+        l.setStyle(CITY_HIGHLIGHT_STYLE);
+        l.bringToFront();
+      }
+    });
+
+    // 视野自动框住全省（让用户一眼看清省的范围和位置）
+    map.fitBounds(layer.getBounds(), { padding: [24, 24] });
+  } catch (e) {
+    toast('该省边界数据加载失败，请检查网络后刷新');
+  }
+}
+
+// 进入城市：有数据跳城市视图；没数据则地图飞到该城市位置
+function enterCity(prov, cityName) {
+  const key = findCity(prov, cityName);
+  if (key) { location.hash = '#/c/' + key; return; }
+
+  // 未上线：地图定位到该城市边界，让用户知道城市在哪
+  const layer = (cityLayers || {})[cityName];
+  if (layer && map) map.flyToBounds(layer.getBounds(), { duration: 0.5, maxZoom: 11 });
+  toast('「' + cityName + '」地图数据筹备中，已定位过去 ✨');
+}
+
+// 城市名 → 已覆盖城市 key
+function findCity(prov, cityName) {
+  const name = (cityName || '').replace(/市$|地区$|盟$|自治州$/, '');
+  for (const [k, v] of Object.entries(getCoveredCities())) {
+    if (v.province === prov.key && (v.name === name || v.name.includes(name) || name.includes(v.name))) return k;
+  }
+  return null;
+}
+
+// ============================================================
+// 视图三：城市视图（POI 卡通地图）
+// ============================================================
+function renderCity(cityKey) {
+  const data = (window.CITY_DATA || {})[cityKey];
+  if (!data) {
+    toast('该城市地图数据筹备中，请稍后刷新 ✨');
+    location.hash = '#/';
+    return;
+  }
+
+  currentView = 'city:' + cityKey;
+  getMap();
+  clearView();
+  setViewUI(autoLocateNotice || ('📍 ' + data.name));
+  autoLocateNotice = null;
+
+  // 左侧"下辖城市"列表（点击省份里的城市直接进城市视图时也要保留可跳转的面板）
+  const prov = PROVINCES.find(p => p.key === data.province);
+  if (prov) buildCityPanel(prov, data.name);
+
+  map.setView(data.coord, data.zoom || 12);
+  renderCityMap(data);
+
+  // 城市边界：当前城市粗边框 + 相邻城市细线，区分城市与城市
+  if (prov) drawCityBorders(prov, data.name);
+}
+
+// 加载该省所有城市边界：当前城市用粗边框，相邻城市用细线区分
+function drawCityBorders(prov, cityName) {
+  getProvGeo(prov.adcode).then(geo => {
+    const borderLayer = L.geoJSON(geo, {
+      interactive: false,
+      style: f => matchCityName(f.properties && f.properties.name, cityName)
+        ? CITY_VIEW_CURRENT_STYLE
+        : CITY_VIEW_NEIGHBOR_STYLE,
+    }).addTo(map);
+    activeLayers.push(borderLayer);
+  }).catch(() => { /* 边界加载失败不影响主视图 */ });
+}
+
+function renderCityMap(city) {
+  const SHOPS = city.shops || [];
+  const HOT = city.hot || [];
+  const HOT_MAP = city.hotMap || {};
+  const TYPES = city.types || [...new Set(SHOPS.map(s => s.type))];
+
+  // 水域示意（可选）
+  if (city.lake) {
+    const lake = L.polygon(city.lake.polygon, {
+      color: '#7fc4e8', weight: 3, opacity: 0.7,
+      fillColor: '#aee0f5', fillOpacity: 0.45,
+    }).addTo(map);
+    activeLayers.push(lake);
+    const label = L.marker(city.lake.label, {
+      icon: L.divIcon({ className: 'decor', html: `<div class="decor-lake-label">${city.lake.labelText}</div>`, iconSize: [0, 0] }),
+      interactive: false,
+    }).addTo(map);
+    activeLayers.push(label);
+  }
+
+  // 装饰元素（可选）
+  (city.decors || []).forEach(d => {
+    const m = L.marker([d.lat, d.lng], {
+      icon: L.divIcon({ className: 'decor', html: `<span class="${d.cls}">${d.html}</span>`, iconSize: [0, 0] }),
+      interactive: false,
+    }).addTo(map);
+    activeLayers.push(m);
+  });
+
+  // ---------- 立体小公仔 ----------
+  const markers = {};
+  const markerByName = {};
+
+  function makeDollIcon(shop) {
+    return L.divIcon({
+      className: 'doll-icon',
+      html: `
+        <div class="doll">
+          <div class="doll-head">
+            <span class="doll-emoji">${shop.emoji}</span>
+            <span class="eye eye-l"></span>
+            <span class="eye eye-r"></span>
+            <span class="blush blush-l"></span>
+            <span class="blush blush-r"></span>
+          </div>
+          <div class="doll-tag">${shop.name}</div>
+          <div class="doll-shadow"></div>
+        </div>`,
+      iconSize: [60, 80],
+      iconAnchor: [30, 76],
+    });
+  }
+
+  function stars(n) {
+    return '★'.repeat(n) + '☆'.repeat(5 - n);
+  }
+
+  function simplePopup(shop) {
+    return `
+      <div class="shop-popup">
+        <span class="big-emoji">${shop.emoji}</span>
+        <div class="shop-name">${shop.name}</div>
+        <span class="shop-tag">${shop.type}</span>
+        <div class="shop-desc">${shop.desc}</div>
+      </div>`;
+  }
+
+  function hotPopup(shop, h) {
+    const comments = h.comments.map(c => `
+      <div class="hp-comment">
+        <div class="hp-c-head">
+          <span class="hp-c-user">${c.user}</span>
+          <span class="hp-c-platform">${c.platform}</span>
+          <span class="hp-stars">${stars(c.stars)}</span>
         </div>
-        <div class="doll-tag">${shop.name}</div>
-        <div class="doll-shadow"></div>
-      </div>`,
-    iconSize: [60, 80],
-    iconAnchor: [30, 76],
-  });
-}
+        <div class="hp-c-text">${c.text}</div>
+        <div class="hp-c-likes">👍 ${c.likes}</div>
+      </div>`).join('');
 
-// 星级字符串
-function stars(n) {
-  return '★'.repeat(n) + '☆'.repeat(5 - n);
-}
+    return `
+      <div class="hot-popup">
+        <div class="hp-top">
+          <span class="hp-emoji">${shop.emoji}</span>
+          <div class="hp-name">${shop.name}</div>
+          <span class="hp-tag">🔥 热度第${h.rank} · ${h.hot}</span>
+        </div>
+        <div class="hp-desc">${shop.desc}</div>
+        <div class="hp-fields">
+          <div class="hp-field"><span class="k">📍 地址</span><span class="v">${h.address}</span></div>
+          <div class="hp-field"><span class="k">🎫 门票</span><span class="v">${h.ticket}</span></div>
+          <div class="hp-field"><span class="k">🕘 时间</span><span class="v">${h.hours}</span></div>
+          <div class="hp-field"><span class="k">🔗 官网</span><span class="v"><a href="${h.website}" target="_blank" rel="noopener">${h.website}</a></span></div>
+        </div>
+        <div class="hp-comments-title">💬 用户评价</div>
+        ${comments}
+      </div>`;
+  }
 
-// 简单 popup（普通地点）
-function simplePopup(shop) {
-  return `
-    <div class="shop-popup">
-      <span class="big-emoji">${shop.emoji}</span>
-      <div class="shop-name">${shop.name}</div>
-      <span class="shop-tag">${shop.type}</span>
-      <div class="shop-desc">${shop.desc}</div>
-    </div>`;
-}
-
-// 丰富 popup（热度榜地点）
-function hotPopup(shop, h) {
-  const comments = h.comments.map(c => `
-    <div class="hp-comment">
-      <div class="hp-c-head">
-        <span class="hp-c-user">${c.user}</span>
-        <span class="hp-c-platform">${c.platform}</span>
-        <span class="hp-stars">${stars(c.stars)}</span>
-      </div>
-      <div class="hp-c-text">${c.text}</div>
-      <div class="hp-c-likes">👍 ${c.likes}</div>
-    </div>`).join('');
-
-  return `
-    <div class="hot-popup">
-      <div class="hp-top">
-        <span class="hp-emoji">${shop.emoji}</span>
-        <div class="hp-name">${shop.name}</div>
-        <span class="hp-tag">🔥 热度第${h.rank} · ${h.hot}</span>
-      </div>
-      <div class="hp-desc">${shop.desc}</div>
-      <div class="hp-fields">
-        <div class="hp-field"><span class="k">📍 地址</span><span class="v">${h.address}</span></div>
-        <div class="hp-field"><span class="k">🎫 门票</span><span class="v">${h.ticket}</span></div>
-        <div class="hp-field"><span class="k">🕘 时间</span><span class="v">${h.hours}</span></div>
-        <div class="hp-field"><span class="k">🔗 官网</span><span class="v"><a href="${h.website}" target="_blank" rel="noopener">${h.website}</a></span></div>
-      </div>
-      <div class="hp-comments-title">💬 用户评价</div>
-      ${comments}
-    </div>`;
-}
-
-SHOPS.forEach(shop => {
-  const marker = L.marker([shop.lat, shop.lng], { icon: makeDollIcon(shop) }).addTo(map);
-
-  marker.bindTooltip(shop.name, {
-    direction: 'top', offset: [0, -52], className: 'shop-tooltip',
+  SHOPS.forEach(shop => {
+    const marker = L.marker([shop.lat, shop.lng], { icon: makeDollIcon(shop) }).addTo(map);
+    marker.bindTooltip(shop.name, { direction: 'top', offset: [0, -52], className: 'shop-tooltip' });
+    const h = HOT_MAP[shop.name];
+    marker.bindPopup(h ? hotPopup(shop, h) : simplePopup(shop), { maxWidth: 320 });
+    (markers[shop.type] = markers[shop.type] || []).push(marker);
+    markerByName[shop.name] = marker;
+    activeLayers.push(marker);
   });
 
-  // 热度榜地点用丰富资料卡
-  const h = HOT_MAP[shop.name];
-  marker.bindPopup(h ? hotPopup(shop, h) : simplePopup(shop), { maxWidth: 320 });
-
-  (markers[shop.type] = markers[shop.type] || []).push(marker);
-  markerByName[shop.name] = marker;
-});
-
-// ---------- 今日热度榜 ----------
-function renderHotList() {
-  const listEl = document.getElementById('hot-list');
-  listEl.innerHTML = '';
+  // ---------- 今日热度榜 ----------
+  const panel = document.createElement('aside');
+  panel.className = 'hot-panel';
+  panel.innerHTML = `
+    <div class="hot-header">
+      <span class="hot-title">🔥 今日热度榜</span>
+      <span class="hot-sub">${city.name} · 实时打卡热度</span>
+    </div>
+    <div class="hot-list"></div>`;
+  $('#view').appendChild(panel);
 
   HOT.forEach(item => {
     const shop = SHOPS.find(s => s.name === item.name);
@@ -156,24 +445,22 @@ function renderHotList() {
         <div class="hot-meta">${shop ? shop.type : ''}</div>
       </div>
       <span class="hot-heat">🔥${item.hot}</span>`;
-
     div.onclick = () => {
       const marker = markerByName[item.name];
       if (marker) {
-        map.flyTo(marker.getLatLng(), 15, { duration: 0.8 });
+        map.flyTo(marker.getLatLng(), 15, { duration: 0.5 });
         marker.openPopup();
       }
     };
-    listEl.appendChild(div);
+    panel.querySelector('.hot-list').appendChild(div);
   });
-}
 
-// ---------- 图例 / 筛选 ----------
-const legendEl = document.getElementById('legend');
+  // ---------- 图例 / 筛选 ----------
+  const legendEl = document.createElement('div');
+  legendEl.className = 'legend';
+  $('#view').appendChild(legendEl);
 
-function renderLegend() {
   const allBtn = document.createElement('button');
-  allBtn.dataset.type = 'all';
   allBtn.innerHTML = `<span class="dot">🗺️</span>全部`;
   allBtn.classList.add('active');
   allBtn.onclick = () => setFilter(null, allBtn);
@@ -181,26 +468,100 @@ function renderLegend() {
 
   TYPES.forEach(type => {
     const btn = document.createElement('button');
-    btn.dataset.type = type;
     const sample = SHOPS.find(s => s.type === type);
-    btn.innerHTML = `<span class="dot">${sample.emoji}</span>${type}`;
+    btn.innerHTML = `<span class="dot">${sample ? sample.emoji : '📍'}</span>${type}`;
     btn.onclick = () => setFilter(type, btn);
     legendEl.appendChild(btn);
   });
+
+  function setFilter(type, clickedBtn) {
+    legendEl.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    clickedBtn.classList.add('active');
+    Object.keys(markers).forEach(t => {
+      const show = type === null || t === type;
+      markers[t].forEach(m => {
+        if (show) { if (!map.hasLayer(m)) m.addTo(map); }
+        else { if (map.hasLayer(m)) m.remove(); }
+      });
+    });
+  }
 }
 
-function setFilter(type, clickedBtn) {
-  legendEl.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-  clickedBtn.classList.add('active');
-
-  Object.keys(markers).forEach(t => {
-    const show = type === null || t === type;
-    markers[t].forEach(m => {
-      if (show) { if (!map.hasLayer(m)) m.addTo(map); }
-      else { if (map.hasLayer(m)) m.remove(); }
-    });
+// ============================================================
+// IP 定位自动跳转（需在 config.js 配置腾讯位置服务 key）
+// 说明：腾讯 WebServiceAPI 无 CORS 头，浏览器 fetch 会被跨域拦截，
+//       因此用 JSONP（script 标签）调用，不受 CORS 限制
+// ============================================================
+function jsonpRequest(url, cbName, timeout) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    const timer = setTimeout(() => { cleanup(); reject(new Error('jsonp timeout')); }, timeout || 6000);
+    function cleanup() {
+      clearTimeout(timer);
+      try { delete window[cbName]; } catch (e) { window[cbName] = undefined; }
+      script.remove();
+    }
+    window[cbName] = data => { cleanup(); resolve(data); };
+    script.onerror = () => { cleanup(); reject(new Error('jsonp error')); };
+    script.src = url;
+    document.head.appendChild(script);
   });
 }
 
-renderLegend();
-renderHotList();
+async function locateAndJump() {
+  const key = (window.MAP_CONFIG || {}).ipKey;
+  if (!key) { console.log('[定位] 未配置 key，跳过自动跳转'); return; }
+  console.log('[定位] 开始 IP 定位…');
+
+  try {
+    const cbName = '__wbtLoc_' + Date.now();
+    const url = 'https://apis.map.qq.com/ws/location/v1/ip?key=' + encodeURIComponent(key) + '&output=jsonp&callback=' + cbName;
+    const d = await jsonpRequest(url, cbName);
+    console.log('[定位] API 返回:', JSON.stringify(d).slice(0, 200));
+
+    if (d.status !== 0 || !d.result || !d.result.ad_info) {
+      console.warn('[定位] 返回异常:', d.status, d.message);
+      return;
+    }
+    const { province, city } = d.result.ad_info;
+    console.log('[定位] 定位到:', province, '/', city);
+
+    const prov = PROVINCES.find(p => province && (p.fullName === province || p.name === province || p.key === province));
+    if (!prov) { console.warn('[定位] 省份匹配失败:', province); return; }
+
+    const cityKey = findCity(prov, city);
+    console.log('[定位] 匹配结果:', cityKey ? ('跳城市 ' + cityKey) : ('跳省视图 ' + prov.key));
+
+    if (cityKey) {
+      autoLocateNotice = '📍 检测到您当前在' + city + '，已自动跳转';
+      autoLocateCity = city; // 记住当前城市，省级视图用它高亮"我在这里"
+      location.hash = '#/c/' + cityKey;
+    } else {
+      autoLocateNotice = '📍 检测到您当前在' + province + '，已为您定位';
+      autoLocateCity = null;
+      location.hash = '#/p/' + prov.key;
+    }
+  } catch (e) {
+    console.error('[定位] 失败:', e);
+    toast('📍 定位失败，已显示全国总览');
+  }
+}
+
+// ============================================================
+// 路由
+// ============================================================
+function router() {
+  const hash = location.hash.slice(1) || '/';
+  const parts = hash.split('/').filter(Boolean);
+  if (parts[0] === 'p' && parts[1]) renderProvince(parts[1]);
+  else if (parts[0] === 'c' && parts[1]) renderCity(parts[1]);
+  else renderOverview();
+}
+
+window.addEventListener('hashchange', router);
+router();
+
+// 首次进入（hash 为空 或 默认的 #/）→ 尝试 IP 自动跳转
+// 注：不能只判断 !location.hash，因为地址栏常显示为 #/ 会被误判为已有路由
+const initRoute = location.hash.replace(/^#\/?$/, '');
+if (!initRoute) locateAndJump();
