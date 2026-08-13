@@ -451,8 +451,12 @@ function renderCityMap(city) {
   panel.className = 'hot-panel';
   panel.innerHTML = `
     <div class="hot-header">
-      <span class="hot-title">🔥 今日热度榜</span>
-      <span class="hot-sub">${city.name} · 实时打卡热度</span>
+      <a class="hot-back-home" href="#/" title="返回全国总览">🏠 全国</a>
+      <span class="hot-titles">
+        <span class="hot-title">🔥 今日热度榜</span>
+        <span class="hot-sub">${city.name} · 实时打卡热度</span>
+      </span>
+      <span class="hot-toggle">▾</span>
     </div>
     <div class="hot-list"></div>`;
   $('#view').appendChild(panel);
@@ -514,6 +518,13 @@ function renderCityMap(city) {
         else { if (map.hasLayer(m)) m.remove(); }
       });
     });
+  }
+
+  // 视野自动框住所有 POI，公仔分布均匀不挤（maxZoom 限制避免太近）
+  if (SHOPS.length) {
+    const bounds = L.latLngBounds([]);
+    SHOPS.forEach(s => bounds.extend([s.lat, s.lng]));
+    map.fitBounds(bounds, { padding: [50, 50], maxZoom: data.zoom || 13, animate: true });
   }
 }
 
