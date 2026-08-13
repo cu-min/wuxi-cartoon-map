@@ -11,7 +11,7 @@ window.MAP_CONFIG = {
   //   4. 把生成的 Key 填到下面 ipKey 的引号里，保存刷新即可生效
   // 免费额度：个人开发者每日免费调用（个人站点足够用）
   // 注意：留空则跳过自动跳转，直接展示全国总览
-  ipKey: '',
+  ipKey: 'RK4BZ-VQD6B-BX4U5-NBR3P-KHXRE-OWFLA',
 
   // 定位失败或未配置 Key 时的落点：
   //   'overview'  全国总览
