@@ -93,12 +93,33 @@ async function loadGeo(url) {
 // ============================================================
 // 视图一：全国总览
 // ============================================================
+// 全国总览：省份列表面板（手机点地图 polygon 难命中，用列表选省）
+function buildProvincePanel() {
+  const panel = document.createElement('div');
+  panel.className = 'city-panel province-panel';
+  panel.innerHTML = `<div class="city-panel-title">🗺️ 全国 · 选择省份</div><div class="city-list"></div>`;
+  $('#view').appendChild(panel);
+  const listEl = panel.querySelector('.city-list');
+  const covered = getCoveredCities();
+  const hasCovered = p => Object.values(covered).some(c => c.province === p.key);
+  listEl.innerHTML = PROVINCES.map(p => {
+    return `<div class="city-item ${hasCovered(p) ? 'ready' : 'pending'}" data-prov="${p.key}">${p.name}${hasCovered(p) ? ' <span class="city-badge">✅</span>' : ''}</div>`;
+  }).join('');
+  listEl.querySelectorAll('.city-item').forEach(el => {
+    el.onclick = () => { location.hash = '#/p/' + el.dataset.prov; };
+  });
+  panel.querySelector('.city-panel-title').onclick = () => panel.classList.toggle('collapsed');
+}
+
 async function renderOverview() {
   currentView = 'overview';
   document.body.dataset.view = 'overview';
   getMap();
   clearView();
   setViewUI(); // 全国总览：无标题、无返回按钮
+
+  // 省份列表面板（手机选省更可靠）
+  buildProvincePanel();
 
   // 初始视角（边界加载完成后会自动 fitBounds 最大化中国）
   map.setView([36, 104], 4);
