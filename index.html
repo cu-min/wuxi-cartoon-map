@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中国 · 卡通迷你地图 🗺️</title>
+
+  <!-- Leaflet CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 地图底图（全局复用，视图切换只增删图层） -->
+  <div id="map"></div>
+
+  <!-- 动态视图层：全国总览 / 省级视图 / 城市视图 的 UI 都渲染在这里 -->
+  <div id="view"></div>
+
+  <!-- 轻提示 -->
+  <div id="toast" class="toast"></div>
+
+  <!-- 配置（IP 定位 key 等） -->
+  <script src="config.js"></script>
+  <!-- 本地私有配置（真实 key，已被 gitignore，不入库） -->
+  <script src="local-config.js"></script>
+  <!-- 全国省级元数据 -->
+  <script src="cities.js"></script>
+  <!-- 城市数据（每城注册到 window.CITY_DATA） -->
+  <script src="data.js"></script>
+  <!-- 主逻辑：路由 / 视图渲染 / IP 自动跳转 -->
+  <script src="app.js"></script>
+  <script src="data/jiangsu-wuxi.js"></script>
+  <script src="data/beijing-beijing.js"></script>
+  <script src="data/tianjin-tianjin.js"></script>
+  <script src="data/shanghai-shanghai.js"></script>
+  <script src="data/chongqing-chongqing.js"></script>
+  <script src="data/hebei-shijiazhuang.js"></script>
+  <script src="data/hebei-qinhuangdao.js"></script>
+  <script src="data/hebei-chengde.js"></script>
+  <script src="data/shanxi-taiyuan.js"></script>
+  <script src="data/shanxi-pingyao.js"></script>
+  <script src="data/neimenggu-huhehaote.js"></script>
+  <script src="data/liaoning-shenyang.js"></script>
+  <script src="data/liaoning-dalian.js"></script>
+  <script src="data/jilin-changchun.js"></script>
+  <script src="data/heilongjiang-haerbin.js"></script>
+  <script src="data/jiangsu-nanjing.js"></script>
+  <script src="data/jiangsu-suzhou.js"></script>
+  <script src="data/jiangsu-yangzhou.js"></script>
+  <script src="data/zhejiang-hangzhou.js"></script>
+  <script src="data/zhejiang-ningbo.js"></script>
+  <script src="data/zhejiang-jiaxing.js"></script>
+  <script src="data/zhejiang-shaoxing.js"></script>
+  <script src="data/anhui-hefei.js"></script>
+  <script src="data/anhui-huangshan.js"></script>
+  <script src="data/fujian-fuzhou.js"></script>
+  <script src="data/fujian-xiamen.js"></script>
+  <script src="data/jiangxi-nanchang.js"></script>
+  <script src="data/jiangxi-jingdezhen.js"></script>
+  <script src="data/shandong-jinan.js"></script>
+  <script src="data/shandong-qingdao.js"></script>
+  <script src="data/shandong-yantai.js"></script>
+  <script src="data/shandong-taian.js"></script>
+  <script src="data/shandong-weihai.js"></script>
+  <script src="data/henan-zhengzhou.js"></script>
+  <script src="data/henan-kaifeng.js"></script>
+  <script src="data/henan-luoyang.js"></script>
+  <script src="data/hubei-wuhan.js"></script>
+  <script src="data/hunan-changsha.js"></script>
+  <script src="data/hunan-zhangjiajie.js"></script>
+  <script src="data/guangdong-guangzhou.js"></script>
+  <script src="data/guangdong-shenzhen.js"></script>
+  <script src="data/guangdong-zhuhai.js"></script>
+  <script src="data/guangdong-foshan.js"></script>
+  <script src="data/guangdong-dongguan.js"></script>
+  <script src="data/guangdong-zhongshan.js"></script>
+  <script src="data/guangxi-nanning.js"></script>
+  <script src="data/guangxi-guilin.js"></script>
+  <script src="data/guangxi-beihai.js"></script>
+  <script src="data/hainan-haikou.js"></script>
+  <script src="data/hainan-sanya.js"></script>
+  <script src="data/sichuan-chengdu.js"></script>
+  <script src="data/sichuan-leshan.js"></script>
+  <script src="data/guizhou-guiyang.js"></script>
+  <script src="data/yunnan-kunming.js"></script>
+  <script src="data/yunnan-lijiang.js"></script>
+  <script src="data/yunnan-xishuangbanna.js"></script>
+  <script src="data/yunnan-dali.js"></script>
+  <script src="data/xizang-lasa.js"></script>
+  <script src="data/shaanxi-xian.js"></script>
+</body>
+</html>
