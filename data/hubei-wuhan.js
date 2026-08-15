@@ -1129,7 +1129,121 @@ window.CITY_DATA['hubei-wuhan'] = {
     "desc": "购物:花鸟鱼虫 湖北省武汉市江岸区中山大道1510号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "东湖生态旅游风景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "武汉杜莎夫人蜡像馆(武汉中央文化旅游区楚河汉街店)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "光谷广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "辉辉烧烤",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "漫咖啡(银泰创意城店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "中茶·观全庄茶馆(书城路店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "江城花业鲜花店(江汉路店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "东湖磨山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "东湖生态旅游风景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "湖北省武汉市武昌区沿湖大道16号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%20%E4%B8%9C%E6%B9%96%E7%94%9F%E6%80%81%E6%97%85%E6%B8%B8%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "武汉杜莎夫人蜡像馆(武汉中央文化旅游区楚河汉街店)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "湖北省武汉市武昌区水果湖街办事处中北路楚河汉街1号武汉中央文化旅游区楚河汉街F1",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%20%E6%AD%A6%E6%B1%89%E6%9D%9C%E8%8E%8E%E5%A4%AB%E4%BA%BA%E8%9C%A1%E5%83%8F%E9%A6%86(%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%A4%AE%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E5%8C%BA%E6%A5%9A%E6%B2%B3%E6%B1%89%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "光谷广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "湖北省武汉市洪山区鲁磨路五公司小区西区南侧",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%20%E5%85%89%E8%B0%B7%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "辉辉烧烤": {
+      "rank": 4,
+      "hot": 85,
+      "address": "湖北省武汉市武昌区大成路与彭刘杨路交叉口东南方向33米左右",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%20%E8%BE%89%E8%BE%89%E7%83%A7%E7%83%A4",
+      "comments": []
+    },
+    "漫咖啡(银泰创意城店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "湖北省武汉市洪山区珞南街道珞喻路33号银泰创意城2F层2011-1号(1楼外围乐高旁,2楼UR旁通道)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%20%E6%BC%AB%E5%92%96%E5%95%A1(%E9%93%B6%E6%B3%B0%E5%88%9B%E6%84%8F%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "中茶·观全庄茶馆(书城路店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "湖北省武汉市洪山区书城路北港春苑欢乐汇1楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%20%E4%B8%AD%E8%8C%B6%C2%B7%E8%A7%82%E5%85%A8%E5%BA%84%E8%8C%B6%E9%A6%86(%E4%B9%A6%E5%9F%8E%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "江城花业鲜花店(江汉路店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "湖北省武汉市江汉区解放大道916号侧四门",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%20%E6%B1%9F%E5%9F%8E%E8%8A%B1%E4%B8%9A%E9%B2%9C%E8%8A%B1%E5%BA%97(%E6%B1%9F%E6%B1%89%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "东湖磨山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "湖北省武汉市洪山区东湖生态旅游风景区内",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%20%E4%B8%9C%E6%B9%96%E7%A3%A8%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

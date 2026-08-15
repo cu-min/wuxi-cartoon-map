@@ -1129,7 +1129,121 @@ window.CITY_DATA['henan-zhengzhou'] = {
     "desc": "购物:花鸟鱼虫 河南省郑州市二七区贺江路御景台-南区"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "黄河花园口旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "郑州二七纪念馆(二七纪念塔)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "二七广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "巴仕德重庆火锅(中牟巴庄火锅老店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "RIO咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(郑州万象城店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "美朵花礼花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "观星台景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "黄河花园口旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "河南省郑州市惠济区黄河大坝路",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%83%91%E5%B7%9E%20%E9%BB%84%E6%B2%B3%E8%8A%B1%E5%9B%AD%E5%8F%A3%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "郑州二七纪念馆(二七纪念塔)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "河南省郑州市二七区二七路230号二七广场(近火车站)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E9%83%91%E5%B7%9E%20%E9%83%91%E5%B7%9E%E4%BA%8C%E4%B8%83%E7%BA%AA%E5%BF%B5%E9%A6%86(%E4%BA%8C%E4%B8%83%E7%BA%AA%E5%BF%B5%E5%A1%94)",
+      "comments": []
+    },
+    "二七广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "河南省郑州市二七区西大街21号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%83%91%E5%B7%9E%20%E4%BA%8C%E4%B8%83%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "巴仕德重庆火锅(中牟巴庄火锅老店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "河南省郑州市中牟县中牟电视塔北200米路东中牟大酒店",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%83%91%E5%B7%9E%20%E5%B7%B4%E4%BB%95%E5%BE%B7%E9%87%8D%E5%BA%86%E7%81%AB%E9%94%85(%E4%B8%AD%E7%89%9F%E5%B7%B4%E5%BA%84%E7%81%AB%E9%94%85%E8%80%81%E5%BA%97)",
+      "comments": []
+    },
+    "RIO咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "河南省郑州市金水区黄河路黄河北街向北十米路西",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%83%91%E5%B7%9E%20RIO%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(郑州万象城店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "河南省郑州市二七区民主路10号万象城F3",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%83%91%E5%B7%9E%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E9%83%91%E5%B7%9E%E4%B8%87%E8%B1%A1%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "美朵花礼花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "河南省郑州市新郑市龙湖镇高坡岩市场",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%83%91%E5%B7%9E%20%E7%BE%8E%E6%9C%B5%E8%8A%B1%E7%A4%BC%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "观星台景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "河南省郑州市登封市告成镇",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%83%91%E5%B7%9E%20%E8%A7%82%E6%98%9F%E5%8F%B0%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

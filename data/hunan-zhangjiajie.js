@@ -1097,7 +1097,121 @@ window.CITY_DATA['hunan-zhangjiajie'] = {
     "desc": "购物:花鸟鱼虫 湖南省张家界市慈利县046号政协家园旁"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "张家界慈利地缝景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "贺龙纪念馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "逸臣广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "乌龙山寨酒楼(江与城店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "缘味奶茶店(贺龙纪念馆店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "新起点托管厚德书店",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "爱里鲜花(馨艺鲜花店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "张家界千古情景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "张家界慈利地缝景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "湖南省张家界市慈利县零溪镇",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%BC%A0%E5%AE%B6%E7%95%8C%20%E5%BC%A0%E5%AE%B6%E7%95%8C%E6%85%88%E5%88%A9%E5%9C%B0%E7%BC%9D%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "贺龙纪念馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "湖南省张家界市桑植县洪家关乡",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%A0%E5%AE%B6%E7%95%8C%20%E8%B4%BA%E9%BE%99%E7%BA%AA%E5%BF%B5%E9%A6%86",
+      "comments": []
+    },
+    "逸臣广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "湖南省张家界市永定区永定街道6号公馆",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%A0%E5%AE%B6%E7%95%8C%20%E9%80%B8%E8%87%A3%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "乌龙山寨酒楼(江与城店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "湖南省张家界市永定区江与城一期S08铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%A0%E5%AE%B6%E7%95%8C%20%E4%B9%8C%E9%BE%99%E5%B1%B1%E5%AF%A8%E9%85%92%E6%A5%BC(%E6%B1%9F%E4%B8%8E%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "缘味奶茶店(贺龙纪念馆店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "湖南省张家界市桑植县洪家关白族乡洪家关村委会西北侧80米",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%A0%E5%AE%B6%E7%95%8C%20%E7%BC%98%E5%91%B3%E5%A5%B6%E8%8C%B6%E5%BA%97(%E8%B4%BA%E9%BE%99%E7%BA%AA%E5%BF%B5%E9%A6%86%E5%BA%97)",
+      "comments": []
+    },
+    "新起点托管厚德书店": {
+      "rank": 6,
+      "hot": 77,
+      "address": "湖南省张家界市慈利县赵家岗土家族乡",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%A0%E5%AE%B6%E7%95%8C%20%E6%96%B0%E8%B5%B7%E7%82%B9%E6%89%98%E7%AE%A1%E5%8E%9A%E5%BE%B7%E4%B9%A6%E5%BA%97",
+      "comments": []
+    },
+    "爱里鲜花(馨艺鲜花店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "湖南省张家界市永定区永定街道人民路205号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%A0%E5%AE%B6%E7%95%8C%20%E7%88%B1%E9%87%8C%E9%B2%9C%E8%8A%B1(%E9%A6%A8%E8%89%BA%E9%B2%9C%E8%8A%B1%E5%BA%97)",
+      "comments": []
+    },
+    "张家界千古情景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "湖南省张家界市武陵源区军地坪街道朝阳路1号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%BC%A0%E5%AE%B6%E7%95%8C%20%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%83%E5%8F%A4%E6%83%85%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

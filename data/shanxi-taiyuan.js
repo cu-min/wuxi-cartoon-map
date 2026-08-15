@@ -1129,7 +1129,121 @@ window.CITY_DATA['shanxi-taiyuan'] = {
     "desc": "购物:花鸟鱼虫 山西省太原市迎泽区桥东街道东岗巷k1区1号楼"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "蒙山大佛景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "山西博物院",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "五一广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "十三月慢生活私人订制西餐厅",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "库迪咖啡(鑫美天地店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(太原茂业天地店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "爱在此刻鲜花店(康达商城店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "太山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "蒙山大佛景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "山西省太原市晋源区蒙山景区",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A4%AA%E5%8E%9F%20%E8%92%99%E5%B1%B1%E5%A4%A7%E4%BD%9B%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "山西博物院": {
+      "rank": 2,
+      "hot": 93,
+      "address": "山西省太原市万柏林区滨河西路北段13号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%AA%E5%8E%9F%20%E5%B1%B1%E8%A5%BF%E5%8D%9A%E7%89%A9%E9%99%A2",
+      "comments": []
+    },
+    "五一广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "山西省太原市迎泽区迎泽大街30号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%AA%E5%8E%9F%20%E4%BA%94%E4%B8%80%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "十三月慢生活私人订制西餐厅": {
+      "rank": 4,
+      "hot": 85,
+      "address": "山西省太原市小店区体育西路茂业天地6幢2404",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%AA%E5%8E%9F%20%E5%8D%81%E4%B8%89%E6%9C%88%E6%85%A2%E7%94%9F%E6%B4%BB%E7%A7%81%E4%BA%BA%E8%AE%A2%E5%88%B6%E8%A5%BF%E9%A4%90%E5%8E%85",
+      "comments": []
+    },
+    "库迪咖啡(鑫美天地店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "山西省太原市万柏林区千峰南路鲜客来生活超市1号底商",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%AA%E5%8E%9F%20%E5%BA%93%E8%BF%AA%E5%92%96%E5%95%A1(%E9%91%AB%E7%BE%8E%E5%A4%A9%E5%9C%B0%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(太原茂业天地店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "山西省太原市小店区亲贤北街79号茂业天地L2",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%AA%E5%8E%9F%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E5%A4%AA%E5%8E%9F%E8%8C%82%E4%B8%9A%E5%A4%A9%E5%9C%B0%E5%BA%97)",
+      "comments": []
+    },
+    "爱在此刻鲜花店(康达商城店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "山西省太原市迎泽区康乐街康达商城一楼(肯德基旁边好市多超市进来即到)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%AA%E5%8E%9F%20%E7%88%B1%E5%9C%A8%E6%AD%A4%E5%88%BB%E9%B2%9C%E8%8A%B1%E5%BA%97(%E5%BA%B7%E8%BE%BE%E5%95%86%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "太山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "山西省太原市晋源区风峪沟沙河北岸",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A4%AA%E5%8E%9F%20%E5%A4%AA%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

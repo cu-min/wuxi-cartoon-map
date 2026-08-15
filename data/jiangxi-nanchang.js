@@ -1129,7 +1129,121 @@ window.CITY_DATA['jiangxi-nanchang'] = {
     "desc": "购物:花鸟鱼虫 江西省南昌市青山湖区江西青山湖高新技术产业园区高新南大道1881号城南经济适用房F9栋商城1层02室"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "八大山人梅湖景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "南昌新四军军部旧址陈列馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "八一广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "军山湖渔家小院",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "Peet's皮爷咖啡(南昌万象城店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(铜锣湾T16店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "禧朵鲜花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "梅湖景区花博园",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "八大山人梅湖景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "江西省南昌市青云谱区青云谱镇青云谱路269号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E6%98%8C%20%E5%85%AB%E5%A4%A7%E5%B1%B1%E4%BA%BA%E6%A2%85%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "南昌新四军军部旧址陈列馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "江西省南昌市西湖区象山南路119号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E6%98%8C%20%E5%8D%97%E6%98%8C%E6%96%B0%E5%9B%9B%E5%86%9B%E5%86%9B%E9%83%A8%E6%97%A7%E5%9D%80%E9%99%88%E5%88%97%E9%A6%86",
+      "comments": []
+    },
+    "八一广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "江西省南昌市东湖区广场南路",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E6%98%8C%20%E5%85%AB%E4%B8%80%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "军山湖渔家小院": {
+      "rank": 4,
+      "hot": 85,
+      "address": "江西省南昌市进贤县三里乡倪坊村村委会邓家村",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E6%98%8C%20%E5%86%9B%E5%B1%B1%E6%B9%96%E6%B8%94%E5%AE%B6%E5%B0%8F%E9%99%A2",
+      "comments": []
+    },
+    "Peet's皮爷咖啡(南昌万象城店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "江西省南昌市红谷滩区红角洲管理处万象城2号门L119号商铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E6%98%8C%20Peet's%E7%9A%AE%E7%88%B7%E5%92%96%E5%95%A1(%E5%8D%97%E6%98%8C%E4%B8%87%E8%B1%A1%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(铜锣湾T16店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "江西省南昌市红谷滩区庐山南大道369号南昌铜锣湾T16购物中心LG1-05号商铺-1",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E6%98%8C%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E9%93%9C%E9%94%A3%E6%B9%BET16%E5%BA%97)",
+      "comments": []
+    },
+    "禧朵鲜花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "江西省南昌市红谷滩区凤凰中大道和翠苑路交叉口乡企城B3栋南7号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E6%98%8C%20%E7%A6%A7%E6%9C%B5%E9%B2%9C%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "梅湖景区花博园": {
+      "rank": 8,
+      "hot": 71,
+      "address": "江西省南昌市青云谱区岱山东路168号南1和北1入园处",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E6%98%8C%20%E6%A2%85%E6%B9%96%E6%99%AF%E5%8C%BA%E8%8A%B1%E5%8D%9A%E5%9B%AD",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

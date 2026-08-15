@@ -1129,7 +1129,121 @@ window.CITY_DATA['henan-kaifeng'] = {
     "desc": "购物:花鸟鱼虫 河南省开封市兰考县黄河大道633号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "繁塔景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "开封市烈士陵园",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "开封市鼓楼广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "开封市龙亭区兴盛德花生直营店(中山路老店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "岛屿咖啡馆",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "库迪咖啡(开封书店街店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "艳萍花店(振河商业城店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "开封城墙景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "繁塔景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "河南省开封市禹王台区繁塔街道繁塔西街30号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%BC%80%E5%B0%81%20%E7%B9%81%E5%A1%94%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "开封市烈士陵园": {
+      "rank": 2,
+      "hot": 93,
+      "address": "河南省开封市顺河回族区东郊乡陵园路1号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%80%E5%B0%81%20%E5%BC%80%E5%B0%81%E5%B8%82%E7%83%88%E5%A3%AB%E9%99%B5%E5%9B%AD",
+      "comments": []
+    },
+    "开封市鼓楼广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "河南省开封市顺河回族区寺后街23号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%80%E5%B0%81%20%E5%BC%80%E5%B0%81%E5%B8%82%E9%BC%93%E6%A5%BC%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "开封市龙亭区兴盛德花生直营店(中山路老店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "河南省开封市龙亭区中山路北段84号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%80%E5%B0%81%20%E5%BC%80%E5%B0%81%E5%B8%82%E9%BE%99%E4%BA%AD%E5%8C%BA%E5%85%B4%E7%9B%9B%E5%BE%B7%E8%8A%B1%E7%94%9F%E7%9B%B4%E8%90%A5%E5%BA%97(%E4%B8%AD%E5%B1%B1%E8%B7%AF%E8%80%81%E5%BA%97)",
+      "comments": []
+    },
+    "岛屿咖啡馆": {
+      "rank": 5,
+      "hot": 81,
+      "address": "河南省开封市鼓楼区西坡北街牡丹苑3号院临街门面",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%80%E5%B0%81%20%E5%B2%9B%E5%B1%BF%E5%92%96%E5%95%A1%E9%A6%86",
+      "comments": []
+    },
+    "库迪咖啡(开封书店街店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "河南省开封市顺河回族区北书店街1号附2号1号(与徐府街交叉口)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%80%E5%B0%81%20%E5%BA%93%E8%BF%AA%E5%92%96%E5%95%A1(%E5%BC%80%E5%B0%81%E4%B9%A6%E5%BA%97%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "艳萍花店(振河商业城店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "河南省开封市鼓楼区寺后街1号振河商业城底商F1",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%BC%80%E5%B0%81%20%E8%89%B3%E8%90%8D%E8%8A%B1%E5%BA%97(%E6%8C%AF%E6%B2%B3%E5%95%86%E4%B8%9A%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "开封城墙景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "河南省开封市龙亭区西门大街198号(大梁门里向北10米路西)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%BC%80%E5%B0%81%20%E5%BC%80%E5%B0%81%E5%9F%8E%E5%A2%99%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

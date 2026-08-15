@@ -1129,7 +1129,121 @@ window.CITY_DATA['henan-luoyang'] = {
     "desc": "购物:花鸟鱼虫 河南省洛阳市涧西区兴隆花园东1门西北310米"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "黛眉山景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "洛阳古墓博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "洛邑古城景区广场-文峰塔",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "清真马杰山牛肉汤馆(无分店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "藏绿特调咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(洛阳中州万达广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "爱尚花艺鲜花婚庆(涧西区万达王府井广州市场店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "白云山旅游区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "黛眉山景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "河南省洛阳市新安县石井镇东山底村S242",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B4%9B%E9%98%B3%20%E9%BB%9B%E7%9C%89%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "洛阳古墓博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "河南省洛阳市老城区机场路6号(近国际牡丹园)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%B4%9B%E9%98%B3%20%E6%B4%9B%E9%98%B3%E5%8F%A4%E5%A2%93%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "洛邑古城景区广场-文峰塔": {
+      "rank": 3,
+      "hot": 89,
+      "address": "河南省洛阳市老城区柳林街30号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B4%9B%E9%98%B3%20%E6%B4%9B%E9%82%91%E5%8F%A4%E5%9F%8E%E6%99%AF%E5%8C%BA%E5%B9%BF%E5%9C%BA-%E6%96%87%E5%B3%B0%E5%A1%94",
+      "comments": []
+    },
+    "清真马杰山牛肉汤馆(无分店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "河南省洛阳市瀍河回族区启明东路235号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B4%9B%E9%98%B3%20%E6%B8%85%E7%9C%9F%E9%A9%AC%E6%9D%B0%E5%B1%B1%E7%89%9B%E8%82%89%E6%B1%A4%E9%A6%86(%E6%97%A0%E5%88%86%E5%BA%97)",
+      "comments": []
+    },
+    "藏绿特调咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "河南省洛阳市涧西区延安路38号街坊底商",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B4%9B%E9%98%B3%20%E8%97%8F%E7%BB%BF%E7%89%B9%E8%B0%83%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(洛阳中州万达广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "河南省洛阳市西工区西工街道中州中路245号建业凯旋广场二层2062,2063号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B4%9B%E9%98%B3%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E6%B4%9B%E9%98%B3%E4%B8%AD%E5%B7%9E%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "爱尚花艺鲜花婚庆(涧西区万达王府井广州市场店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "河南省洛阳市涧西区太原路与安徽路交叉口正南方向57米左右",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B4%9B%E9%98%B3%20%E7%88%B1%E5%B0%9A%E8%8A%B1%E8%89%BA%E9%B2%9C%E8%8A%B1%E5%A9%9A%E5%BA%86(%E6%B6%A7%E8%A5%BF%E5%8C%BA%E4%B8%87%E8%BE%BE%E7%8E%8B%E5%BA%9C%E4%BA%95%E5%B9%BF%E5%B7%9E%E5%B8%82%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "白云山旅游区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "河南省洛阳市嵩县郑栾高速龙峪湾国家森林公园东侧",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B4%9B%E9%98%B3%20%E7%99%BD%E4%BA%91%E5%B1%B1%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

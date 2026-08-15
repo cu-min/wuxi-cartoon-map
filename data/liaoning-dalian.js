@@ -1129,7 +1129,121 @@ window.CITY_DATA['liaoning-dalian'] = {
     "desc": "购物:花鸟鱼虫 辽宁省大连市庄河市新华街道新华路桦林宾馆东南侧约30米"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "东鸡冠山景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "大连博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "星海广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "君霖海鲜私房菜(第三中学店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "未知咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(万达广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "玉林鲜花",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "白玉山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "东鸡冠山景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "辽宁省大连市旅顺口区启新街东三巷",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E8%BF%9E%20%E4%B8%9C%E9%B8%A1%E5%86%A0%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "大连博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "辽宁省大连市沙河口区星海湾街道会展路10号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E8%BF%9E%20%E5%A4%A7%E8%BF%9E%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "星海广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "辽宁省大连市沙河口区中山路572号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E8%BF%9E%20%E6%98%9F%E6%B5%B7%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "君霖海鲜私房菜(第三中学店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "辽宁省大连市沙河口区华北路327号(三中对面)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E8%BF%9E%20%E5%90%9B%E9%9C%96%E6%B5%B7%E9%B2%9C%E7%A7%81%E6%88%BF%E8%8F%9C(%E7%AC%AC%E4%B8%89%E4%B8%AD%E5%AD%A6%E5%BA%97)",
+      "comments": []
+    },
+    "未知咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "辽宁省大连市中山区南山路60号1单元1层1号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E8%BF%9E%20%E6%9C%AA%E7%9F%A5%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "西西弗书店(万达广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "辽宁省大连市甘井子区机场街道虹韵路6号万达广场1A层1A26/1A28-A",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E8%BF%9E%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "玉林鲜花": {
+      "rank": 7,
+      "hot": 74,
+      "address": "辽宁省大连市中山区青泥洼桥街道长江路155号(佳兆业购物广场斜对面)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E8%BF%9E%20%E7%8E%89%E6%9E%97%E9%B2%9C%E8%8A%B1",
+      "comments": []
+    },
+    "白玉山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "辽宁省大连市旅顺口区白玉山路",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E8%BF%9E%20%E7%99%BD%E7%8E%89%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

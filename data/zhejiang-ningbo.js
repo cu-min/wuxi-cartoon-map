@@ -1129,7 +1129,121 @@ window.CITY_DATA['zhejiang-ningbo'] = {
     "desc": "购物:花鸟鱼虫 浙江省宁波市慈溪市逍林镇林西路232号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "浙东小九寨景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "宁波博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "中山广场-中山公园",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "鄞江桥头龙虾总店",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "解忧咖啡馆(天一家园店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "阿毛饭店·宁波老字号(新华书店店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "三玫花店(桥西岸路)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "天下玉苑旅游景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "浙东小九寨景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "浙江省宁波市余姚市大隐镇袁毛线芝林村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%AE%81%E6%B3%A2%20%E6%B5%99%E4%B8%9C%E5%B0%8F%E4%B9%9D%E5%AF%A8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "宁波博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "浙江省宁波市鄞州区首南中路1000号(近鄞州公园)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%AE%81%E6%B3%A2%20%E5%AE%81%E6%B3%A2%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "中山广场-中山公园": {
+      "rank": 3,
+      "hot": 89,
+      "address": "浙江省宁波市海曙区苍水街中山广场",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%AE%81%E6%B3%A2%20%E4%B8%AD%E5%B1%B1%E5%B9%BF%E5%9C%BA-%E4%B8%AD%E5%B1%B1%E5%85%AC%E5%9B%AD",
+      "comments": []
+    },
+    "鄞江桥头龙虾总店": {
+      "rank": 4,
+      "hot": 85,
+      "address": "浙江省宁波市海曙区鄞江镇官池中路2-4号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%AE%81%E6%B3%A2%20%E9%84%9E%E6%B1%9F%E6%A1%A5%E5%A4%B4%E9%BE%99%E8%99%BE%E6%80%BB%E5%BA%97",
+      "comments": []
+    },
+    "解忧咖啡馆(天一家园店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "浙江省宁波市海曙区望春街道澄波街281号(天一家园北门)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%AE%81%E6%B3%A2%20%E8%A7%A3%E5%BF%A7%E5%92%96%E5%95%A1%E9%A6%86(%E5%A4%A9%E4%B8%80%E5%AE%B6%E5%9B%AD%E5%BA%97)",
+      "comments": []
+    },
+    "阿毛饭店·宁波老字号(新华书店店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "浙江省宁波市海曙区中山东路99号(鼓楼地铁站A口步行190米)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%AE%81%E6%B3%A2%20%E9%98%BF%E6%AF%9B%E9%A5%AD%E5%BA%97%C2%B7%E5%AE%81%E6%B3%A2%E8%80%81%E5%AD%97%E5%8F%B7(%E6%96%B0%E5%8D%8E%E4%B9%A6%E5%BA%97%E5%BA%97)",
+      "comments": []
+    },
+    "三玫花店(桥西岸路)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "浙江省宁波市奉化区锦屏街道大成路7号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%AE%81%E6%B3%A2%20%E4%B8%89%E7%8E%AB%E8%8A%B1%E5%BA%97(%E6%A1%A5%E8%A5%BF%E5%B2%B8%E8%B7%AF)",
+      "comments": []
+    },
+    "天下玉苑旅游景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "浙江省宁波市余姚市",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%AE%81%E6%B3%A2%20%E5%A4%A9%E4%B8%8B%E7%8E%89%E8%8B%91%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

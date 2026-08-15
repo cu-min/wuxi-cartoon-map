@@ -1129,7 +1129,121 @@ window.CITY_DATA['zhejiang-jiaxing'] = {
     "desc": "购物:花鸟鱼虫 浙江省嘉兴市南湖区建设街道环城南路27号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "南湖景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "嘉兴博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "老佛爷购物中心",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "五芳斋(新气象路店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "兴旺阁咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(嘉兴龙鼎万达广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "心语馨苑花店(格林路店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "东湖景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "南湖景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "浙江省嘉兴市南湖区南溪西路1号(迎宾桥堍)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%98%89%E5%85%B4%20%E5%8D%97%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "嘉兴博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "浙江省嘉兴市南湖区南湖街道海盐塘路485号(南湖新渡口南)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%98%89%E5%85%B4%20%E5%98%89%E5%85%B4%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "老佛爷购物中心": {
+      "rank": 3,
+      "hot": 89,
+      "address": "浙江省嘉兴市南湖区老佛爷购物中心1幢商业102号0101室",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%98%89%E5%85%B4%20%E8%80%81%E4%BD%9B%E7%88%B7%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83",
+      "comments": []
+    },
+    "五芳斋(新气象路店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "浙江省嘉兴市南湖区长水街道新气象路1055号-1号商铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%98%89%E5%85%B4%20%E4%BA%94%E8%8A%B3%E6%96%8B(%E6%96%B0%E6%B0%94%E8%B1%A1%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "兴旺阁咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "浙江省嘉兴市南湖区东栅街道南溪西路景宜路276号(欧尚超市向东300米)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%98%89%E5%85%B4%20%E5%85%B4%E6%97%BA%E9%98%81%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(嘉兴龙鼎万达广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "浙江省嘉兴市南湖区城南街道昌盛中路26号嘉兴龙鼎万达广场1层1056号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%98%89%E5%85%B4%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E5%98%89%E5%85%B4%E9%BE%99%E9%BC%8E%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "心语馨苑花店(格林路店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "浙江省嘉兴市南湖区东栅街道景宜花园20幢1楼格林路173号(景宜花园西南门外往东面50米)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%98%89%E5%85%B4%20%E5%BF%83%E8%AF%AD%E9%A6%A8%E8%8B%91%E8%8A%B1%E5%BA%97(%E6%A0%BC%E6%9E%97%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "东湖景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "浙江省嘉兴市平湖市人民东路167号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%98%89%E5%85%B4%20%E4%B8%9C%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

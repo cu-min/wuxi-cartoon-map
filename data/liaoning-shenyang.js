@@ -1129,7 +1129,121 @@ window.CITY_DATA['liaoning-shenyang'] = {
     "desc": "购物:花鸟鱼虫 辽宁省沈阳市大东区吉祥一路25号门市(联通公司旁)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "沈阳七星山旅游风景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "沈阳故宫博物院",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "中山广场-毛泽东雕像",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "老北市味里香串店(总店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "阿兰朵咖啡(新民店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(万达广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花天丽鲜花庆典(爱工北街店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "沈阳朝阳山生态文化景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "沈阳七星山旅游风景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "辽宁省沈阳市沈北新区兴隆台街道石佛寺村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B2%88%E9%98%B3%20%E6%B2%88%E9%98%B3%E4%B8%83%E6%98%9F%E5%B1%B1%E6%97%85%E6%B8%B8%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "沈阳故宫博物院": {
+      "rank": 2,
+      "hot": 93,
+      "address": "辽宁省沈阳市沈河区沈阳路171号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%B2%88%E9%98%B3%20%E6%B2%88%E9%98%B3%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2",
+      "comments": []
+    },
+    "中山广场-毛泽东雕像": {
+      "rank": 3,
+      "hot": 89,
+      "address": "辽宁省沈阳市和平区太原街街道开封街3号巷中山广场",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B2%88%E9%98%B3%20%E4%B8%AD%E5%B1%B1%E5%B9%BF%E5%9C%BA-%E6%AF%9B%E6%B3%BD%E4%B8%9C%E9%9B%95%E5%83%8F",
+      "comments": []
+    },
+    "老北市味里香串店(总店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "辽宁省沈阳市和平区北市一街17号4门",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B2%88%E9%98%B3%20%E8%80%81%E5%8C%97%E5%B8%82%E5%91%B3%E9%87%8C%E9%A6%99%E4%B8%B2%E5%BA%97(%E6%80%BB%E5%BA%97)",
+      "comments": []
+    },
+    "阿兰朵咖啡(新民店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "辽宁省沈阳市新民市华丽新都西门北80米",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B2%88%E9%98%B3%20%E9%98%BF%E5%85%B0%E6%9C%B5%E5%92%96%E5%95%A1(%E6%96%B0%E6%B0%91%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店(万达广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "辽宁省沈阳市和平区太原街街道太原南街2号万达广场2层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B2%88%E9%98%B3%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "花天丽鲜花庆典(爱工北街店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "辽宁省沈阳市铁西区爱工北街34-1号4门",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B2%88%E9%98%B3%20%E8%8A%B1%E5%A4%A9%E4%B8%BD%E9%B2%9C%E8%8A%B1%E5%BA%86%E5%85%B8(%E7%88%B1%E5%B7%A5%E5%8C%97%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "沈阳朝阳山生态文化景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "辽宁省沈阳市浑南区祝家街道常沙线东50米",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B2%88%E9%98%B3%20%E6%B2%88%E9%98%B3%E6%9C%9D%E9%98%B3%E5%B1%B1%E7%94%9F%E6%80%81%E6%96%87%E5%8C%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

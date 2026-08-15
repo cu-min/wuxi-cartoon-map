@@ -1129,7 +1129,121 @@ window.CITY_DATA['yunnan-kunming'] = {
     "desc": "购物:花鸟鱼虫 云南省昆明市盘龙区联盟街道联盟路奥斯迪联盟·尚义花市"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "龙门景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "昆明市博物馆(昆明市文物保护和考古研究中心)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "东风广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "山人野生菌餐厅",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "H2O咖啡馆·酒吧(海伦国际店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(昆明瑞鼎城爱琴海店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "昆明世界园艺博览园-俄罗斯园",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "轿子山风景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "龙门景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "云南省昆明市西山区西山公路西郊滇池畔西岸",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%98%86%E6%98%8E%20%E9%BE%99%E9%97%A8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "昆明市博物馆(昆明市文物保护和考古研究中心)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "云南省昆明市官渡区拓东路93号(岔街地铁站D口步行490米)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%98%86%E6%98%8E%20%E6%98%86%E6%98%8E%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86(%E6%98%86%E6%98%8E%E5%B8%82%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%92%8C%E8%80%83%E5%8F%A4%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83)",
+      "comments": []
+    },
+    "东风广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "云南省昆明市盘龙区东风东路1号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%98%86%E6%98%8E%20%E4%B8%9C%E9%A3%8E%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "山人野生菌餐厅": {
+      "rank": 4,
+      "hot": 85,
+      "address": "云南省昆明市盘龙区青云街道东三环北苑农产品综合批发市场B2-15-17",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%98%86%E6%98%8E%20%E5%B1%B1%E4%BA%BA%E9%87%8E%E7%94%9F%E8%8F%8C%E9%A4%90%E5%8E%85",
+      "comments": []
+    },
+    "H2O咖啡馆·酒吧(海伦国际店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "云南省昆明市官渡区小板桥街道金源大道海伦国际13号(恒丰银行旁)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%98%86%E6%98%8E%20H2O%E5%92%96%E5%95%A1%E9%A6%86%C2%B7%E9%85%92%E5%90%A7(%E6%B5%B7%E4%BC%A6%E5%9B%BD%E9%99%85%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店(昆明瑞鼎城爱琴海店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "云南省昆明市盘龙区白云路168号昆明瑞鼎城悦容匯购物公园F1",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%98%86%E6%98%8E%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E6%98%86%E6%98%8E%E7%91%9E%E9%BC%8E%E5%9F%8E%E7%88%B1%E7%90%B4%E6%B5%B7%E5%BA%97)",
+      "comments": []
+    },
+    "昆明世界园艺博览园-俄罗斯园": {
+      "rank": 7,
+      "hot": 74,
+      "address": "云南省昆明市盘龙区青云街道国际室外展区·南亚之窗",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%98%86%E6%98%8E%20%E6%98%86%E6%98%8E%E4%B8%96%E7%95%8C%E5%9B%AD%E8%89%BA%E5%8D%9A%E8%A7%88%E5%9B%AD-%E4%BF%84%E7%BD%97%E6%96%AF%E5%9B%AD",
+      "comments": []
+    },
+    "轿子山风景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "云南省昆明市禄劝彝族苗族自治县",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%98%86%E6%98%8E%20%E8%BD%BF%E5%AD%90%E5%B1%B1%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

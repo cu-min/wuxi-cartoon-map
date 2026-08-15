@@ -1129,7 +1129,121 @@ window.CITY_DATA['zhejiang-hangzhou'] = {
     "desc": "购物:花鸟鱼虫 浙江省杭州市临安区於潜镇天风街5号(恒大广告边上)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "雷峰塔景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "胡雪岩故居",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "杭州之翼购物中心",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "王荣法羊锅·非遗传承美食(羊锅村店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "木香咖啡(人民大道店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(龙湖金沙天街店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "鹊桥鲜花(高沙商业街店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "河坊街景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "雷峰塔景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "浙江省杭州市西湖区西湖街道南山路15号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "胡雪岩故居": {
+      "rank": 2,
+      "hot": 93,
+      "address": "浙江省杭州市上城区元宝街18号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%9D%AD%E5%B7%9E%20%E8%83%A1%E9%9B%AA%E5%B2%A9%E6%95%85%E5%B1%85",
+      "comments": []
+    },
+    "杭州之翼购物中心": {
+      "rank": 3,
+      "hot": 89,
+      "address": "浙江省杭州市上城区彭埠街道鸿泰路133号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%9D%AD%E5%B7%9E%20%E6%9D%AD%E5%B7%9E%E4%B9%8B%E7%BF%BC%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83",
+      "comments": []
+    },
+    "王荣法羊锅·非遗传承美食(羊锅村店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "浙江省杭州市余杭区仓前街道苕溪村马家村18组9号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%9D%AD%E5%B7%9E%20%E7%8E%8B%E8%8D%A3%E6%B3%95%E7%BE%8A%E9%94%85%C2%B7%E9%9D%9E%E9%81%97%E4%BC%A0%E6%89%BF%E7%BE%8E%E9%A3%9F(%E7%BE%8A%E9%94%85%E6%9D%91%E5%BA%97)",
+      "comments": []
+    },
+    "木香咖啡(人民大道店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "浙江省杭州市临平区南苑街道人民大道769号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%9D%AD%E5%B7%9E%20%E6%9C%A8%E9%A6%99%E5%92%96%E5%95%A1(%E4%BA%BA%E6%B0%91%E5%A4%A7%E9%81%93%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(龙湖金沙天街店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "浙江省杭州市钱塘区金沙大道560号龙湖·金沙天街F4",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E9%BE%99%E6%B9%96%E9%87%91%E6%B2%99%E5%A4%A9%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "鹊桥鲜花(高沙商业街店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "浙江省杭州市钱塘区下沙街道学林街1106号-1",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%9D%AD%E5%B7%9E%20%E9%B9%8A%E6%A1%A5%E9%B2%9C%E8%8A%B1(%E9%AB%98%E6%B2%99%E5%95%86%E4%B8%9A%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "河坊街景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "浙江省杭州市上城区清波街道河坊街180号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

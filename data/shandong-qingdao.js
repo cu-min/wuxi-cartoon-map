@@ -1129,7 +1129,121 @@ window.CITY_DATA['shandong-qingdao'] = {
     "desc": "购物:花鸟鱼虫 山东省青岛市即墨区樱花街3号(即墨市政府南100米)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "青岛太和山风景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "青岛德国总督楼旧址博物馆(青岛迎宾馆)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "五四广场-五月的风",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "渔佳小厨-小船海鲜-青岛菜",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "花神海咖啡石老人店",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(海信广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "青岛世界园艺博览园",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "青岛奥林匹克雕塑文化园",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "青岛太和山风景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "山东省青岛市城阳区",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E9%9D%92%E5%B2%9B%E5%A4%AA%E5%92%8C%E5%B1%B1%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "青岛德国总督楼旧址博物馆(青岛迎宾馆)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "山东省青岛市市南区江苏路街道龙山路26号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E9%9D%92%E5%B2%9B%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%9D%A3%E6%A5%BC%E6%97%A7%E5%9D%80%E5%8D%9A%E7%89%A9%E9%A6%86(%E9%9D%92%E5%B2%9B%E8%BF%8E%E5%AE%BE%E9%A6%86)",
+      "comments": []
+    },
+    "五四广场-五月的风": {
+      "rank": 3,
+      "hot": 89,
+      "address": "山东省青岛市市南区东海西路32号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E4%BA%94%E5%9B%9B%E5%B9%BF%E5%9C%BA-%E4%BA%94%E6%9C%88%E7%9A%84%E9%A3%8E",
+      "comments": []
+    },
+    "渔佳小厨-小船海鲜-青岛菜": {
+      "rank": 4,
+      "hot": 85,
+      "address": "山东省青岛市市北区登州路65-4号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E6%B8%94%E4%BD%B3%E5%B0%8F%E5%8E%A8-%E5%B0%8F%E8%88%B9%E6%B5%B7%E9%B2%9C-%E9%9D%92%E5%B2%9B%E8%8F%9C",
+      "comments": []
+    },
+    "花神海咖啡石老人店": {
+      "rank": 5,
+      "hot": 81,
+      "address": "山东省青岛市崂山区海口路287号石老人海水浴场内",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E8%8A%B1%E7%A5%9E%E6%B5%B7%E5%92%96%E5%95%A1%E7%9F%B3%E8%80%81%E4%BA%BA%E5%BA%97",
+      "comments": []
+    },
+    "西西弗书店(海信广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "山东省青岛市市南区澳门路117号海信广场B1",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E6%B5%B7%E4%BF%A1%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "青岛世界园艺博览园": {
+      "rank": 7,
+      "hot": 74,
+      "address": "山东省青岛市李沧区长水路(原世园大道)与常川路交叉口",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E9%9D%92%E5%B2%9B%E4%B8%96%E7%95%8C%E5%9B%AD%E8%89%BA%E5%8D%9A%E8%A7%88%E5%9B%AD",
+      "comments": []
+    },
+    "青岛奥林匹克雕塑文化园": {
+      "rank": 8,
+      "hot": 71,
+      "address": "山东省青岛市城阳区兴阳路318号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E9%9D%92%E5%B2%9B%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E9%9B%95%E5%A1%91%E6%96%87%E5%8C%96%E5%9B%AD",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

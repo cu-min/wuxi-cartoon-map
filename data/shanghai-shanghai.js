@@ -1129,7 +1129,121 @@ window.CITY_DATA['shanghai-shanghai'] = {
     "desc": "购物:花鸟鱼虫 上海市闵行区颛桥镇颛兴东路1579号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "枫泾古镇景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "上海城市规划展示馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "延中广场公园",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "甜蜜蜜港式茶餐厅(虹梅店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "MOCHA猫咪咖啡(长宁店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "湛恩纪念图书馆",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花优选园艺(发财树大型绿植网红植物大花蕙兰花箱造景兰花)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "金山城市沙滩景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "枫泾古镇景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "上海市金山区亭枫公路8588弄28号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%8A%E6%B5%B7%20%E6%9E%AB%E6%B3%BE%E5%8F%A4%E9%95%87%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "上海城市规划展示馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "上海市黄浦区南京东路街道人民大道100号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%8A%E6%B5%B7%20%E4%B8%8A%E6%B5%B7%E5%9F%8E%E5%B8%82%E8%A7%84%E5%88%92%E5%B1%95%E7%A4%BA%E9%A6%86",
+      "comments": []
+    },
+    "延中广场公园": {
+      "rank": 3,
+      "hot": 89,
+      "address": "上海市黄浦区延安东路523号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%8A%E6%B5%B7%20%E5%BB%B6%E4%B8%AD%E5%B9%BF%E5%9C%BA%E5%85%AC%E5%9B%AD",
+      "comments": []
+    },
+    "甜蜜蜜港式茶餐厅(虹梅店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "上海市闵行区虹梅路3293号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%8A%E6%B5%B7%20%E7%94%9C%E8%9C%9C%E8%9C%9C%E6%B8%AF%E5%BC%8F%E8%8C%B6%E9%A4%90%E5%8E%85(%E8%99%B9%E6%A2%85%E5%BA%97)",
+      "comments": []
+    },
+    "MOCHA猫咪咖啡(长宁店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "上海市长宁区安顺路118号7临",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%8A%E6%B5%B7%20MOCHA%E7%8C%AB%E5%92%AA%E5%92%96%E5%95%A1(%E9%95%BF%E5%AE%81%E5%BA%97)",
+      "comments": []
+    },
+    "湛恩纪念图书馆": {
+      "rank": 6,
+      "hot": 77,
+      "address": "上海市杨浦区长白新村街道军工路516号上海理工大学内",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%8A%E6%B5%B7%20%E6%B9%9B%E6%81%A9%E7%BA%AA%E5%BF%B5%E5%9B%BE%E4%B9%A6%E9%A6%86",
+      "comments": []
+    },
+    "花优选园艺(发财树大型绿植网红植物大花蕙兰花箱造景兰花)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "上海市松江区广富林路658号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%8A%E6%B5%B7%20%E8%8A%B1%E4%BC%98%E9%80%89%E5%9B%AD%E8%89%BA(%E5%8F%91%E8%B4%A2%E6%A0%91%E5%A4%A7%E5%9E%8B%E7%BB%BF%E6%A4%8D%E7%BD%91%E7%BA%A2%E6%A4%8D%E7%89%A9%E5%A4%A7%E8%8A%B1%E8%95%99%E5%85%B0%E8%8A%B1%E7%AE%B1%E9%80%A0%E6%99%AF%E5%85%B0%E8%8A%B1)",
+      "comments": []
+    },
+    "金山城市沙滩景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "上海市金山区沪杭公路7555号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%8A%E6%B5%B7%20%E9%87%91%E5%B1%B1%E5%9F%8E%E5%B8%82%E6%B2%99%E6%BB%A9%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

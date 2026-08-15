@@ -1121,7 +1121,121 @@ window.CITY_DATA['jiangxi-jingdezhen'] = {
     "desc": "购物:花鸟鱼虫 江西省景德镇市珠山区周路口街道广场南路与浙江路交叉路口南侧(北京迪斯尼幼儿园西北侧约50米)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "御窑厂国家考古遗址公园",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "景德镇中国陶瓷博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "景德镇陶溪川创意广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "肖旺.本地菜-百年老店(里村翠云路店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "多有空间咖啡陶艺",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "育才书店(朝阳大道店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花时间花店(浙江路店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "洪岩仙境景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "御窑厂国家考古遗址公园": {
+      "rank": 1,
+      "hot": 98,
+      "address": "江西省景德镇市珠山区珠山街道",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%99%AF%E5%BE%B7%E9%95%87%20%E5%BE%A1%E7%AA%91%E5%8E%82%E5%9B%BD%E5%AE%B6%E8%80%83%E5%8F%A4%E9%81%97%E5%9D%80%E5%85%AC%E5%9B%AD",
+      "comments": []
+    },
+    "景德镇中国陶瓷博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "江西省景德镇市昌江区紫晶北路1号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%99%AF%E5%BE%B7%E9%95%87%20%E6%99%AF%E5%BE%B7%E9%95%87%E4%B8%AD%E5%9B%BD%E9%99%B6%E7%93%B7%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "景德镇陶溪川创意广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "江西省景德镇市珠山区里村街道新厂西路150号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%99%AF%E5%BE%B7%E9%95%87%20%E6%99%AF%E5%BE%B7%E9%95%87%E9%99%B6%E6%BA%AA%E5%B7%9D%E5%88%9B%E6%84%8F%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "肖旺.本地菜-百年老店(里村翠云路店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "江西省景德镇市珠山区里村街道翠云路4号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%99%AF%E5%BE%B7%E9%95%87%20%E8%82%96%E6%97%BA.%E6%9C%AC%E5%9C%B0%E8%8F%9C-%E7%99%BE%E5%B9%B4%E8%80%81%E5%BA%97(%E9%87%8C%E6%9D%91%E7%BF%A0%E4%BA%91%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "多有空间咖啡陶艺": {
+      "rank": 5,
+      "hot": 81,
+      "address": "江西省景德镇市珠山区新厂街道雕塑瓷厂",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%99%AF%E5%BE%B7%E9%95%87%20%E5%A4%9A%E6%9C%89%E7%A9%BA%E9%97%B4%E5%92%96%E5%95%A1%E9%99%B6%E8%89%BA",
+      "comments": []
+    },
+    "育才书店(朝阳大道店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "江西省景德镇市浮梁县浮梁二小门口",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%99%AF%E5%BE%B7%E9%95%87%20%E8%82%B2%E6%89%8D%E4%B9%A6%E5%BA%97(%E6%9C%9D%E9%98%B3%E5%A4%A7%E9%81%93%E5%BA%97)",
+      "comments": []
+    },
+    "花时间花店(浙江路店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "江西省景德镇市珠山区周路口街道浙江路天鹅堡美食会所楼下",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%99%AF%E5%BE%B7%E9%95%87%20%E8%8A%B1%E6%97%B6%E9%97%B4%E8%8A%B1%E5%BA%97(%E6%B5%99%E6%B1%9F%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "洪岩仙境景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "江西省景德镇市乐平市东北部",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%99%AF%E5%BE%B7%E9%95%87%20%E6%B4%AA%E5%B2%A9%E4%BB%99%E5%A2%83%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

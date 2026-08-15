@@ -1129,7 +1129,121 @@ window.CITY_DATA['sichuan-chengdu'] = {
     "desc": "购物:花鸟鱼虫 四川省成都市双流区东升街道吴家坝南街27号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "三圣花乡旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "四川美术馆(人民西路)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "天府广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "鱼满堂大鱼头火锅店(玉林店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "原创咖啡·休闲茶饮·棋牌室(河滨路店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(世豪广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花屿礼鲜花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "青城山-都江堰旅游景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "三圣花乡旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "四川省成都市锦江区三圣街道红沙村联合一组136号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%88%90%E9%83%BD%20%E4%B8%89%E5%9C%A3%E8%8A%B1%E4%B9%A1%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "四川美术馆(人民西路)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "四川省成都市青羊区西御河街道人民西路6号(距天府广场地铁站西1北口240米)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%88%90%E9%83%BD%20%E5%9B%9B%E5%B7%9D%E7%BE%8E%E6%9C%AF%E9%A6%86(%E4%BA%BA%E6%B0%91%E8%A5%BF%E8%B7%AF)",
+      "comments": []
+    },
+    "天府广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "四川省成都市青羊区西御河街道人民南路一段86号(近四川科技馆)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%88%90%E9%83%BD%20%E5%A4%A9%E5%BA%9C%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "鱼满堂大鱼头火锅店(玉林店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "四川省成都市武侯区小天东街5号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%88%90%E9%83%BD%20%E9%B1%BC%E6%BB%A1%E5%A0%82%E5%A4%A7%E9%B1%BC%E5%A4%B4%E7%81%AB%E9%94%85%E5%BA%97(%E7%8E%89%E6%9E%97%E5%BA%97)",
+      "comments": []
+    },
+    "原创咖啡·休闲茶饮·棋牌室(河滨路店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "四川省成都市锦江区河滨路75号2楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%88%90%E9%83%BD%20%E5%8E%9F%E5%88%9B%E5%92%96%E5%95%A1%C2%B7%E4%BC%91%E9%97%B2%E8%8C%B6%E9%A5%AE%C2%B7%E6%A3%8B%E7%89%8C%E5%AE%A4(%E6%B2%B3%E6%BB%A8%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(世豪广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "四川省成都市武侯区剑南大道中段998号世豪广场F2",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%88%90%E9%83%BD%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E4%B8%96%E8%B1%AA%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "花屿礼鲜花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "四川省成都市青羊区府南街道双顺路21号附25号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%88%90%E9%83%BD%20%E8%8A%B1%E5%B1%BF%E7%A4%BC%E9%B2%9C%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "青城山-都江堰旅游景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "四川省成都市都江堰市青城山镇106省道西侧",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%88%90%E9%83%BD%20%E9%9D%92%E5%9F%8E%E5%B1%B1-%E9%83%BD%E6%B1%9F%E5%A0%B0%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

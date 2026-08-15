@@ -1113,7 +1113,121 @@ window.CITY_DATA['jiangsu-yangzhou'] = {
     "desc": "购物:花鸟鱼虫 江苏省扬州市江都区邵伯镇甘棠路邵伯紫京饭店东北侧约50米"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "东关历史文化旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "扬州八怪纪念馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "遗体器官捐献纪念园-博爱园",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "小马家烧烤馆(望月路老字号店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "TAAR:TAAR塔尔咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(扬州邗江万达广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "万丈时光鲜花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "朴园景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "东关历史文化旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "江苏省扬州市广陵区泰州路口",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%89%AC%E5%B7%9E%20%E4%B8%9C%E5%85%B3%E5%8E%86%E5%8F%B2%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "扬州八怪纪念馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "江苏省扬州市广陵区驼岭巷18号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%89%AC%E5%B7%9E%20%E6%89%AC%E5%B7%9E%E5%85%AB%E6%80%AA%E7%BA%AA%E5%BF%B5%E9%A6%86",
+      "comments": []
+    },
+    "遗体器官捐献纪念园-博爱园": {
+      "rank": 3,
+      "hot": 89,
+      "address": "江苏省扬州市广陵区东关街道泰州路19号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%AC%E5%B7%9E%20%E9%81%97%E4%BD%93%E5%99%A8%E5%AE%98%E6%8D%90%E7%8C%AE%E7%BA%AA%E5%BF%B5%E5%9B%AD-%E5%8D%9A%E7%88%B1%E5%9B%AD",
+      "comments": []
+    },
+    "小马家烧烤馆(望月路老字号店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "江苏省扬州市邗江区邗上街道望月路457-2号(汉庭连锁酒店向西50米)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%AC%E5%B7%9E%20%E5%B0%8F%E9%A9%AC%E5%AE%B6%E7%83%A7%E7%83%A4%E9%A6%86(%E6%9C%9B%E6%9C%88%E8%B7%AF%E8%80%81%E5%AD%97%E5%8F%B7%E5%BA%97)",
+      "comments": []
+    },
+    "TAAR:TAAR塔尔咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "江苏省扬州市广陵区东关街道观巷23号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%AC%E5%B7%9E%20TAAR%3ATAAR%E5%A1%94%E5%B0%94%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "西西弗书店(扬州邗江万达广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "江苏省扬州市邗江区邗江中路302号万达广场3层3031B号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%AC%E5%B7%9E%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E6%89%AC%E5%B7%9E%E9%82%97%E6%B1%9F%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "万丈时光鲜花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "江苏省扬州市邗江区新盛街道京华城路341号华鼎星城北门",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%AC%E5%B7%9E%20%E4%B8%87%E4%B8%88%E6%97%B6%E5%85%89%E9%B2%9C%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "朴园景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "江苏省扬州市江都区丁伙镇北环路18号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%89%AC%E5%B7%9E%20%E6%9C%B4%E5%9B%AD%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

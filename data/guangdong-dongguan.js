@@ -1129,7 +1129,121 @@ window.CITY_DATA['guangdong-dongguan'] = {
     "desc": "购物:花鸟鱼虫 广东省东莞市东坑镇文阁路85号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "下坝坊景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "海战博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "大朗广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "六福金禧家宴",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "作一咖啡·轻餐厅(林则徐纪念馆店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "覔书店",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "东莞市东城仟色花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "松山湖风景区松湖烟雨",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "下坝坊景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广东省东莞市下坝一坊南侧",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%9C%E8%8E%9E%20%E4%B8%8B%E5%9D%9D%E5%9D%8A%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "海战博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广东省东莞市虎门镇环岛路威远炮台东侧",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%9C%E8%8E%9E%20%E6%B5%B7%E6%88%98%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "大朗广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广东省东莞市美景中路与金丽路交汇处南",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%9C%E8%8E%9E%20%E5%A4%A7%E6%9C%97%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "六福金禧家宴": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广东省东莞市塘厦镇康庄路东31号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%9C%E8%8E%9E%20%E5%85%AD%E7%A6%8F%E9%87%91%E7%A6%A7%E5%AE%B6%E5%AE%B4",
+      "comments": []
+    },
+    "作一咖啡·轻餐厅(林则徐纪念馆店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广东省东莞市虎门镇东运路2号8号楼101室",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%9C%E8%8E%9E%20%E4%BD%9C%E4%B8%80%E5%92%96%E5%95%A1%C2%B7%E8%BD%BB%E9%A4%90%E5%8E%85(%E6%9E%97%E5%88%99%E5%BE%90%E7%BA%AA%E5%BF%B5%E9%A6%86%E5%BA%97)",
+      "comments": []
+    },
+    "覔书店": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广东省东莞市东城街道鸿福东路1号东莞民盈国贸城B1",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%9C%E8%8E%9E%20%E8%A6%94%E4%B9%A6%E5%BA%97",
+      "comments": []
+    },
+    "东莞市东城仟色花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广东省东莞市东城涡岭工业路2号113",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%9C%E8%8E%9E%20%E4%B8%9C%E8%8E%9E%E5%B8%82%E4%B8%9C%E5%9F%8E%E4%BB%9F%E8%89%B2%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "松山湖风景区松湖烟雨": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广东省东莞市大学路松山湖风景区",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%9C%E8%8E%9E%20%E6%9D%BE%E5%B1%B1%E6%B9%96%E9%A3%8E%E6%99%AF%E5%8C%BA%E6%9D%BE%E6%B9%96%E7%83%9F%E9%9B%A8",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

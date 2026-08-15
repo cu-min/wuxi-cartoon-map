@@ -1129,7 +1129,121 @@ window.CITY_DATA['xizang-lasa'] = {
     "desc": "购物:花鸟鱼虫 西藏自治区拉萨市城关区功德进街道卓堆村67号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "蓝色天国羊八井地热旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "西藏博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "布达拉宫广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "饭香居家常菜",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "老字号雪域鲁固茶馆(嘎玛贡桑店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "城东智剑书店文具",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "芳香鲜花店(纳金路店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "纳木措国家风景区-扎西半岛",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "蓝色天国羊八井地热旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "西藏自治区拉萨市当雄县S304",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%8B%89%E8%90%A8%20%E8%93%9D%E8%89%B2%E5%A4%A9%E5%9B%BD%E7%BE%8A%E5%85%AB%E4%BA%95%E5%9C%B0%E7%83%AD%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "西藏博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "西藏自治区拉萨市城关区罗布林卡路19号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%8B%89%E8%90%A8%20%E8%A5%BF%E8%97%8F%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "布达拉宫广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "西藏自治区拉萨市城关区北京中路35号(西藏石油公司旁)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%8B%89%E8%90%A8%20%E5%B8%83%E8%BE%BE%E6%8B%89%E5%AE%AB%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "饭香居家常菜": {
+      "rank": 4,
+      "hot": 85,
+      "address": "西藏自治区拉萨市堆龙德庆区东嘎街道博达路",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%8B%89%E8%90%A8%20%E9%A5%AD%E9%A6%99%E5%B1%85%E5%AE%B6%E5%B8%B8%E8%8F%9C",
+      "comments": []
+    },
+    "老字号雪域鲁固茶馆(嘎玛贡桑店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "西藏自治区拉萨市城关区江苏东路",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%8B%89%E8%90%A8%20%E8%80%81%E5%AD%97%E5%8F%B7%E9%9B%AA%E5%9F%9F%E9%B2%81%E5%9B%BA%E8%8C%B6%E9%A6%86(%E5%98%8E%E7%8E%9B%E8%B4%A1%E6%A1%91%E5%BA%97)",
+      "comments": []
+    },
+    "城东智剑书店文具": {
+      "rank": 6,
+      "hot": 77,
+      "address": "西藏自治区拉萨市城关区蔡公堂街道书山路2号世邦书山郡1幢1单元1层1号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%8B%89%E8%90%A8%20%E5%9F%8E%E4%B8%9C%E6%99%BA%E5%89%91%E4%B9%A6%E5%BA%97%E6%96%87%E5%85%B7",
+      "comments": []
+    },
+    "芳香鲜花店(纳金路店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "西藏自治区拉萨市城关区嘎玛贡桑街道纳金路19号金谷物业旁",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%8B%89%E8%90%A8%20%E8%8A%B3%E9%A6%99%E9%B2%9C%E8%8A%B1%E5%BA%97(%E7%BA%B3%E9%87%91%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "纳木措国家风景区-扎西半岛": {
+      "rank": 8,
+      "hot": 71,
+      "address": "西藏自治区拉萨市当雄县纳木湖乡纳木错风景区内",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%8B%89%E8%90%A8%20%E7%BA%B3%E6%9C%A8%E6%8E%AA%E5%9B%BD%E5%AE%B6%E9%A3%8E%E6%99%AF%E5%8C%BA-%E6%89%8E%E8%A5%BF%E5%8D%8A%E5%B2%9B",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

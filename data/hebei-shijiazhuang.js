@@ -1129,7 +1129,121 @@ window.CITY_DATA['hebei-shijiazhuang'] = {
     "desc": "购物:花鸟鱼虫 河北省石家庄市行唐县龙州镇承泽路龙州公园北侧约170米"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "苍岩山景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "石家庄解放纪念碑景区",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "绿荫广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "南仓口王家烧麦(正定总店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "百客咖啡(国际大厦店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(万象城店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "北关鲜花绿植店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "仙台山旅游风景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "苍岩山景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "河北省石家庄市井陉县苍岩山镇",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%9F%B3%E5%AE%B6%E5%BA%84%20%E8%8B%8D%E5%B2%A9%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "石家庄解放纪念碑景区": {
+      "rank": 2,
+      "hot": 93,
+      "address": "河北省石家庄市新华区新华路街道正太广场公里街29号(解放广场-地铁站东北侧约300米)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E7%9F%B3%E5%AE%B6%E5%BA%84%20%E7%9F%B3%E5%AE%B6%E5%BA%84%E8%A7%A3%E6%94%BE%E7%BA%AA%E5%BF%B5%E7%A2%91%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "绿荫广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "河北省石家庄市新华区宁安街道二中西街(石家庄铁路运输学校东南侧)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%9F%B3%E5%AE%B6%E5%BA%84%20%E7%BB%BF%E8%8D%AB%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "南仓口王家烧麦(正定总店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "河北省石家庄市正定县正定镇中山西路马家鸡斜对面(近中山西路)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%9F%B3%E5%AE%B6%E5%BA%84%20%E5%8D%97%E4%BB%93%E5%8F%A3%E7%8E%8B%E5%AE%B6%E7%83%A7%E9%BA%A6(%E6%AD%A3%E5%AE%9A%E6%80%BB%E5%BA%97)",
+      "comments": []
+    },
+    "百客咖啡(国际大厦店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "河北省石家庄市长安区中山东路301号国际大厦一楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%9F%B3%E5%AE%B6%E5%BA%84%20%E7%99%BE%E5%AE%A2%E5%92%96%E5%95%A1(%E5%9B%BD%E9%99%85%E5%A4%A7%E5%8E%A6%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(万象城店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "河北省石家庄市桥西区中山西路108号石家庄华润万象城F4",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%9F%B3%E5%AE%B6%E5%BA%84%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E4%B8%87%E8%B1%A1%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "北关鲜花绿植店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "河北省石家庄市栾城区鑫源路",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%9F%B3%E5%AE%B6%E5%BA%84%20%E5%8C%97%E5%85%B3%E9%B2%9C%E8%8A%B1%E7%BB%BF%E6%A4%8D%E5%BA%97",
+      "comments": []
+    },
+    "仙台山旅游风景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "河北省石家庄市井陉县辛庄乡五弓村(太行山东麓)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%9F%B3%E5%AE%B6%E5%BA%84%20%E4%BB%99%E5%8F%B0%E5%B1%B1%E6%97%85%E6%B8%B8%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

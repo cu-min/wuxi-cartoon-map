@@ -1129,7 +1129,121 @@ window.CITY_DATA['jiangsu-nanjing'] = {
     "desc": "购物:花鸟鱼虫 江苏省南京市鼓楼区宁海路街道虎踞北路34号果色花香农贸市场外3号门面"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "玄武湖景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "南京博物院",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "中央商场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "玉鹏酒店·好吃新鲜六合菜",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "星咖啡(凤台南路店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "先锋书店(五台山总店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "秋月花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "音乐台景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "玄武湖景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "江苏省南京市玄武区玄武门路1号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E4%BA%AC%20%E7%8E%84%E6%AD%A6%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "南京博物院": {
+      "rank": 2,
+      "hot": 93,
+      "address": "江苏省南京市玄武区梅园新村街道中山东路321号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E4%BA%AC%20%E5%8D%97%E4%BA%AC%E5%8D%9A%E7%89%A9%E9%99%A2",
+      "comments": []
+    },
+    "中央商场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "江苏省南京市建邺区江东中路237号(雨润国际广场内)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E4%BA%AC%20%E4%B8%AD%E5%A4%AE%E5%95%86%E5%9C%BA",
+      "comments": []
+    },
+    "玉鹏酒店·好吃新鲜六合菜": {
+      "rank": 4,
+      "hot": 85,
+      "address": "江苏省南京市六合区文昌街80-2号(距地铁S8号线凤凰山公园站700米,近欢乐港)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E4%BA%AC%20%E7%8E%89%E9%B9%8F%E9%85%92%E5%BA%97%C2%B7%E5%A5%BD%E5%90%83%E6%96%B0%E9%B2%9C%E5%85%AD%E5%90%88%E8%8F%9C",
+      "comments": []
+    },
+    "星咖啡(凤台南路店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "江苏省南京市雨花台区凤台南路1号德盈8号楼3楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E4%BA%AC%20%E6%98%9F%E5%92%96%E5%95%A1(%E5%87%A4%E5%8F%B0%E5%8D%97%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "先锋书店(五台山总店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "江苏省南京市鼓楼区广州路173号五台山体育馆地下车库",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E4%BA%AC%20%E5%85%88%E9%94%8B%E4%B9%A6%E5%BA%97(%E4%BA%94%E5%8F%B0%E5%B1%B1%E6%80%BB%E5%BA%97)",
+      "comments": []
+    },
+    "秋月花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "江苏省南京市玄武区锁金北路(南京林业大学·新庄地铁站3号口步行430米)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E4%BA%AC%20%E7%A7%8B%E6%9C%88%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "音乐台景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "江苏省南京市玄武区石象路7号钟山风景名胜区内",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E4%BA%AC%20%E9%9F%B3%E4%B9%90%E5%8F%B0%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

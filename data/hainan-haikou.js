@@ -1129,7 +1129,121 @@ window.CITY_DATA['hainan-haikou'] = {
     "desc": "购物:花鸟鱼虫 海南省海口市秀英区西秀镇长滨西四街6号海南省肿瘤医院1号楼A区"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "西秀海滩公园",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "海南省博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "瑞特广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "海南大学南门小吃一条街",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "福山咖啡馆(长堤路店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(海口万象城黑标店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花仙子平价鲜花批发(华海路店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "海口观澜湖旅游度假区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "西秀海滩公园": {
+      "rank": 1,
+      "hot": 98,
+      "address": "海南省海口市秀英区滨海大道163号中国石油公司海南分公司西侧280米左右",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B5%B7%E5%8F%A3%20%E8%A5%BF%E7%A7%80%E6%B5%B7%E6%BB%A9%E5%85%AC%E5%9B%AD",
+      "comments": []
+    },
+    "海南省博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "海南省海口市琼山区国兴大道76号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%B7%E5%8F%A3%20%E6%B5%B7%E5%8D%97%E7%9C%81%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "瑞特广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "海南省海口市龙华区国贸路6号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%B7%E5%8F%A3%20%E7%91%9E%E7%89%B9%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "海南大学南门小吃一条街": {
+      "rank": 4,
+      "hot": 85,
+      "address": "海南省海口市美兰区海甸三西路和海富街交叉口西南侧",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%B7%E5%8F%A3%20%E6%B5%B7%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%97%E9%97%A8%E5%B0%8F%E5%90%83%E4%B8%80%E6%9D%A1%E8%A1%97",
+      "comments": []
+    },
+    "福山咖啡馆(长堤路店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "海南省海口市美兰区博爱街道长堤路水巷口骑楼集散广场4号商铺(靠近骑楼老街的路边)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%B7%E5%8F%A3%20%E7%A6%8F%E5%B1%B1%E5%92%96%E5%95%A1%E9%A6%86(%E9%95%BF%E5%A0%A4%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店(海口万象城黑标店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "海南省海口市龙华区金贸东路4号海口万象城L3",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%B7%E5%8F%A3%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E6%B5%B7%E5%8F%A3%E4%B8%87%E8%B1%A1%E5%9F%8E%E9%BB%91%E6%A0%87%E5%BA%97)",
+      "comments": []
+    },
+    "花仙子平价鲜花批发(华海路店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "海南省海口市龙华区华山别墅小区(华海路)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%B7%E5%8F%A3%20%E8%8A%B1%E4%BB%99%E5%AD%90%E5%B9%B3%E4%BB%B7%E9%B2%9C%E8%8A%B1%E6%89%B9%E5%8F%91(%E5%8D%8E%E6%B5%B7%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "海口观澜湖旅游度假区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "海南省海口市龙华区观澜湖大道1号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B5%B7%E5%8F%A3%20%E6%B5%B7%E5%8F%A3%E8%A7%82%E6%BE%9C%E6%B9%96%E6%97%85%E6%B8%B8%E5%BA%A6%E5%81%87%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

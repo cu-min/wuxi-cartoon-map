@@ -1129,7 +1129,121 @@ window.CITY_DATA['zhejiang-shaoxing'] = {
     "desc": "购物:花鸟鱼虫 浙江省绍兴市诸暨市大唐街道开元东路458号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "东湖景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "绍兴博物馆(新馆)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "聚银时代购物中心B座",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "大润发美食街",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "你好咖啡(银座店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(绍兴天地店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花仙子鲜花(滨海商业中心店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "杭州湾海上花田生态旅游度假区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "东湖景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "浙江省绍兴市越城区皋埠街道云东路",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%BB%8D%E5%85%B4%20%E4%B8%9C%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "绍兴博物馆(新馆)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "浙江省绍兴市越城区斗门街道解放大道566号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E7%BB%8D%E5%85%B4%20%E7%BB%8D%E5%85%B4%E5%8D%9A%E7%89%A9%E9%A6%86(%E6%96%B0%E9%A6%86)",
+      "comments": []
+    },
+    "聚银时代购物中心B座": {
+      "rank": 3,
+      "hot": 89,
+      "address": "浙江省绍兴市柯桥区笛扬路1536号银泰百货(柯桥店)F1",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%BB%8D%E5%85%B4%20%E8%81%9A%E9%93%B6%E6%97%B6%E4%BB%A3%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83B%E5%BA%A7",
+      "comments": []
+    },
+    "大润发美食街": {
+      "rank": 4,
+      "hot": 85,
+      "address": "浙江省绍兴市越城区财富中心",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%BB%8D%E5%85%B4%20%E5%A4%A7%E6%B6%A6%E5%8F%91%E7%BE%8E%E9%A3%9F%E8%A1%97",
+      "comments": []
+    },
+    "你好咖啡(银座店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "浙江省绍兴市柯桥区柯桥街道银座国际商务中心1幢208",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%BB%8D%E5%85%B4%20%E4%BD%A0%E5%A5%BD%E5%92%96%E5%95%A1(%E9%93%B6%E5%BA%A7%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(绍兴天地店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "浙江省绍兴市越城区马臻南路18、28号A厂103",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%BB%8D%E5%85%B4%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E7%BB%8D%E5%85%B4%E5%A4%A9%E5%9C%B0%E5%BA%97)",
+      "comments": []
+    },
+    "花仙子鲜花(滨海商业中心店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "浙江省绍兴市柯桥区马鞍街道滨海开发区双盈大酒店1层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%BB%8D%E5%85%B4%20%E8%8A%B1%E4%BB%99%E5%AD%90%E9%B2%9C%E8%8A%B1(%E6%BB%A8%E6%B5%B7%E5%95%86%E4%B8%9A%E4%B8%AD%E5%BF%83%E5%BA%97)",
+      "comments": []
+    },
+    "杭州湾海上花田生态旅游度假区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "浙江省绍兴市上虞区杭州湾经济技术开发区花海大道1000号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%BB%8D%E5%85%B4%20%E6%9D%AD%E5%B7%9E%E6%B9%BE%E6%B5%B7%E4%B8%8A%E8%8A%B1%E7%94%B0%E7%94%9F%E6%80%81%E6%97%85%E6%B8%B8%E5%BA%A6%E5%81%87%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

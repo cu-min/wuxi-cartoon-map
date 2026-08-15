@@ -1129,7 +1129,121 @@ window.CITY_DATA['beijing-beijing'] = {
     "desc": "购物:花鸟鱼虫 北京市西城区广安门外大街168号天虹商场(宣武门店)B1"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "潭柘寺景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "中国美术馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "天安门广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "云海肴·汽锅鸡·云南代表菜(荟聚店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "等待戈多·咖啡馆(交道口店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(西直门凯德店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "北京国际鲜花港",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "红螺寺旅游区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "潭柘寺景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "北京市门头沟区潭柘寺镇",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E4%BA%AC%20%E6%BD%AD%E6%9F%98%E5%AF%BA%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "中国美术馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "北京市东城区景山街道五四大街1号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E4%BA%AC%20%E4%B8%AD%E5%9B%BD%E7%BE%8E%E6%9C%AF%E9%A6%86",
+      "comments": []
+    },
+    "天安门广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "北京市东城区东长安街",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E4%BA%AC%20%E5%A4%A9%E5%AE%89%E9%97%A8%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "云海肴·汽锅鸡·云南代表菜(荟聚店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "北京市大兴区西红门地区欣宁街荟聚购物中心3楼03E115B号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E4%BA%AC%20%E4%BA%91%E6%B5%B7%E8%82%B4%C2%B7%E6%B1%BD%E9%94%85%E9%B8%A1%C2%B7%E4%BA%91%E5%8D%97%E4%BB%A3%E8%A1%A8%E8%8F%9C(%E8%8D%9F%E8%81%9A%E5%BA%97)",
+      "comments": []
+    },
+    "等待戈多·咖啡馆(交道口店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "北京市东城区交道口街道交道口东大街4-24号(近北新桥地铁站D口)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E4%BA%AC%20%E7%AD%89%E5%BE%85%E6%88%88%E5%A4%9A%C2%B7%E5%92%96%E5%95%A1%E9%A6%86(%E4%BA%A4%E9%81%93%E5%8F%A3%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店(西直门凯德店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "北京市西城区西直门外大街1号西环广场凯德MALL(西直门店)F3-L3-19/20",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E4%BA%AC%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E8%A5%BF%E7%9B%B4%E9%97%A8%E5%87%AF%E5%BE%B7%E5%BA%97)",
+      "comments": []
+    },
+    "北京国际鲜花港": {
+      "rank": 7,
+      "hot": 74,
+      "address": "北京市顺义区杨镇鲜花港南路9号(白马路北侧)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E4%BA%AC%20%E5%8C%97%E4%BA%AC%E5%9B%BD%E9%99%85%E9%B2%9C%E8%8A%B1%E6%B8%AF",
+      "comments": []
+    },
+    "红螺寺旅游区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "北京市怀柔区怀柔镇芦庄村红螺东路2号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E4%BA%AC%20%E7%BA%A2%E8%9E%BA%E5%AF%BA%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };
