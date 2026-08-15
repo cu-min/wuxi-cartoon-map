@@ -356,6 +356,7 @@ html, body {
 .hp-field .v a:hover { text-decoration: underline; }
 
 .hp-comments-title { font-size: 13px; font-weight: 800; color: #e8693a; margin: 10px 0 6px; }
+.hp-comments-empty { font-size: 12px; color: #b9a08e; margin: 10px 0 4px; text-align: center; }
 .hp-comment {
   border: 1px solid #ffe3d1; background: #fffaf6; border-radius: 10px;
   padding: 7px 9px; margin-bottom: 6px;
