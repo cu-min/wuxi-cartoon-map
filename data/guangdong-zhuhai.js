@@ -1129,7 +1129,121 @@ window.CITY_DATA['guangdong-zhuhai'] = {
     "desc": "购物:花鸟鱼虫 广东省珠海市斗门区江湾三路兆丰新村"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "梅溪牌坊旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "珠海博物馆(新馆)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "北山广场(杨匏安纪念公园)",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "湛王海鲜酒楼(湾仔海鲜街店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "漫咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "旭日园艺(格馨花卉世界店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "凤凰山风景旅游区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "梅溪牌坊旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广东省珠海市香洲区上冲梅溪村3号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%8F%A0%E6%B5%B7%20%E6%A2%85%E6%BA%AA%E7%89%8C%E5%9D%8A%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "珠海博物馆(新馆)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广东省珠海市香洲区香湾街道海虹路88号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E7%8F%A0%E6%B5%B7%20%E7%8F%A0%E6%B5%B7%E5%8D%9A%E7%89%A9%E9%A6%86(%E6%96%B0%E9%A6%86)",
+      "comments": []
+    },
+    "北山广场(杨匏安纪念公园)": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广东省珠海市香洲区南屏镇南屏中新国际花园西南(北山大院北)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%8F%A0%E6%B5%B7%20%E5%8C%97%E5%B1%B1%E5%B9%BF%E5%9C%BA(%E6%9D%A8%E5%8C%8F%E5%AE%89%E7%BA%AA%E5%BF%B5%E5%85%AC%E5%9B%AD)",
+      "comments": []
+    },
+    "湛王海鲜酒楼(湾仔海鲜街店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广东省珠海市香洲区湾仔海鲜街13号(近湾仔旅游码头)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%8F%A0%E6%B5%B7%20%E6%B9%9B%E7%8E%8B%E6%B5%B7%E9%B2%9C%E9%85%92%E6%A5%BC(%E6%B9%BE%E4%BB%94%E6%B5%B7%E9%B2%9C%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "漫咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广东省珠海市香洲区上华路2号中珠九悦售楼部一层(近人民西路与三台石路交界处)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%8F%A0%E6%B5%B7%20%E6%BC%AB%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "西西弗书店": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广东省珠海市香洲区狮山街道银桦路102号万象汇2楼水云间对面",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%8F%A0%E6%B5%B7%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97",
+      "comments": []
+    },
+    "旭日园艺(格馨花卉世界店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广东省珠海市香洲区金凤路格馨花卉世界花市二街A1号B1号档口",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%8F%A0%E6%B5%B7%20%E6%97%AD%E6%97%A5%E5%9B%AD%E8%89%BA(%E6%A0%BC%E9%A6%A8%E8%8A%B1%E5%8D%89%E4%B8%96%E7%95%8C%E5%BA%97)",
+      "comments": []
+    },
+    "凤凰山风景旅游区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广东省珠海市香洲区前山街道青松路(普陀寺旁)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%8F%A0%E6%B5%B7%20%E5%87%A4%E5%87%B0%E5%B1%B1%E9%A3%8E%E6%99%AF%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

@@ -1113,7 +1113,121 @@ window.CITY_DATA['shandong-weihai'] = {
     "desc": "购物:花鸟鱼虫 山东省威海市荣成市文化路6号振华商厦"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "卧龙山旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "威海市博物馆(海滨中路)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "幸福门广场-海阅景区",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "真品羊肉馆(纪念路店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "抹香鲸咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "布克书店·布克咖啡(幸福门店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "刘公岛风景名胜区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "卧龙山旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "山东省威海市环翠区西北山路118号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A8%81%E6%B5%B7%20%E5%8D%A7%E9%BE%99%E5%B1%B1%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "威海市博物馆(海滨中路)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "山东省威海市环翠区即墨路2A威海文化艺术中心三楼",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%A8%81%E6%B5%B7%20%E5%A8%81%E6%B5%B7%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86(%E6%B5%B7%E6%BB%A8%E4%B8%AD%E8%B7%AF)",
+      "comments": []
+    },
+    "幸福门广场-海阅景区": {
+      "rank": 3,
+      "hot": 89,
+      "address": "山东省威海市环翠区世昌大道幸福公园幸福门",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A8%81%E6%B5%B7%20%E5%B9%B8%E7%A6%8F%E9%97%A8%E5%B9%BF%E5%9C%BA-%E6%B5%B7%E9%98%85%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "真品羊肉馆(纪念路店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "山东省威海市环翠区鲸园街道纪念路22-7号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A8%81%E6%B5%B7%20%E7%9C%9F%E5%93%81%E7%BE%8A%E8%82%89%E9%A6%86(%E7%BA%AA%E5%BF%B5%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "抹香鲸咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "山东省威海市环翠区怡园街道北环海路165-105号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A8%81%E6%B5%B7%20%E6%8A%B9%E9%A6%99%E9%B2%B8%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "布克书店·布克咖啡(幸福门店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "山东省威海市环翠区环翠楼街道新威路128-15号亿特隆装饰城东门雅致水汇东",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A8%81%E6%B5%B7%20%E5%B8%83%E5%85%8B%E4%B9%A6%E5%BA%97%C2%B7%E5%B8%83%E5%85%8B%E5%92%96%E5%95%A1(%E5%B9%B8%E7%A6%8F%E9%97%A8%E5%BA%97)",
+      "comments": []
+    },
+    "花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "山东省威海市环翠区夏家疃街与海峰路交叉口正西方向39米左右",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A8%81%E6%B5%B7%20%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "刘公岛风景名胜区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "山东省威海市环翠区海滨北路101-2号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A8%81%E6%B5%B7%20%E5%88%98%E5%85%AC%E5%B2%9B%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

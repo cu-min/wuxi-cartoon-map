@@ -1129,7 +1129,121 @@ window.CITY_DATA['guangdong-foshan'] = {
     "desc": "购物:花鸟鱼虫 广东省佛山市禅城区南庄镇虚丝厂路16益民楼5号铺"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "佛山电视塔",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "顺德博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "张槎文化广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "足球农庄·岭南经典粤菜",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "无恙咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "东方书城(东方广场总店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "观雅花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "贤鲁岛4A景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "佛山电视塔": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广东省佛山市禅城区季华隧道与文华北路交叉路口往西南约200米(文华公园)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%BD%9B%E5%B1%B1%20%E4%BD%9B%E5%B1%B1%E7%94%B5%E8%A7%86%E5%A1%94",
+      "comments": []
+    },
+    "顺德博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广东省佛山市顺德区大良新城区碧水路北侧(近区政府)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E4%BD%9B%E5%B1%B1%20%E9%A1%BA%E5%BE%B7%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "张槎文化广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广东省佛山市禅城区张槎三路与仙槎南路交叉口西北角",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%BD%9B%E5%B1%B1%20%E5%BC%A0%E6%A7%8E%E6%96%87%E5%8C%96%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "足球农庄·岭南经典粤菜": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广东省佛山市南海区滘口大街",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%BD%9B%E5%B1%B1%20%E8%B6%B3%E7%90%83%E5%86%9C%E5%BA%84%C2%B7%E5%B2%AD%E5%8D%97%E7%BB%8F%E5%85%B8%E7%B2%A4%E8%8F%9C",
+      "comments": []
+    },
+    "无恙咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广东省佛山市南海区桂城南新五路19号(近桂城中心小学)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%BD%9B%E5%B1%B1%20%E6%97%A0%E6%81%99%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "东方书城(东方广场总店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广东省佛山市禅城区文龙街8号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%BD%9B%E5%B1%B1%20%E4%B8%9C%E6%96%B9%E4%B9%A6%E5%9F%8E(%E4%B8%9C%E6%96%B9%E5%B9%BF%E5%9C%BA%E6%80%BB%E5%BA%97)",
+      "comments": []
+    },
+    "观雅花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广东省佛山市禅城区南庄镇人和路9号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%BD%9B%E5%B1%B1%20%E8%A7%82%E9%9B%85%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "贤鲁岛4A景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广东省佛山市南海区里水西南部",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%BD%9B%E5%B1%B1%20%E8%B4%A4%E9%B2%81%E5%B2%9B4A%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

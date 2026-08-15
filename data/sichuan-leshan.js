@@ -1113,7 +1113,121 @@ window.CITY_DATA['sichuan-leshan'] = {
     "desc": "购物:花鸟鱼虫 四川省乐山市马边彝族自治县民建镇华西大道7号1层"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "黑竹沟风景名胜区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "乐山大佛博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "佛光广场-喷水池",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "嘉兴路美食街",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "MarzCoffee咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "中萱书店(中沟巷店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "不二花艺鲜花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "千佛岩旅游景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "黑竹沟风景名胜区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "四川省乐山市峨边彝族自治县黑竹沟镇",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B9%90%E5%B1%B1%20%E9%BB%91%E7%AB%B9%E6%B2%9F%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA",
+      "comments": []
+    },
+    "乐山大佛博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "四川省乐山市市中区凌云路2435号簏子街",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E4%B9%90%E5%B1%B1%20%E4%B9%90%E5%B1%B1%E5%A4%A7%E4%BD%9B%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "佛光广场-喷水池": {
+      "rank": 3,
+      "hot": 89,
+      "address": "四川省乐山市峨眉山市佛光广场内(东侧)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B9%90%E5%B1%B1%20%E4%BD%9B%E5%85%89%E5%B9%BF%E5%9C%BA-%E5%96%B7%E6%B0%B4%E6%B1%A0",
+      "comments": []
+    },
+    "嘉兴路美食街": {
+      "rank": 4,
+      "hot": 85,
+      "address": "四川省乐山市市中区通江街道嘉兴路鸿瑞花园",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B9%90%E5%B1%B1%20%E5%98%89%E5%85%B4%E8%B7%AF%E7%BE%8E%E9%A3%9F%E8%A1%97",
+      "comments": []
+    },
+    "MarzCoffee咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "四川省乐山市市中区嘉兴路732号6栋1单元",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B9%90%E5%B1%B1%20MarzCoffee%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "中萱书店(中沟巷店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "四川省乐山市市中区通江街道春华路中段389号民生至尊1号楼三楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B9%90%E5%B1%B1%20%E4%B8%AD%E8%90%B1%E4%B9%A6%E5%BA%97(%E4%B8%AD%E6%B2%9F%E5%B7%B7%E5%BA%97)",
+      "comments": []
+    },
+    "不二花艺鲜花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "四川省乐山市市中区邦泰中心二号门三苏路772号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B9%90%E5%B1%B1%20%E4%B8%8D%E4%BA%8C%E8%8A%B1%E8%89%BA%E9%B2%9C%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "千佛岩旅游景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "四川省乐山市夹江县焉城街道",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B9%90%E5%B1%B1%20%E5%8D%83%E4%BD%9B%E5%B2%A9%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

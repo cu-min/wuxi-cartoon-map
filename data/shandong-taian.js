@@ -1129,7 +1129,121 @@ window.CITY_DATA['shandong-taian'] = {
     "desc": "购物:花鸟鱼虫 山东省泰安市泰山区迎胜路130-3号附近"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "泰山东御道风景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "泰安市博物馆(岱庙景区)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "新泰青云购物中心家属院",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "鲁菜根·泰安菜(普照寺路店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "山边咖啡馆酒馆(万达店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "文友书店旗舰店",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "爱诺鲜花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "云蒙山风景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "泰山东御道风景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "山东省泰安市泰山区红门路54号泰山风景名胜区",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B3%B0%E5%AE%89%20%E6%B3%B0%E5%B1%B1%E4%B8%9C%E5%BE%A1%E9%81%93%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "泰安市博物馆(岱庙景区)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "山东省泰安市泰山区岱庙街道东岳大街191号岱庙内(西北角)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%B3%B0%E5%AE%89%20%E6%B3%B0%E5%AE%89%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86(%E5%B2%B1%E5%BA%99%E6%99%AF%E5%8C%BA)",
+      "comments": []
+    },
+    "新泰青云购物中心家属院": {
+      "rank": 3,
+      "hot": 89,
+      "address": "山东省泰安市新泰市青云街道青云路1538号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B3%B0%E5%AE%89%20%E6%96%B0%E6%B3%B0%E9%9D%92%E4%BA%91%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83%E5%AE%B6%E5%B1%9E%E9%99%A2",
+      "comments": []
+    },
+    "鲁菜根·泰安菜(普照寺路店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "山东省泰安市泰山区泰前街道普照寺路泰前回迁楼3号楼1号营业房",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B3%B0%E5%AE%89%20%E9%B2%81%E8%8F%9C%E6%A0%B9%C2%B7%E6%B3%B0%E5%AE%89%E8%8F%9C(%E6%99%AE%E7%85%A7%E5%AF%BA%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "山边咖啡馆酒馆(万达店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "山东省泰安市泰山区万达广场6号公寓楼后面停车场D166号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B3%B0%E5%AE%89%20%E5%B1%B1%E8%BE%B9%E5%92%96%E5%95%A1%E9%A6%86%E9%85%92%E9%A6%86(%E4%B8%87%E8%BE%BE%E5%BA%97)",
+      "comments": []
+    },
+    "文友书店旗舰店": {
+      "rank": 6,
+      "hot": 77,
+      "address": "山东省泰安市泰山区东岳大街396号盐业大厦1楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B3%B0%E5%AE%89%20%E6%96%87%E5%8F%8B%E4%B9%A6%E5%BA%97%E6%97%97%E8%88%B0%E5%BA%97",
+      "comments": []
+    },
+    "爱诺鲜花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "山东省泰安市肥城市新城街道新城路桃城故事10栋1层01铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B3%B0%E5%AE%89%20%E7%88%B1%E8%AF%BA%E9%B2%9C%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "云蒙山风景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "山东省泰安市肥城市孙伯镇东坞村北",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B3%B0%E5%AE%89%20%E4%BA%91%E8%92%99%E5%B1%B1%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

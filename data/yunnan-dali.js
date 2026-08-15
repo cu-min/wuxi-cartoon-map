@@ -1033,7 +1033,121 @@ window.CITY_DATA['yunnan-dali'] = {
     "desc": "购物:花鸟鱼虫 云南省大理白族自治州大理市太和街道大理兰花苑H-77号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "洱海景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "大理州博物馆景区",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "大理爱琴海购物公园",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "老字号石龙水库生态渔家",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "有风小院",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "海豚阿德书店DOLPHINADEBOOKS(床单厂店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "快乐小兵鲜花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "大理张家翠园·半山花谷",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "洱海景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "云南省大理白族自治州大理市环海东路",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E7%90%86%20%E6%B4%B1%E6%B5%B7%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "大理州博物馆景区": {
+      "rank": 2,
+      "hot": 93,
+      "address": "云南省大理白族自治州大理市下关洱河南路8号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E7%90%86%20%E5%A4%A7%E7%90%86%E5%B7%9E%E5%8D%9A%E7%89%A9%E9%A6%86%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "大理爱琴海购物公园": {
+      "rank": 3,
+      "hot": 89,
+      "address": "云南省大理白族自治州大理市太和街道鸡足山路龙悦华府",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E7%90%86%20%E5%A4%A7%E7%90%86%E7%88%B1%E7%90%B4%E6%B5%B7%E8%B4%AD%E7%89%A9%E5%85%AC%E5%9B%AD",
+      "comments": []
+    },
+    "老字号石龙水库生态渔家": {
+      "rank": 4,
+      "hot": 85,
+      "address": "云南省大理白族自治州剑川县石龙村石龙水库旁",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E7%90%86%20%E8%80%81%E5%AD%97%E5%8F%B7%E7%9F%B3%E9%BE%99%E6%B0%B4%E5%BA%93%E7%94%9F%E6%80%81%E6%B8%94%E5%AE%B6",
+      "comments": []
+    },
+    "有风小院": {
+      "rank": 5,
+      "hot": 81,
+      "address": "云南省大理白族自治州大理市刘官厂行政村凤阳邑自然村3组234号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E7%90%86%20%E6%9C%89%E9%A3%8E%E5%B0%8F%E9%99%A2",
+      "comments": []
+    },
+    "海豚阿德书店DOLPHINADEBOOKS(床单厂店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "云南省大理白族自治州大理市大理镇苍坪街床单厂艺术区D栋2楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E7%90%86%20%E6%B5%B7%E8%B1%9A%E9%98%BF%E5%BE%B7%E4%B9%A6%E5%BA%97DOLPHINADEBOOKS(%E5%BA%8A%E5%8D%95%E5%8E%82%E5%BA%97)",
+      "comments": []
+    },
+    "快乐小兵鲜花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "云南省大理白族自治州大理市博南巷2号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E7%90%86%20%E5%BF%AB%E4%B9%90%E5%B0%8F%E5%85%B5%E9%B2%9C%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "大理张家翠园·半山花谷": {
+      "rank": 8,
+      "hot": 71,
+      "address": "云南省大理白族自治州大理市大理镇大理古城三月街中和索道旁边隐仙路苍山地质公园",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A4%A7%E7%90%86%20%E5%A4%A7%E7%90%86%E5%BC%A0%E5%AE%B6%E7%BF%A0%E5%9B%AD%C2%B7%E5%8D%8A%E5%B1%B1%E8%8A%B1%E8%B0%B7",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

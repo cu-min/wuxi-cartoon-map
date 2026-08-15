@@ -1129,7 +1129,121 @@ window.CITY_DATA['anhui-huangshan'] = {
     "desc": "购物:花鸟鱼虫 安徽省黄山市屯溪区阜上路26号(百惠平价水果店隔壁)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "凤凰源景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "屯溪博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "南滨江公园-莲花广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "和平饭店鱼味馆",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "往来咖啡(滨江中路店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "星星书城(屯溪东城实验小学店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "有间花店(屯溪区分店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "黄山-云谷景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "凤凰源景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "安徽省黄山市黄山区汤口镇山岔村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%BB%84%E5%B1%B1%20%E5%87%A4%E5%87%B0%E6%BA%90%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "屯溪博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "安徽省黄山市屯溪区老街168号(近新安江)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E9%BB%84%E5%B1%B1%20%E5%B1%AF%E6%BA%AA%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "南滨江公园-莲花广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "安徽省黄山市屯溪区花山路南滨江游园",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%BB%84%E5%B1%B1%20%E5%8D%97%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD-%E8%8E%B2%E8%8A%B1%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "和平饭店鱼味馆": {
+      "rank": 4,
+      "hot": 85,
+      "address": "安徽省黄山市黄山区103省道码头太平湖旅游码头太平湖风景区",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%BB%84%E5%B1%B1%20%E5%92%8C%E5%B9%B3%E9%A5%AD%E5%BA%97%E9%B1%BC%E5%91%B3%E9%A6%86",
+      "comments": []
+    },
+    "往来咖啡(滨江中路店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "安徽省黄山市屯溪区昱中街道滨江中路23-12号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%BB%84%E5%B1%B1%20%E5%BE%80%E6%9D%A5%E5%92%96%E5%95%A1(%E6%BB%A8%E6%B1%9F%E4%B8%AD%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "星星书城(屯溪东城实验小学店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "安徽省黄山市屯溪区屯光镇天都首郡5-108、5-109",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%BB%84%E5%B1%B1%20%E6%98%9F%E6%98%9F%E4%B9%A6%E5%9F%8E(%E5%B1%AF%E6%BA%AA%E4%B8%9C%E5%9F%8E%E5%AE%9E%E9%AA%8C%E5%B0%8F%E5%AD%A6%E5%BA%97)",
+      "comments": []
+    },
+    "有间花店(屯溪区分店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "安徽省黄山市屯溪区昱东街道新园东路169号徽府菜斜对面",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%BB%84%E5%B1%B1%20%E6%9C%89%E9%97%B4%E8%8A%B1%E5%BA%97(%E5%B1%AF%E6%BA%AA%E5%8C%BA%E5%88%86%E5%BA%97)",
+      "comments": []
+    },
+    "黄山-云谷景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "安徽省黄山市黄山区汤口镇黄山风景区(东南角)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%BB%84%E5%B1%B1%20%E9%BB%84%E5%B1%B1-%E4%BA%91%E8%B0%B7%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

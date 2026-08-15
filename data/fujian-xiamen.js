@@ -1129,7 +1129,121 @@ window.CITY_DATA['fujian-xiamen'] = {
     "desc": "购物:花鸟鱼虫 福建省厦门市思明区开元街道虎园路信义里2号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "厦门市鼓浪屿风景名胜区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "华侨博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "音乐广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "九龙塘两岸民俗村(厦门美食公园上李水库店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "咖啡公园",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "闽南小院戏曲茶馆(新华书店中山路店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "洪塘花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "厦门海沧大桥旅游区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "厦门市鼓浪屿风景名胜区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "福建省厦门市思明区晃岩路36号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8E%A6%E9%97%A8%20%E5%8E%A6%E9%97%A8%E5%B8%82%E9%BC%93%E6%B5%AA%E5%B1%BF%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA",
+      "comments": []
+    },
+    "华侨博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "福建省厦门市思明区厦港街道思明南路493号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%8E%A6%E9%97%A8%20%E5%8D%8E%E4%BE%A8%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "音乐广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "福建省厦门市思明区滨海街道环岛南路318号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8E%A6%E9%97%A8%20%E9%9F%B3%E4%B9%90%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "九龙塘两岸民俗村(厦门美食公园上李水库店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "福建省厦门市思明区龙虎山路821号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8E%A6%E9%97%A8%20%E4%B9%9D%E9%BE%99%E5%A1%98%E4%B8%A4%E5%B2%B8%E6%B0%91%E4%BF%97%E6%9D%91(%E5%8E%A6%E9%97%A8%E7%BE%8E%E9%A3%9F%E5%85%AC%E5%9B%AD%E4%B8%8A%E6%9D%8E%E6%B0%B4%E5%BA%93%E5%BA%97)",
+      "comments": []
+    },
+    "咖啡公园": {
+      "rank": 5,
+      "hot": 81,
+      "address": "福建省厦门市思明区湖明路136号107",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8E%A6%E9%97%A8%20%E5%92%96%E5%95%A1%E5%85%AC%E5%9B%AD",
+      "comments": []
+    },
+    "闽南小院戏曲茶馆(新华书店中山路店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "福建省厦门市思明区中华街道中山路163-165号新华书店2楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8E%A6%E9%97%A8%20%E9%97%BD%E5%8D%97%E5%B0%8F%E9%99%A2%E6%88%8F%E6%9B%B2%E8%8C%B6%E9%A6%86(%E6%96%B0%E5%8D%8E%E4%B9%A6%E5%BA%97%E4%B8%AD%E5%B1%B1%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "洪塘花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "福建省厦门市湖里区洪塘社156-3",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8E%A6%E9%97%A8%20%E6%B4%AA%E5%A1%98%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "厦门海沧大桥旅游区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "福建省厦门市湖里区东渡路127-17号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8E%A6%E9%97%A8%20%E5%8E%A6%E9%97%A8%E6%B5%B7%E6%B2%A7%E5%A4%A7%E6%A1%A5%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

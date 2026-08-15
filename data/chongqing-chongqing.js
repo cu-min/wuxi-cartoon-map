@@ -1129,7 +1129,121 @@ window.CITY_DATA['chongqing-chongqing'] = {
     "desc": "购物:花鸟鱼虫 重庆市巴南区融汇大道233号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "神龙峡景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "聂荣臻元帅陈列馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "重庆朝天门广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "文梅农庄",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "两岸咖啡·西餐牛排(汇祥好莱坞店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(英利·大融城店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "绿韵花艺鲜花店(解放碑店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "金佛山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "神龙峡景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "重庆市南川区南平镇永安村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%A5%9E%E9%BE%99%E5%B3%A1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "聂荣臻元帅陈列馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "重庆市江津区几江街道鼎山大道386号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E8%81%82%E8%8D%A3%E8%87%BB%E5%85%83%E5%B8%85%E9%99%88%E5%88%97%E9%A6%86",
+      "comments": []
+    },
+    "重庆朝天门广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "重庆市渝中区长江滨江路两江交汇处",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E9%87%8D%E5%BA%86%E6%9C%9D%E5%A4%A9%E9%97%A8%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "文梅农庄": {
+      "rank": 4,
+      "hot": 85,
+      "address": "重庆市北碚区北温泉街道缙云支线附近",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%96%87%E6%A2%85%E5%86%9C%E5%BA%84",
+      "comments": []
+    },
+    "两岸咖啡·西餐牛排(汇祥好莱坞店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "重庆市两江新区仙桃街道腾芳大道2号汇祥空港荟街4号电梯上三楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E4%B8%A4%E5%B2%B8%E5%92%96%E5%95%A1%C2%B7%E8%A5%BF%E9%A4%90%E7%89%9B%E6%8E%92(%E6%B1%87%E7%A5%A5%E5%A5%BD%E8%8E%B1%E5%9D%9E%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店(英利·大融城店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "重庆市渝中区解放碑民权路26号英利大融城F3",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E8%8B%B1%E5%88%A9%C2%B7%E5%A4%A7%E8%9E%8D%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "绿韵花艺鲜花店(解放碑店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "重庆市渝中区新民街解放碑日月光中心L3-11号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%BB%BF%E9%9F%B5%E8%8A%B1%E8%89%BA%E9%B2%9C%E8%8A%B1%E5%BA%97(%E8%A7%A3%E6%94%BE%E7%A2%91%E5%BA%97)",
+      "comments": []
+    },
+    "金佛山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "重庆市南川区G243神龙峡景区东北方向",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E9%87%91%E4%BD%9B%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

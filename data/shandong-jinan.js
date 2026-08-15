@@ -1129,7 +1129,121 @@ window.CITY_DATA['shandong-jinan'] = {
     "desc": "购物:花鸟鱼虫 山东省济南市槐荫区经三路182-4号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "章丘七星台旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "山东博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "贵和购物中心",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "舜和海鲜(舜和国际店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "CollectionCoffee汲萃咖啡(玉函银座店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(万达广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "济南鲜花港景区",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "济南九重天风景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "章丘七星台旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "山东省济南市章丘区垛庄镇(近济南野生动物园)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B5%8E%E5%8D%97%20%E7%AB%A0%E4%B8%98%E4%B8%83%E6%98%9F%E5%8F%B0%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "山东博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "山东省济南市历下区姚家街道经十路11899号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%8E%E5%8D%97%20%E5%B1%B1%E4%B8%9C%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "贵和购物中心": {
+      "rank": 3,
+      "hot": 89,
+      "address": "山东省济南市历下区泉城路街道天地坛街1号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%8E%E5%8D%97%20%E8%B4%B5%E5%92%8C%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83",
+      "comments": []
+    },
+    "舜和海鲜(舜和国际店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "山东省济南市槐荫区段店北路街道经十路26008号(近济南西站山东国际会展中心)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%8E%E5%8D%97%20%E8%88%9C%E5%92%8C%E6%B5%B7%E9%B2%9C(%E8%88%9C%E5%92%8C%E5%9B%BD%E9%99%85%E5%BA%97)",
+      "comments": []
+    },
+    "CollectionCoffee汲萃咖啡(玉函银座店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "山东省济南市历下区经十路19288号鲁商广场B座F1层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%8E%E5%8D%97%20CollectionCoffee%E6%B1%B2%E8%90%83%E5%92%96%E5%95%A1(%E7%8E%89%E5%87%BD%E9%93%B6%E5%BA%A7%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(万达广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "山东省济南市市中区经四路5号万达广场(魏家庄店)F3-370",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%8E%E5%8D%97%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "济南鲜花港景区": {
+      "rank": 7,
+      "hot": 74,
+      "address": "山东省济南市历城区世纪大道辅路",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B5%8E%E5%8D%97%20%E6%B5%8E%E5%8D%97%E9%B2%9C%E8%8A%B1%E6%B8%AF%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "济南九重天风景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "山东省济南市历城区九重天风景区",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B5%8E%E5%8D%97%20%E6%B5%8E%E5%8D%97%E4%B9%9D%E9%87%8D%E5%A4%A9%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

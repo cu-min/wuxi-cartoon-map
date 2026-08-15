@@ -1129,7 +1129,121 @@ window.CITY_DATA['guizhou-guiyang'] = {
     "desc": "购物:花鸟鱼虫 贵州省贵阳市花溪区孟关苗族布依族乡孟关大道孟关乡农贸市场西南侧约70米"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "乡愁贵州景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "贵州天海美术馆艺术景区",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "时光贵州",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "老茶厅暖云(烤全羊森林公园店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "高原家咖啡(博爱路店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(万达广场观山湖店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "芊缘花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "香纸沟景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "乡愁贵州景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "贵州省贵阳市清镇市乡愁大道旁",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E8%B4%B5%E9%98%B3%20%E4%B9%A1%E6%84%81%E8%B4%B5%E5%B7%9E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "贵州天海美术馆艺术景区": {
+      "rank": 2,
+      "hot": 93,
+      "address": "贵州省贵阳市乌当区新庄东路阳晨总部基地A区19栋",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E8%B4%B5%E9%98%B3%20%E8%B4%B5%E5%B7%9E%E5%A4%A9%E6%B5%B7%E7%BE%8E%E6%9C%AF%E9%A6%86%E8%89%BA%E6%9C%AF%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "时光贵州": {
+      "rank": 3,
+      "hot": 89,
+      "address": "贵州省贵阳市清镇市滨湖街道百花路与观清路交叉路口往东约100米(尚湖城西侧约50米)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%B4%B5%E9%98%B3%20%E6%97%B6%E5%85%89%E8%B4%B5%E5%B7%9E",
+      "comments": []
+    },
+    "老茶厅暖云(烤全羊森林公园店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "贵州省贵阳市南明区森林公园园林路90号-30号楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%B4%B5%E9%98%B3%20%E8%80%81%E8%8C%B6%E5%8E%85%E6%9A%96%E4%BA%91(%E7%83%A4%E5%85%A8%E7%BE%8A%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E5%BA%97)",
+      "comments": []
+    },
+    "高原家咖啡(博爱路店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "贵州省贵阳市南明区中华南路街道昙花一现(汇灵巷17号院落店)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%B4%B5%E9%98%B3%20%E9%AB%98%E5%8E%9F%E5%AE%B6%E5%92%96%E5%95%A1(%E5%8D%9A%E7%88%B1%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店(万达广场观山湖店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "贵州省贵阳市观山湖区万达广场1b层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%B4%B5%E9%98%B3%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E8%A7%82%E5%B1%B1%E6%B9%96%E5%BA%97)",
+      "comments": []
+    },
+    "芊缘花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "贵州省贵阳市观山湖区翠柳路华润国际社区D区1层83号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%B4%B5%E9%98%B3%20%E8%8A%8A%E7%BC%98%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "香纸沟景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "贵州省贵阳市乌当区",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E8%B4%B5%E9%98%B3%20%E9%A6%99%E7%BA%B8%E6%B2%9F%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

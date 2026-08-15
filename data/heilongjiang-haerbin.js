@@ -1129,7 +1129,121 @@ window.CITY_DATA['heilongjiang-haerbin'] = {
     "desc": "购物:花鸟鱼虫 黑龙江省哈尔滨市南岗区电缆街"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "滨江湿地旅游风景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "黑龙江省博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "索菲亚广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "赫煊馋嘴烧烤·馋嘴小腰(香滨店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "快乐窗咖啡店",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(华润万象汇店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "黑龙江省农业科学院园艺分院",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "长岭湖旅游区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "滨江湿地旅游风景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "黑龙江省哈尔滨市道外区民主镇胜利村(305乡道西)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%93%88%E5%B0%94%E6%BB%A8%20%E6%BB%A8%E6%B1%9F%E6%B9%BF%E5%9C%B0%E6%97%85%E6%B8%B8%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "黑龙江省博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "黑龙江省哈尔滨市南岗区红军街50号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%93%88%E5%B0%94%E6%BB%A8%20%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "索菲亚广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "黑龙江省哈尔滨市道里区兆麟街道透笼街88号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%93%88%E5%B0%94%E6%BB%A8%20%E7%B4%A2%E8%8F%B2%E4%BA%9A%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "赫煊馋嘴烧烤·馋嘴小腰(香滨店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "黑龙江省哈尔滨市香坊区和平路街道香滨路4号中北春城21栋1层15号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%93%88%E5%B0%94%E6%BB%A8%20%E8%B5%AB%E7%85%8A%E9%A6%8B%E5%98%B4%E7%83%A7%E7%83%A4%C2%B7%E9%A6%8B%E5%98%B4%E5%B0%8F%E8%85%B0(%E9%A6%99%E6%BB%A8%E5%BA%97)",
+      "comments": []
+    },
+    "快乐窗咖啡店": {
+      "rank": 5,
+      "hot": 81,
+      "address": "黑龙江省哈尔滨市南岗区曲线街道木工街2号104室(近哈工大)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%93%88%E5%B0%94%E6%BB%A8%20%E5%BF%AB%E4%B9%90%E7%AA%97%E5%92%96%E5%95%A1%E5%BA%97",
+      "comments": []
+    },
+    "西西弗书店(华润万象汇店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "黑龙江省哈尔滨市松北区世茂大道555号华润万象汇2楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%93%88%E5%B0%94%E6%BB%A8%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E5%8D%8E%E6%B6%A6%E4%B8%87%E8%B1%A1%E6%B1%87%E5%BA%97)",
+      "comments": []
+    },
+    "黑龙江省农业科学院园艺分院": {
+      "rank": 7,
+      "hot": 74,
+      "address": "黑龙江省哈尔滨市香坊区",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%93%88%E5%B0%94%E6%BB%A8%20%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81%E5%86%9C%E4%B8%9A%E7%A7%91%E5%AD%A6%E9%99%A2%E5%9B%AD%E8%89%BA%E5%88%86%E9%99%A2",
+      "comments": []
+    },
+    "长岭湖旅游区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "黑龙江省哈尔滨市道里区新发镇环湖北路旁",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%93%88%E5%B0%94%E6%BB%A8%20%E9%95%BF%E5%B2%AD%E6%B9%96%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

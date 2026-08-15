@@ -1129,7 +1129,121 @@ window.CITY_DATA['shaanxi-xian'] = {
     "desc": "购物:花鸟鱼虫 陕西省西安市未央区凤城一路东口工商银行隔壁"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "汉城湖旅游景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "陕西历史博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "曲江新景线大雁塔南广场站",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "魏家凉皮(博水商务大厦店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "FeverAlesCoffee",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(西安高新万达广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "皇悦鲜花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "大唐西市文化景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "汉城湖旅游景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "陕西省西安市未央区北二环与朱宏路交叉口西侧",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%AE%89%20%E6%B1%89%E5%9F%8E%E6%B9%96%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "陕西历史博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "陕西省西安市雁塔区小寨东路91号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%AE%89%20%E9%99%95%E8%A5%BF%E5%8E%86%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "曲江新景线大雁塔南广场站": {
+      "rank": 3,
+      "hot": 89,
+      "address": "陕西省西安市雁塔区雁塔南路428号大唐不夜城内(北侧)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%AE%89%20%E6%9B%B2%E6%B1%9F%E6%96%B0%E6%99%AF%E7%BA%BF%E5%A4%A7%E9%9B%81%E5%A1%94%E5%8D%97%E5%B9%BF%E5%9C%BA%E7%AB%99",
+      "comments": []
+    },
+    "魏家凉皮(博水商务大厦店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "陕西省西安市碑林区南院门街道南大街3号(中大国际对面)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%AE%89%20%E9%AD%8F%E5%AE%B6%E5%87%89%E7%9A%AE(%E5%8D%9A%E6%B0%B4%E5%95%86%E5%8A%A1%E5%A4%A7%E5%8E%A6%E5%BA%97)",
+      "comments": []
+    },
+    "FeverAlesCoffee": {
+      "rank": 5,
+      "hot": 81,
+      "address": "陕西省西安市碑林区保吉巷小区26栋1单元10110室",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%AE%89%20FeverAlesCoffee",
+      "comments": []
+    },
+    "西西弗书店(西安高新万达广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "陕西省西安市雁塔区唐延路49号万达广场(西安高新店)F3",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%AE%89%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E8%A5%BF%E5%AE%89%E9%AB%98%E6%96%B0%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "皇悦鲜花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "陕西省西安市碑林区互助路1号一楼门店",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%AE%89%20%E7%9A%87%E6%82%A6%E9%B2%9C%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "大唐西市文化景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "陕西省西安市莲湖区劳动南路118号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%AE%89%20%E5%A4%A7%E5%94%90%E8%A5%BF%E5%B8%82%E6%96%87%E5%8C%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

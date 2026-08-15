@@ -1105,7 +1105,121 @@ window.CITY_DATA['fujian-fuzhou'] = {
     "desc": "购物:花鸟鱼虫 福建省福州市福清市清昌大道3号8-10号商铺"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "鼓山旅游景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "中国寿山石馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "榕城广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "战地蚝王烧烤(台亚岚新城店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "鲜花咖啡(钱隆世家商业街店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(福州远洋乐堤港店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花屿植鲜花绿植店(生日鲜花开业花篮烟台山店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "镇海楼景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "鼓山旅游景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "福建省福州市晋安区福马路1000号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%A6%8F%E5%B7%9E%20%E9%BC%93%E5%B1%B1%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "中国寿山石馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "福建省福州市晋安区寿山乡寿山村寿山188号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E7%A6%8F%E5%B7%9E%20%E4%B8%AD%E5%9B%BD%E5%AF%BF%E5%B1%B1%E7%9F%B3%E9%A6%86",
+      "comments": []
+    },
+    "榕城广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "福建省福州市仓山区金山街道金榕南路10号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A6%8F%E5%B7%9E%20%E6%A6%95%E5%9F%8E%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "战地蚝王烧烤(台亚岚新城店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "福建省福州市平潭县康湖路中湖台亚岚小区305号店面",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A6%8F%E5%B7%9E%20%E6%88%98%E5%9C%B0%E8%9A%9D%E7%8E%8B%E7%83%A7%E7%83%A4(%E5%8F%B0%E4%BA%9A%E5%B2%9A%E6%96%B0%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "鲜花咖啡(钱隆世家商业街店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "福建省福州市晋安区鼓山镇连洋路118号福晟钱隆世家8号楼1层17-18号店面",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A6%8F%E5%B7%9E%20%E9%B2%9C%E8%8A%B1%E5%92%96%E5%95%A1(%E9%92%B1%E9%9A%86%E4%B8%96%E5%AE%B6%E5%95%86%E4%B8%9A%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(福州远洋乐堤港店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "福建省福州市仓山区金山街道浦上大道198号福州远洋德呈乐堤港F2学而思学习机",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A6%8F%E5%B7%9E%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E7%A6%8F%E5%B7%9E%E8%BF%9C%E6%B4%8B%E4%B9%90%E5%A0%A4%E6%B8%AF%E5%BA%97)",
+      "comments": []
+    },
+    "花屿植鲜花绿植店(生日鲜花开业花篮烟台山店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "福建省福州市仓山区临江街道仓前山社区​梅坞路57-33号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A6%8F%E5%B7%9E%20%E8%8A%B1%E5%B1%BF%E6%A4%8D%E9%B2%9C%E8%8A%B1%E7%BB%BF%E6%A4%8D%E5%BA%97(%E7%94%9F%E6%97%A5%E9%B2%9C%E8%8A%B1%E5%BC%80%E4%B8%9A%E8%8A%B1%E7%AF%AE%E7%83%9F%E5%8F%B0%E5%B1%B1%E5%BA%97)",
+      "comments": []
+    },
+    "镇海楼景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "福建省福州市鼓楼区福飞南路139号(屏山公园内)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%A6%8F%E5%B7%9E%20%E9%95%87%E6%B5%B7%E6%A5%BC%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

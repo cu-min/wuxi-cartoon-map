@@ -1129,7 +1129,121 @@ window.CITY_DATA['hebei-chengde'] = {
     "desc": "购物:花鸟鱼虫 河北省承德市滦平县中兴路与福源道交叉口西南方向52米左右"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "普陀宗乘之庙",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "承德博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "双百购物广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "草原城俱乐部-餐厅",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "之一咖啡(承德铂悦山店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "百汇书店(双桥街店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "友义鲜花批发(承德店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "金山岭长城旅游区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "普陀宗乘之庙": {
+      "rank": 1,
+      "hot": 98,
+      "address": "河北省承德市双桥区狮子沟镇狮子园路须弥福寿之庙西450米",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%89%BF%E5%BE%B7%20%E6%99%AE%E9%99%80%E5%AE%97%E4%B9%98%E4%B9%8B%E5%BA%99",
+      "comments": []
+    },
+    "承德博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "河北省承德市双桥区狮子沟镇狮子园路承德六中斜对面",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%89%BF%E5%BE%B7%20%E6%89%BF%E5%BE%B7%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "双百购物广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "河北省承德市双桥区新华路北1号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%BF%E5%BE%B7%20%E5%8F%8C%E7%99%BE%E8%B4%AD%E7%89%A9%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "草原城俱乐部-餐厅": {
+      "rank": 4,
+      "hot": 85,
+      "address": "河北省承德市丰宁满族自治县大滩镇扎拉营村225号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%BF%E5%BE%B7%20%E8%8D%89%E5%8E%9F%E5%9F%8E%E4%BF%B1%E4%B9%90%E9%83%A8-%E9%A4%90%E5%8E%85",
+      "comments": []
+    },
+    "之一咖啡(承德铂悦山店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "河北省承德市双桥区高新技术开发区铂悦山4期底商102铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%BF%E5%BE%B7%20%E4%B9%8B%E4%B8%80%E5%92%96%E5%95%A1(%E6%89%BF%E5%BE%B7%E9%93%82%E6%82%A6%E5%B1%B1%E5%BA%97)",
+      "comments": []
+    },
+    "百汇书店(双桥街店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "河北省承德市平泉市平泉镇双桥街迎宾小区北区易居宾馆旁边",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%BF%E5%BE%B7%20%E7%99%BE%E6%B1%87%E4%B9%A6%E5%BA%97(%E5%8F%8C%E6%A1%A5%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "友义鲜花批发(承德店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "河北省承德市双桥区高庙村孟泉沟露露包装3层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%89%BF%E5%BE%B7%20%E5%8F%8B%E4%B9%89%E9%B2%9C%E8%8A%B1%E6%89%B9%E5%8F%91(%E6%89%BF%E5%BE%B7%E5%BA%97)",
+      "comments": []
+    },
+    "金山岭长城旅游区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "河北省承德市滦平县巴克什营镇花楼沟村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%89%BF%E5%BE%B7%20%E9%87%91%E5%B1%B1%E5%B2%AD%E9%95%BF%E5%9F%8E%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

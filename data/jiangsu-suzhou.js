@@ -1129,7 +1129,121 @@ window.CITY_DATA['jiangsu-suzhou'] = {
     "desc": "购物:花鸟鱼虫 江苏省苏州市虎丘区狮山街道珠江路121号嘉业阳光假日15幢01商铺"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "七里山塘景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "张家港凤凰山景区河阳山歌馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "丽丰购物中心",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "五卅酒家(十全街/凤凰街店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "两岸咖啡(新吴街店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(万达店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "如意鲜花(阊胥路店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "金鸡湖景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "七里山塘景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "江苏省苏州市姑苏区山塘街177号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E8%8B%8F%E5%B7%9E%20%E4%B8%83%E9%87%8C%E5%B1%B1%E5%A1%98%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "张家港凤凰山景区河阳山歌馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "江苏省苏州市张家港市凤凰镇凤恬路河阳山歌馆南门",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E8%8B%8F%E5%B7%9E%20%E5%BC%A0%E5%AE%B6%E6%B8%AF%E5%87%A4%E5%87%B0%E5%B1%B1%E6%99%AF%E5%8C%BA%E6%B2%B3%E9%98%B3%E5%B1%B1%E6%AD%8C%E9%A6%86",
+      "comments": []
+    },
+    "丽丰购物中心": {
+      "rank": 3,
+      "hot": 89,
+      "address": "江苏省苏州市吴中区长桥街道宝带东路399号中润中心",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%8B%8F%E5%B7%9E%20%E4%B8%BD%E4%B8%B0%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83",
+      "comments": []
+    },
+    "五卅酒家(十全街/凤凰街店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "江苏省苏州市姑苏区十全小区",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%8B%8F%E5%B7%9E%20%E4%BA%94%E5%8D%85%E9%85%92%E5%AE%B6(%E5%8D%81%E5%85%A8%E8%A1%97%2F%E5%87%A4%E5%87%B0%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "两岸咖啡(新吴街店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "江苏省苏州市昆山市张浦镇新吴街与银河路交汇处(新吴街865号)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%8B%8F%E5%B7%9E%20%E4%B8%A4%E5%B2%B8%E5%92%96%E5%95%A1(%E6%96%B0%E5%90%B4%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店(万达店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "江苏省苏州市常熟市珠海路8号常熟万达广场购物中心二层2001A-2002号商铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%8B%8F%E5%B7%9E%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E4%B8%87%E8%BE%BE%E5%BA%97)",
+      "comments": []
+    },
+    "如意鲜花(阊胥路店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "江苏省苏州市姑苏区金阊街道阊胥路527号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%8B%8F%E5%B7%9E%20%E5%A6%82%E6%84%8F%E9%B2%9C%E8%8A%B1(%E9%98%8A%E8%83%A5%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "金鸡湖景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "江苏省苏州市吴中区金鸡湖街道",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E8%8B%8F%E5%B7%9E%20%E9%87%91%E9%B8%A1%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

@@ -1129,7 +1129,121 @@ window.CITY_DATA['yunnan-lijiang'] = {
     "desc": "购物:花鸟鱼虫 云南省丽江市古城区西安街道昌洛街63号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "金塔文化旅游景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "茶马古道博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "丽江国际购物广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "阿妈腊排骨(南门老店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "田德能咖啡纪念馆",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "有志书店实验店",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "关关雎鸠鲜花礼品店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "文笔山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "金塔文化旅游景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "云南省丽江市古城区金山乡德为村附近",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%BD%E6%B1%9F%20%E9%87%91%E5%A1%94%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "茶马古道博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "云南省丽江市古城区中和路",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%BD%E6%B1%9F%20%E8%8C%B6%E9%A9%AC%E5%8F%A4%E9%81%93%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "丽江国际购物广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "云南省丽江市古城区大研街道福慧路618号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%BD%E6%B1%9F%20%E4%B8%BD%E6%B1%9F%E5%9B%BD%E9%99%85%E8%B4%AD%E7%89%A9%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "阿妈腊排骨(南门老店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "云南省丽江市古城区祥和路古城南门163号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%BD%E6%B1%9F%20%E9%98%BF%E5%A6%88%E8%85%8A%E6%8E%92%E9%AA%A8(%E5%8D%97%E9%97%A8%E8%80%81%E5%BA%97)",
+      "comments": []
+    },
+    "田德能咖啡纪念馆": {
+      "rank": 5,
+      "hot": 81,
+      "address": "云南省丽江市古城区聚宝街(过青龙桥直行20米右侧)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%BD%E6%B1%9F%20%E7%94%B0%E5%BE%B7%E8%83%BD%E5%92%96%E5%95%A1%E7%BA%AA%E5%BF%B5%E9%A6%86",
+      "comments": []
+    },
+    "有志书店实验店": {
+      "rank": 6,
+      "hot": 77,
+      "address": "云南省丽江市古城区长水路446号有志书店",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%BD%E6%B1%9F%20%E6%9C%89%E5%BF%97%E4%B9%A6%E5%BA%97%E5%AE%9E%E9%AA%8C%E5%BA%97",
+      "comments": []
+    },
+    "关关雎鸠鲜花礼品店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "云南省丽江市古城区大研街道五一街文生巷66号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%BD%E6%B1%9F%20%E5%85%B3%E5%85%B3%E9%9B%8E%E9%B8%A0%E9%B2%9C%E8%8A%B1%E7%A4%BC%E5%93%81%E5%BA%97",
+      "comments": []
+    },
+    "文笔山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "云南省丽江市玉龙纳西族自治县黄山镇文华段文华村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%BD%E6%B1%9F%20%E6%96%87%E7%AC%94%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

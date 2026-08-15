@@ -1129,7 +1129,121 @@ window.CITY_DATA['guangxi-guilin'] = {
     "desc": "购物:花鸟鱼虫 广西壮族自治区桂林市全州县全州镇中心北路商会大厦对面"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "桂林两江四湖景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "桂林一院两馆景区",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "灵田起义纪念广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "李宗仁先生故居-餐厅",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "彭小猫瑶乡小茶馆",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "宛照书店",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "大师傅金奖啤酒鱼(桂花店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "桂林尧山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "桂林两江四湖景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广西壮族自治区桂林市秀峰区滨江路",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%A1%82%E6%9E%97%20%E6%A1%82%E6%9E%97%E4%B8%A4%E6%B1%9F%E5%9B%9B%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "桂林一院两馆景区": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广西壮族自治区桂林市临桂区临桂镇中心公园西北侧",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%A1%82%E6%9E%97%20%E6%A1%82%E6%9E%97%E4%B8%80%E9%99%A2%E4%B8%A4%E9%A6%86%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "灵田起义纪念广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广西壮族自治区桂林市灵川县灵田镇人民政府后山",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%A1%82%E6%9E%97%20%E7%81%B5%E7%94%B0%E8%B5%B7%E4%B9%89%E7%BA%AA%E5%BF%B5%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "李宗仁先生故居-餐厅": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广西壮族自治区桂林市临桂区两江镇李宗仁故居内(东北角)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%A1%82%E6%9E%97%20%E6%9D%8E%E5%AE%97%E4%BB%81%E5%85%88%E7%94%9F%E6%95%85%E5%B1%85-%E9%A4%90%E5%8E%85",
+      "comments": []
+    },
+    "彭小猫瑶乡小茶馆": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广西壮族自治区桂林市象山区龙船坪路3号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%A1%82%E6%9E%97%20%E5%BD%AD%E5%B0%8F%E7%8C%AB%E7%91%B6%E4%B9%A1%E5%B0%8F%E8%8C%B6%E9%A6%86",
+      "comments": []
+    },
+    "宛照书店": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广西壮族自治区桂林市秀峰区秀峰街道滨江北路67号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%A1%82%E6%9E%97%20%E5%AE%9B%E7%85%A7%E4%B9%A6%E5%BA%97",
+      "comments": []
+    },
+    "大师傅金奖啤酒鱼(桂花店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广西壮族自治区桂林市阳朔县阳朔镇叠翠路47号(益田西街停车场入口处)(近老车站,阳朔公园长廊旁)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%A1%82%E6%9E%97%20%E5%A4%A7%E5%B8%88%E5%82%85%E9%87%91%E5%A5%96%E5%95%A4%E9%85%92%E9%B1%BC(%E6%A1%82%E8%8A%B1%E5%BA%97)",
+      "comments": []
+    },
+    "桂林尧山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广西壮族自治区桂林市七星区朝阳乡",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%A1%82%E6%9E%97%20%E6%A1%82%E6%9E%97%E5%B0%A7%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

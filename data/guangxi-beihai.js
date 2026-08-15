@@ -1129,7 +1129,121 @@ window.CITY_DATA['guangxi-beihai'] = {
     "desc": "购物:花鸟鱼虫 广西壮族自治区北海市海城区北星路与湖海路交叉口西南方向303米左右"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "涠洲岛火山国家地质公园五彩滩景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "北海海丝首港景区展示中心",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "北海海景广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "庞庞海鲜大碗粉",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "老道咖啡(老街店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "北海教育书城(润发大厦店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "温馨花店(合浦二分店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "鳄鱼山景区-火山口地质公园",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "涠洲岛火山国家地质公园五彩滩景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广西壮族自治区北海市海城区涠洲岛",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E6%B5%B7%20%E6%B6%A0%E6%B4%B2%E5%B2%9B%E7%81%AB%E5%B1%B1%E5%9B%BD%E5%AE%B6%E5%9C%B0%E8%B4%A8%E5%85%AC%E5%9B%AD%E4%BA%94%E5%BD%A9%E6%BB%A9%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "北海海丝首港景区展示中心": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广西壮族自治区北海市海城区海角街道四川路桂中大药房隔壁外沙岛",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E6%B5%B7%20%E5%8C%97%E6%B5%B7%E6%B5%B7%E4%B8%9D%E9%A6%96%E6%B8%AF%E6%99%AF%E5%8C%BA%E5%B1%95%E7%A4%BA%E4%B8%AD%E5%BF%83",
+      "comments": []
+    },
+    "北海海景广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广西壮族自治区北海市海城区东街街道海景大道北50米",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E6%B5%B7%20%E5%8C%97%E6%B5%B7%E6%B5%B7%E6%99%AF%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "庞庞海鲜大碗粉": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广西壮族自治区北海市银海区银滩镇银滩二号路银滩恒利旅游度假中心国会区别墅18型13号一楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E6%B5%B7%20%E5%BA%9E%E5%BA%9E%E6%B5%B7%E9%B2%9C%E5%A4%A7%E7%A2%97%E7%B2%89",
+      "comments": []
+    },
+    "老道咖啡(老街店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广西壮族自治区北海市海城区珠海西路老街165号(观光老街口)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E6%B5%B7%20%E8%80%81%E9%81%93%E5%92%96%E5%95%A1(%E8%80%81%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "北海教育书城(润发大厦店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广西壮族自治区北海市海城区北京路大润发超市4楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E6%B5%B7%20%E5%8C%97%E6%B5%B7%E6%95%99%E8%82%B2%E4%B9%A6%E5%9F%8E(%E6%B6%A6%E5%8F%91%E5%A4%A7%E5%8E%A6%E5%BA%97)",
+      "comments": []
+    },
+    "温馨花店(合浦二分店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广西壮族自治区北海市合浦县廉州镇英才路10号(汽车总站对面巷子内20米)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E6%B5%B7%20%E6%B8%A9%E9%A6%A8%E8%8A%B1%E5%BA%97(%E5%90%88%E6%B5%A6%E4%BA%8C%E5%88%86%E5%BA%97)",
+      "comments": []
+    },
+    "鳄鱼山景区-火山口地质公园": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广西壮族自治区北海市海城区涠洲镇竹蔗寮村委下石螺村14号涠洲岛",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8C%97%E6%B5%B7%20%E9%B3%84%E9%B1%BC%E5%B1%B1%E6%99%AF%E5%8C%BA-%E7%81%AB%E5%B1%B1%E5%8F%A3%E5%9C%B0%E8%B4%A8%E5%85%AC%E5%9B%AD",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

@@ -1129,7 +1129,121 @@ window.CITY_DATA['guangxi-nanning'] = {
     "desc": "购物:花鸟鱼虫 广西壮族自治区南宁市青秀区教育路20-1号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "南宁民歌湖景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "广西展览馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "朝阳广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "大理白族村酒楼(长湖旗舰店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "喵园·猫主题咖啡厅·撸猫馆(国贸店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "你在我在咖啡图书馆(东盟世纪村店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "喜之星花店(广西大学店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "大明山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "南宁民歌湖景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广西壮族自治区南宁市青秀区津头街道金浦路23号民歌广场旁",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E5%AE%81%20%E5%8D%97%E5%AE%81%E6%B0%91%E6%AD%8C%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "广西展览馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广西壮族自治区南宁市兴宁区民生街道民主路12",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E5%AE%81%20%E5%B9%BF%E8%A5%BF%E5%B1%95%E8%A7%88%E9%A6%86",
+      "comments": []
+    },
+    "朝阳广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广西壮族自治区南宁市兴宁区朝阳路38号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E5%AE%81%20%E6%9C%9D%E9%98%B3%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "大理白族村酒楼(长湖旗舰店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广西壮族自治区南宁市青秀区长湖路50号三月花大院内",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E5%AE%81%20%E5%A4%A7%E7%90%86%E7%99%BD%E6%97%8F%E6%9D%91%E9%85%92%E6%A5%BC(%E9%95%BF%E6%B9%96%E6%97%97%E8%88%B0%E5%BA%97)",
+      "comments": []
+    },
+    "喵园·猫主题咖啡厅·撸猫馆(国贸店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广西壮族自治区南宁市青秀区民族大道41号国贸中心A座18层1806室(导航国贸购物中心A座)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E5%AE%81%20%E5%96%B5%E5%9B%AD%C2%B7%E7%8C%AB%E4%B8%BB%E9%A2%98%E5%92%96%E5%95%A1%E5%8E%85%C2%B7%E6%92%B8%E7%8C%AB%E9%A6%86(%E5%9B%BD%E8%B4%B8%E5%BA%97)",
+      "comments": []
+    },
+    "你在我在咖啡图书馆(东盟世纪村店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广西壮族自治区南宁市青秀区中山街道英华路9号东盟世纪村2栋1层1号商铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E5%AE%81%20%E4%BD%A0%E5%9C%A8%E6%88%91%E5%9C%A8%E5%92%96%E5%95%A1%E5%9B%BE%E4%B9%A6%E9%A6%86(%E4%B8%9C%E7%9B%9F%E4%B8%96%E7%BA%AA%E6%9D%91%E5%BA%97)",
+      "comments": []
+    },
+    "喜之星花店(广西大学店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广西壮族自治区南宁市西乡塘区西乡塘街道火炬一支路4号(近广西大学,明秀西路)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E5%AE%81%20%E5%96%9C%E4%B9%8B%E6%98%9F%E8%8A%B1%E5%BA%97(%E5%B9%BF%E8%A5%BF%E5%A4%A7%E5%AD%A6%E5%BA%97)",
+      "comments": []
+    },
+    "大明山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广西壮族自治区南宁市武鸣区明山路1号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%8D%97%E5%AE%81%20%E5%A4%A7%E6%98%8E%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

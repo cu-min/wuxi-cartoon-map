@@ -921,7 +921,121 @@ window.CITY_DATA['shanxi-pingyao'] = {
     "desc": "购物:花鸟鱼虫 山西省晋中市平遥县万达快捷酒店南10米"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "平遥古城墙",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "中国钱庄博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "宇峰购物广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "洪武记饭店",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "谋生咖啡酒馆",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "求学书店得力文具(桃李街店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "星语花店(双林大道店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "平遥县衙",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "平遥古城墙": {
+      "rank": 1,
+      "hot": 98,
+      "address": "山西省晋中市平遥县照壁南街",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%B9%B3%E9%81%A5%20%E5%B9%B3%E9%81%A5%E5%8F%A4%E5%9F%8E%E5%A2%99",
+      "comments": []
+    },
+    "中国钱庄博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "山西省晋中市平遥县南大街45号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%B3%E9%81%A5%20%E4%B8%AD%E5%9B%BD%E9%92%B1%E5%BA%84%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "宇峰购物广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "山西省晋中市平遥县西关大街",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%B3%E9%81%A5%20%E5%AE%87%E5%B3%B0%E8%B4%AD%E7%89%A9%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "洪武记饭店": {
+      "rank": 4,
+      "hot": 85,
+      "address": "山西省晋中市平遥县古城街道南大街84号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%B3%E9%81%A5%20%E6%B4%AA%E6%AD%A6%E8%AE%B0%E9%A5%AD%E5%BA%97",
+      "comments": []
+    },
+    "谋生咖啡酒馆": {
+      "rank": 5,
+      "hot": 81,
+      "address": "山西省晋中市平遥县平遥古城(沙巷街)14号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%B3%E9%81%A5%20%E8%B0%8B%E7%94%9F%E5%92%96%E5%95%A1%E9%85%92%E9%A6%86",
+      "comments": []
+    },
+    "求学书店得力文具(桃李街店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "山西省晋中市平遥县城西街道桃李街法院小区门面",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%B3%E9%81%A5%20%E6%B1%82%E5%AD%A6%E4%B9%A6%E5%BA%97%E5%BE%97%E5%8A%9B%E6%96%87%E5%85%B7(%E6%A1%83%E6%9D%8E%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "星语花店(双林大道店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "山西省晋中市平遥县南外环城南小区门面102号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%B3%E9%81%A5%20%E6%98%9F%E8%AF%AD%E8%8A%B1%E5%BA%97(%E5%8F%8C%E6%9E%97%E5%A4%A7%E9%81%93%E5%BA%97)",
+      "comments": []
+    },
+    "平遥县衙": {
+      "rank": 8,
+      "hot": 71,
+      "address": "山西省晋中市平遥县平遥古城内",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%B9%B3%E9%81%A5%20%E5%B9%B3%E9%81%A5%E5%8E%BF%E8%A1%99",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

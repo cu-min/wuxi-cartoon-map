@@ -1129,7 +1129,121 @@ window.CITY_DATA['shandong-yantai'] = {
     "desc": "购物:花鸟鱼虫 山东省烟台市莱山区黄海路街道观海路204号祥隆国际生活馆108号(中国好声音KTV楼下临街)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "南山旅游景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "张裕酒文化博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "烟台滨海广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "老四季",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "躔度咖啡(集合店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(烟台万象汇店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "红玫瑰花店(迎春大街店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "磁山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "南山旅游景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "山东省烟台市龙口市东江街道",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%83%9F%E5%8F%B0%20%E5%8D%97%E5%B1%B1%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "张裕酒文化博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "山东省烟台市芝罘区东山街道大马路56号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E7%83%9F%E5%8F%B0%20%E5%BC%A0%E8%A3%95%E9%85%92%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "烟台滨海广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "山东省烟台市芝罘区大马路44号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%83%9F%E5%8F%B0%20%E7%83%9F%E5%8F%B0%E6%BB%A8%E6%B5%B7%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "老四季": {
+      "rank": 4,
+      "hot": 85,
+      "address": "山东省烟台市莱州市文昌路街道幸福里小区往东路南",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%83%9F%E5%8F%B0%20%E8%80%81%E5%9B%9B%E5%AD%A3",
+      "comments": []
+    },
+    "躔度咖啡(集合店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "山东省烟台市芝罘区白石街道新海阳西街2号(中医世家新海阳店北侧)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%83%9F%E5%8F%B0%20%E8%BA%94%E5%BA%A6%E5%92%96%E5%95%A1(%E9%9B%86%E5%90%88%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(烟台万象汇店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "山东省烟台市莱山区观海路烟台万象汇2楼228号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%83%9F%E5%8F%B0%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E7%83%9F%E5%8F%B0%E4%B8%87%E8%B1%A1%E6%B1%87%E5%BA%97)",
+      "comments": []
+    },
+    "红玫瑰花店(迎春大街店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "山东省烟台市莱山区初家街道迎春大街158号内3号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%83%9F%E5%8F%B0%20%E7%BA%A2%E7%8E%AB%E7%91%B0%E8%8A%B1%E5%BA%97(%E8%BF%8E%E6%98%A5%E5%A4%A7%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "磁山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "山东省烟台市福山区三亚路三磁山南侧",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%83%9F%E5%8F%B0%20%E7%A3%81%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

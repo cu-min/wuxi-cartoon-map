@@ -1129,7 +1129,121 @@ window.CITY_DATA['hunan-changsha'] = {
     "desc": "购物:花鸟鱼虫 湖南省长沙市雨花区高桥街道马王堆南路西子花苑5栋1层101号商铺(近西门,双拥广场旁)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "长沙石燕湖生态旅游景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "湖南美术馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "黄兴广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "八一桥原味粉馆(八一桥总店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "ETERNALLOVE恒爱宠物善终生命纪念馆",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(长沙海信广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "花之园花店(七里庙路店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "回龙山景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "长沙石燕湖生态旅游景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "湖南省长沙市雨花区跳马镇跳马村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%B2%99%20%E9%95%BF%E6%B2%99%E7%9F%B3%E7%87%95%E6%B9%96%E7%94%9F%E6%80%81%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "湖南美术馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "湖南省长沙市岳麓区靳江路潇湘路口公交站",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%B2%99%20%E6%B9%96%E5%8D%97%E7%BE%8E%E6%9C%AF%E9%A6%86",
+      "comments": []
+    },
+    "黄兴广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "湖南省长沙市芙蓉区人民西路251号1栋",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%B2%99%20%E9%BB%84%E5%85%B4%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "八一桥原味粉馆(八一桥总店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "湖南省长沙市芙蓉区八一路617号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%B2%99%20%E5%85%AB%E4%B8%80%E6%A1%A5%E5%8E%9F%E5%91%B3%E7%B2%89%E9%A6%86(%E5%85%AB%E4%B8%80%E6%A1%A5%E6%80%BB%E5%BA%97)",
+      "comments": []
+    },
+    "ETERNALLOVE恒爱宠物善终生命纪念馆": {
+      "rank": 5,
+      "hot": 81,
+      "address": "湖南省长沙市天心区桂花坪街道石碑路105商铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%B2%99%20ETERNALLOVE%E6%81%92%E7%88%B1%E5%AE%A0%E7%89%A9%E5%96%84%E7%BB%88%E7%94%9F%E5%91%BD%E7%BA%AA%E5%BF%B5%E9%A6%86",
+      "comments": []
+    },
+    "西西弗书店(长沙海信广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "湖南省长沙市天心区湘江中路二段36号华远华中心裙楼海信广场F2",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%B2%99%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E9%95%BF%E6%B2%99%E6%B5%B7%E4%BF%A1%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "花之园花店(七里庙路店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "湖南省长沙市雨花区七里庙路与芙蓉中路交叉口东南方向198米左右",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%B2%99%20%E8%8A%B1%E4%B9%8B%E5%9B%AD%E8%8A%B1%E5%BA%97(%E4%B8%83%E9%87%8C%E5%BA%99%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "回龙山景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "湖南省长沙市宁乡市X097与X098交叉口东北方向730米",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%B2%99%20%E5%9B%9E%E9%BE%99%E5%B1%B1%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

@@ -1121,7 +1121,121 @@ window.CITY_DATA['guangdong-zhongshan'] = {
     "desc": "购物:花鸟鱼虫 广东省中山市石岐街道宏基路东华花园C幢4卡"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "中山温泉旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "厨邦酱油文化博览馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "海洲健身广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "亿烤天下自助美食汇(小榄店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "四囍咖啡公司(中山纪念堂店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "中山纪念图书馆少儿图书馆",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "自然之家阿云花卉园艺公司",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "仙踪龙园景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "中山温泉旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广东省中山市三乡镇雍陌村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%AD%E5%B1%B1%20%E4%B8%AD%E5%B1%B1%E6%B8%A9%E6%B3%89%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "厨邦酱油文化博览馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广东省中山市雅柏北路1号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%AD%E5%B1%B1%20%E5%8E%A8%E9%82%A6%E9%85%B1%E6%B2%B9%E6%96%87%E5%8C%96%E5%8D%9A%E8%A7%88%E9%A6%86",
+      "comments": []
+    },
+    "海洲健身广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广东省中山市古镇广东中山市古镇",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%AD%E5%B1%B1%20%E6%B5%B7%E6%B4%B2%E5%81%A5%E8%BA%AB%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "亿烤天下自助美食汇(小榄店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广东省中山市小榄镇新华中路118号大信·新都汇118广场2层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%AD%E5%B1%B1%20%E4%BA%BF%E7%83%A4%E5%A4%A9%E4%B8%8B%E8%87%AA%E5%8A%A9%E7%BE%8E%E9%A3%9F%E6%B1%87(%E5%B0%8F%E6%A6%84%E5%BA%97)",
+      "comments": []
+    },
+    "四囍咖啡公司(中山纪念堂店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广东省中山市石岐街道孙文中路169号一层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%AD%E5%B1%B1%20%E5%9B%9B%E5%9B%8D%E5%92%96%E5%95%A1%E5%85%AC%E5%8F%B8(%E4%B8%AD%E5%B1%B1%E7%BA%AA%E5%BF%B5%E5%A0%82%E5%BA%97)",
+      "comments": []
+    },
+    "中山纪念图书馆少儿图书馆": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广东省中山市兴中道中山纪念图书馆新馆内",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%AD%E5%B1%B1%20%E4%B8%AD%E5%B1%B1%E7%BA%AA%E5%BF%B5%E5%9B%BE%E4%B9%A6%E9%A6%86%E5%B0%91%E5%84%BF%E5%9B%BE%E4%B9%A6%E9%A6%86",
+      "comments": []
+    },
+    "自然之家阿云花卉园艺公司": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广东省中山市弘业家居花卉交易市场",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%AD%E5%B1%B1%20%E8%87%AA%E7%84%B6%E4%B9%8B%E5%AE%B6%E9%98%BF%E4%BA%91%E8%8A%B1%E5%8D%89%E5%9B%AD%E8%89%BA%E5%85%AC%E5%8F%B8",
+      "comments": []
+    },
+    "仙踪龙园景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广东省中山市中山村五桂山山麓",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%AD%E5%B1%B1%20%E4%BB%99%E8%B8%AA%E9%BE%99%E5%9B%AD%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

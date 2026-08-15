@@ -1129,7 +1129,121 @@ window.CITY_DATA['jiangsu-wuxi'] = {
     "desc": "购物:花鸟鱼虫 江苏省无锡市锡山区安镇街道高科技农业示范园内"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "清名桥古运河景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "无锡博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "圆融购物中心",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "麦福德家常菜馆(麦福德龙虾馆)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "超凡一杯咖啡馆(长江国际花园店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店&矢量咖啡(无锡万象城店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "喵小姐花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "江阴滨江要塞旅游区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "清名桥古运河景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "江苏省无锡市梁溪区永乐路与南长街交汇处",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%97%A0%E9%94%A1%20%E6%B8%85%E5%90%8D%E6%A1%A5%E5%8F%A4%E8%BF%90%E6%B2%B3%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "无锡博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "江苏省无锡市梁溪区太湖广场南侧钟书路100号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%97%A0%E9%94%A1%20%E6%97%A0%E9%94%A1%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "圆融购物中心": {
+      "rank": 3,
+      "hot": 89,
+      "address": "江苏省无锡市梁溪区锡澄路262号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%97%A0%E9%94%A1%20%E5%9C%86%E8%9E%8D%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83",
+      "comments": []
+    },
+    "麦福德家常菜馆(麦福德龙虾馆)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "江苏省无锡市锡山区鹅湖镇青虹路42号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%97%A0%E9%94%A1%20%E9%BA%A6%E7%A6%8F%E5%BE%B7%E5%AE%B6%E5%B8%B8%E8%8F%9C%E9%A6%86(%E9%BA%A6%E7%A6%8F%E5%BE%B7%E9%BE%99%E8%99%BE%E9%A6%86)",
+      "comments": []
+    },
+    "超凡一杯咖啡馆(长江国际花园店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "江苏省无锡市新吴区旺庄街道长江北路15-13号(长江国际花园一期门面房,东亚风情街江苏银行正对面)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%97%A0%E9%94%A1%20%E8%B6%85%E5%87%A1%E4%B8%80%E6%9D%AF%E5%92%96%E5%95%A1%E9%A6%86(%E9%95%BF%E6%B1%9F%E5%9B%BD%E9%99%85%E8%8A%B1%E5%9B%AD%E5%BA%97)",
+      "comments": []
+    },
+    "西西弗书店&矢量咖啡(无锡万象城店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "江苏省无锡市滨湖区金石路88号(近金石路)无锡万象城L2",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%97%A0%E9%94%A1%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97%26%E7%9F%A2%E9%87%8F%E5%92%96%E5%95%A1(%E6%97%A0%E9%94%A1%E4%B8%87%E8%B1%A1%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "喵小姐花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "江苏省无锡市梁溪区阳光城市花园c区29-2",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%97%A0%E9%94%A1%20%E5%96%B5%E5%B0%8F%E5%A7%90%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "江阴滨江要塞旅游区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "江苏省无锡市江阴市龙岗路",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%97%A0%E9%94%A1%20%E6%B1%9F%E9%98%B4%E6%BB%A8%E6%B1%9F%E8%A6%81%E5%A1%9E%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

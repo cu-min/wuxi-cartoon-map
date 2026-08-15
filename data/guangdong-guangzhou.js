@@ -1129,7 +1129,121 @@ window.CITY_DATA['guangdong-guangzhou'] = {
     "desc": "购物:花鸟鱼虫 广东省广州市海珠区敦和路利民士多旁"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "沙面旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "中山纪念堂",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "花城广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "松雅轩海鲜酒家(同和店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "旧雨咖啡·CoffeeFORU(黄村奥体店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "山顶书店(鹤翔路店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "爱优意鲜花",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "帽峰山森林公园铜锣湾生态旅游景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "沙面旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广东省广州市荔湾区沙面南街52号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%B9%BF%E5%B7%9E%20%E6%B2%99%E9%9D%A2%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "中山纪念堂": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广东省广州市越秀区北京街道东风中路299号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%BF%E5%B7%9E%20%E4%B8%AD%E5%B1%B1%E7%BA%AA%E5%BF%B5%E5%A0%82",
+      "comments": []
+    },
+    "花城广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广东省广州市天河区珠江新城CBD中心区",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%BF%E5%B7%9E%20%E8%8A%B1%E5%9F%8E%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "松雅轩海鲜酒家(同和店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广东省广州市白云区同和街道同和街南湖西路自编3号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%BF%E5%B7%9E%20%E6%9D%BE%E9%9B%85%E8%BD%A9%E6%B5%B7%E9%B2%9C%E9%85%92%E5%AE%B6(%E5%90%8C%E5%92%8C%E5%BA%97)",
+      "comments": []
+    },
+    "旧雨咖啡·CoffeeFORU(黄村奥体店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广东省广州市天河区奥体南路6号东澳创意小镇11栋",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%BF%E5%B7%9E%20%E6%97%A7%E9%9B%A8%E5%92%96%E5%95%A1%C2%B7CoffeeFORU(%E9%BB%84%E6%9D%91%E5%A5%A5%E4%BD%93%E5%BA%97)",
+      "comments": []
+    },
+    "山顶书店(鹤翔路店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广东省广州市荔湾区广钢鹤翔小区东区东南门东南120米",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%BF%E5%B7%9E%20%E5%B1%B1%E9%A1%B6%E4%B9%A6%E5%BA%97(%E9%B9%A4%E7%BF%94%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "爱优意鲜花": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广东省广州市白云区永泰学山塘街40号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%B9%BF%E5%B7%9E%20%E7%88%B1%E4%BC%98%E6%84%8F%E9%B2%9C%E8%8A%B1",
+      "comments": []
+    },
+    "帽峰山森林公园铜锣湾生态旅游景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广东省广州市白云区S115古洞乡村段",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%B9%BF%E5%B7%9E%20%E5%B8%BD%E5%B3%B0%E5%B1%B1%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E9%93%9C%E9%94%A3%E6%B9%BE%E7%94%9F%E6%80%81%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

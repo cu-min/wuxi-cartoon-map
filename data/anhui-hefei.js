@@ -1129,7 +1129,121 @@ window.CITY_DATA['anhui-hefei'] = {
     "desc": "购物:花鸟鱼虫 安徽省合肥市包河区芜湖路街道桐城路86号(桐城路与芜湖路交口往北100米)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "银屏山旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "安徽博物院(庐阳馆)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "和平广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "丁哥·庐味鲜鱼鲜土菜·合肥记忆(世纪阳光花园店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "岸香咖啡(中山路店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "半勺·新徽菜(图书城店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "小戴花鱼轩花店(长安路店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "姥山岛旅游度假区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "银屏山旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "安徽省合肥市巢湖市南郊X007",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%90%88%E8%82%A5%20%E9%93%B6%E5%B1%8F%E5%B1%B1%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "安徽博物院(庐阳馆)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "安徽省合肥市庐阳区安庆路268号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%90%88%E8%82%A5%20%E5%AE%89%E5%BE%BD%E5%8D%9A%E7%89%A9%E9%99%A2(%E5%BA%90%E9%98%B3%E9%A6%86)",
+      "comments": []
+    },
+    "和平广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "安徽省合肥市瑶海区和平路",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%90%88%E8%82%A5%20%E5%92%8C%E5%B9%B3%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "丁哥·庐味鲜鱼鲜土菜·合肥记忆(世纪阳光花园店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "安徽省合肥市包河区马鞍山路世纪阳光花园紫阳苑B-20-101",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%90%88%E8%82%A5%20%E4%B8%81%E5%93%A5%C2%B7%E5%BA%90%E5%91%B3%E9%B2%9C%E9%B1%BC%E9%B2%9C%E5%9C%9F%E8%8F%9C%C2%B7%E5%90%88%E8%82%A5%E8%AE%B0%E5%BF%86(%E4%B8%96%E7%BA%AA%E9%98%B3%E5%85%89%E8%8A%B1%E5%9B%AD%E5%BA%97)",
+      "comments": []
+    },
+    "岸香咖啡(中山路店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "安徽省合肥市包河区洞庭湖路2539号滨湖假日花园2SD1幢商105,105上",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%90%88%E8%82%A5%20%E5%B2%B8%E9%A6%99%E5%92%96%E5%95%A1(%E4%B8%AD%E5%B1%B1%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "半勺·新徽菜(图书城店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "安徽省合肥市庐阳区长江中路279号新华书店图书城店3楼儿童区域",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%90%88%E8%82%A5%20%E5%8D%8A%E5%8B%BA%C2%B7%E6%96%B0%E5%BE%BD%E8%8F%9C(%E5%9B%BE%E4%B9%A6%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "小戴花鱼轩花店(长安路店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "安徽省合肥市肥西县长安路柏堰商业街A2-12号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%90%88%E8%82%A5%20%E5%B0%8F%E6%88%B4%E8%8A%B1%E9%B1%BC%E8%BD%A9%E8%8A%B1%E5%BA%97(%E9%95%BF%E5%AE%89%E8%B7%AF%E5%BA%97)",
+      "comments": []
+    },
+    "姥山岛旅游度假区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "安徽省合肥市巢湖市中庙街道巢湖湖心",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%90%88%E8%82%A5%20%E5%A7%A5%E5%B1%B1%E5%B2%9B%E6%97%85%E6%B8%B8%E5%BA%A6%E5%81%87%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

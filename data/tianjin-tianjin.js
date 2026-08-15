@@ -1129,7 +1129,121 @@ window.CITY_DATA['tianjin-tianjin'] = {
     "desc": "购物:花鸟鱼虫 天津市津南区咸水沽镇红霞里1-1-101"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "天塔湖景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "平津战役纪念馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "天津站海河广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "青年餐厅烤鸭(津湾店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "cafe",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(滨海万达广场店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "刘姐花店(晋宁道店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "世纪钟",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "天塔湖景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "天津市河西区卫津南路1号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%20%E5%A4%A9%E5%A1%94%E6%B9%96%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "平津战役纪念馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "天津市红桥区平津道8号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%20%E5%B9%B3%E6%B4%A5%E6%88%98%E5%BD%B9%E7%BA%AA%E5%BF%B5%E9%A6%86",
+      "comments": []
+    },
+    "天津站海河广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "天津市河北区新纬路1号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%20%E5%A4%A9%E6%B4%A5%E7%AB%99%E6%B5%B7%E6%B2%B3%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "青年餐厅烤鸭(津湾店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "天津市和平区解放北路48号津湾广场1层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%20%E9%9D%92%E5%B9%B4%E9%A4%90%E5%8E%85%E7%83%A4%E9%B8%AD(%E6%B4%A5%E6%B9%BE%E5%BA%97)",
+      "comments": []
+    },
+    "cafe": {
+      "rank": 5,
+      "hot": 81,
+      "address": "天津市南开区学府街道湖影道学湖里小区",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%20cafe",
+      "comments": []
+    },
+    "西西弗书店(滨海万达广场店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "天津市滨海新区洞庭路4572号滨海万达广场2楼2026室",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E6%BB%A8%E6%B5%B7%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA%E5%BA%97)",
+      "comments": []
+    },
+    "刘姐花店(晋宁道店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "天津市南开区王顶堤街道晋宁道与淦江路交口晋宁北里18号楼底商",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%20%E5%88%98%E5%A7%90%E8%8A%B1%E5%BA%97(%E6%99%8B%E5%AE%81%E9%81%93%E5%BA%97)",
+      "comments": []
+    },
+    "世纪钟": {
+      "rank": 8,
+      "hot": 71,
+      "address": "天津市河北区世纪钟广场(天津站西侧)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%A4%A9%E6%B4%A5%20%E4%B8%96%E7%BA%AA%E9%92%9F",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

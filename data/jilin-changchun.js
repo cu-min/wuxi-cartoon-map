@@ -1129,7 +1129,121 @@ window.CITY_DATA['jilin-changchun'] = {
     "desc": "购物:花鸟鱼虫 吉林省长春市朝阳区红旗街271号亚细亚百货大厦"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "新立湖国家水利风景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "长影旧址博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "站前广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "状元阁烧烤(总店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "磨时光咖啡(畅溪街店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "吉林省图书馆旧址",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "大鹅花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "中山公园",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "新立湖国家水利风景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "吉林省长春市南关区新立城水库管理局附近",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%98%A5%20%E6%96%B0%E7%AB%8B%E6%B9%96%E5%9B%BD%E5%AE%B6%E6%B0%B4%E5%88%A9%E9%A3%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "长影旧址博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "吉林省长春市朝阳区红旗街1118号(原长影电影制片厂)",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%98%A5%20%E9%95%BF%E5%BD%B1%E6%97%A7%E5%9D%80%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "站前广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "吉林省长春市宽城区",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%98%A5%20%E7%AB%99%E5%89%8D%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "状元阁烧烤(总店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "吉林省长春市朝阳区新华路西昌小区316栋",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%98%A5%20%E7%8A%B6%E5%85%83%E9%98%81%E7%83%A7%E7%83%A4(%E6%80%BB%E5%BA%97)",
+      "comments": []
+    },
+    "磨时光咖啡(畅溪街店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "吉林省长春市南关区富裕街道南三环畅溪街1号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%98%A5%20%E7%A3%A8%E6%97%B6%E5%85%89%E5%92%96%E5%95%A1(%E7%95%85%E6%BA%AA%E8%A1%97%E5%BA%97)",
+      "comments": []
+    },
+    "吉林省图书馆旧址": {
+      "rank": 6,
+      "hot": 77,
+      "address": "吉林省长春市朝阳区桂林街道新民大街吉林大学白求恩医学部公共卫生学院东侧约60米",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%98%A5%20%E5%90%89%E6%9E%97%E7%9C%81%E5%9B%BE%E4%B9%A6%E9%A6%86%E6%97%A7%E5%9D%80",
+      "comments": []
+    },
+    "大鹅花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "吉林省长春市宽城区人民大街1111号(胜利公园地铁站D口步行70米)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%98%A5%20%E5%A4%A7%E9%B9%85%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "中山公园": {
+      "rank": 8,
+      "hot": 71,
+      "address": "吉林省长春市宽城区成都大路东200米",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E9%95%BF%E6%98%A5%20%E4%B8%AD%E5%B1%B1%E5%85%AC%E5%9B%AD",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

@@ -1097,7 +1097,121 @@ window.CITY_DATA['yunnan-xishuangbanna'] = {
     "desc": "购物:花鸟鱼虫 云南省西双版纳傣族自治州景洪市允景洪街道民航路37号(中国人民保险公司对面)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "大勐龙景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "西双版纳民族博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "西双版纳融创茂",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "北京胜利涮羊肉(版纳店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "冷空气咖啡·星光夜市全景",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "趣趣长长博物与书店",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "热恋鲜花(勐泐大道店)",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "西双版纳勐景来景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "大勐龙景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "云南省西双版纳傣族自治州景洪市勐龙镇知青路2号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%20%E5%A4%A7%E5%8B%90%E9%BE%99%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "西双版纳民族博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "云南省西双版纳傣族自治州景洪市雨林大道与勐泐大道环路交叉处西双版纳民族博物馆F1",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%20%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E6%B0%91%E6%97%8F%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "西双版纳融创茂": {
+      "rank": 3,
+      "hot": 89,
+      "address": "云南省西双版纳傣族自治州景洪市万达广场路1号西双版纳融创茂",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%20%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E8%9E%8D%E5%88%9B%E8%8C%82",
+      "comments": []
+    },
+    "北京胜利涮羊肉(版纳店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "云南省西双版纳傣族自治州景洪市民航路雨林花谷酒店隔壁",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%20%E5%8C%97%E4%BA%AC%E8%83%9C%E5%88%A9%E6%B6%AE%E7%BE%8A%E8%82%89(%E7%89%88%E7%BA%B3%E5%BA%97)",
+      "comments": []
+    },
+    "冷空气咖啡·星光夜市全景": {
+      "rank": 5,
+      "hot": 81,
+      "address": "云南省西双版纳傣族自治州景洪市告庄西双景星光夜市4号门入口闸机口处",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%20%E5%86%B7%E7%A9%BA%E6%B0%94%E5%92%96%E5%95%A1%C2%B7%E6%98%9F%E5%85%89%E5%A4%9C%E5%B8%82%E5%85%A8%E6%99%AF",
+      "comments": []
+    },
+    "趣趣长长博物与书店": {
+      "rank": 6,
+      "hot": 77,
+      "address": "云南省西双版纳傣族自治州景洪市旅游度假区管理委员会西双版纳民族博物馆最左侧长廊",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%20%E8%B6%A3%E8%B6%A3%E9%95%BF%E9%95%BF%E5%8D%9A%E7%89%A9%E4%B8%8E%E4%B9%A6%E5%BA%97",
+      "comments": []
+    },
+    "热恋鲜花(勐泐大道店)": {
+      "rank": 7,
+      "hot": 74,
+      "address": "云南省西双版纳傣族自治州景洪市勐泐大道46号阳光假日15号商铺",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%20%E7%83%AD%E6%81%8B%E9%B2%9C%E8%8A%B1(%E5%8B%90%E6%B3%90%E5%A4%A7%E9%81%93%E5%BA%97)",
+      "comments": []
+    },
+    "西双版纳勐景来景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "云南省西双版纳傣族自治州勐海县打洛镇勐景来",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%20%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%8B%90%E6%99%AF%E6%9D%A5%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

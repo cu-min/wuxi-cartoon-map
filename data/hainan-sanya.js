@@ -1065,7 +1065,121 @@ window.CITY_DATA['hainan-sanya'] = {
     "desc": "购物:花鸟鱼虫 海南省三亚市吉阳区榆亚路181-26号"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "槟榔河文化旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "三亚山海贝文化博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "海月广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "三亚老渔民海鲜店(三亚湾店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "飞素咖啡",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "西西弗书店(三亚万象汇店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "云逸鲜花花卉绿植店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "三亚西岛海洋文化旅游区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "槟榔河文化旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "海南省三亚市天涯区槟榔4组防洪楼",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%89%E4%BA%9A%20%E6%A7%9F%E6%A6%94%E6%B2%B3%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "三亚山海贝文化博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "海南省三亚市吉阳区吉阳镇榆亚路680号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%89%E4%BA%9A%20%E4%B8%89%E4%BA%9A%E5%B1%B1%E6%B5%B7%E8%B4%9D%E6%96%87%E5%8C%96%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "海月广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "海南省三亚市天涯区迎宾路九号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%89%E4%BA%9A%20%E6%B5%B7%E6%9C%88%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "三亚老渔民海鲜店(三亚湾店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "海南省三亚市天涯区长顺五巷9号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%89%E4%BA%9A%20%E4%B8%89%E4%BA%9A%E8%80%81%E6%B8%94%E6%B0%91%E6%B5%B7%E9%B2%9C%E5%BA%97(%E4%B8%89%E4%BA%9A%E6%B9%BE%E5%BA%97)",
+      "comments": []
+    },
+    "飞素咖啡": {
+      "rank": 5,
+      "hot": 81,
+      "address": "海南省三亚市吉阳区春光中巷D区36栋别墅",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%89%E4%BA%9A%20%E9%A3%9E%E7%B4%A0%E5%92%96%E5%95%A1",
+      "comments": []
+    },
+    "西西弗书店(三亚万象汇店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "海南省三亚市吉阳区月川中路8号三亚吉阳万象汇L2层L201号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%89%E4%BA%9A%20%E8%A5%BF%E8%A5%BF%E5%BC%97%E4%B9%A6%E5%BA%97(%E4%B8%89%E4%BA%9A%E4%B8%87%E8%B1%A1%E6%B1%87%E5%BA%97)",
+      "comments": []
+    },
+    "云逸鲜花花卉绿植店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "海南省三亚市吉阳区榆亚路13-4号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E4%B8%89%E4%BA%9A%20%E4%BA%91%E9%80%B8%E9%B2%9C%E8%8A%B1%E8%8A%B1%E5%8D%89%E7%BB%BF%E6%A4%8D%E5%BA%97",
+      "comments": []
+    },
+    "三亚西岛海洋文化旅游区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "海南省三亚市天涯区肖旗港码头(西岛)",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E4%B8%89%E4%BA%9A%20%E4%B8%89%E4%BA%9A%E8%A5%BF%E5%B2%9B%E6%B5%B7%E6%B4%8B%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

@@ -1129,7 +1129,121 @@ window.CITY_DATA['guangdong-shenzhen'] = {
     "desc": "购物:花鸟鱼虫 广东省深圳市福田区福星路福田村贝底田坊8号(福安街72-B)"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "西涌国际滨海旅游区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "深圳博物馆金田路馆(历史民俗)",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "天虹购物中心(龙华店)",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "金泰汕头牛肉店(兴围店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "深圳市南山咖啡博物馆",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "香港新发烧腊茶餐厅(书城店)",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "鲜花店.开业花篮.发财树.绿植租摆.花卉市场",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "深圳市仙湖植物园",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "西涌国际滨海旅游区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "广东省深圳市龙岗区大鹏新区南澳街道西涌社区新屋村68号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%20%E8%A5%BF%E6%B6%8C%E5%9B%BD%E9%99%85%E6%BB%A8%E6%B5%B7%E6%97%85%E6%B8%B8%E5%8C%BA",
+      "comments": []
+    },
+    "深圳博物馆金田路馆(历史民俗)": {
+      "rank": 2,
+      "hot": 93,
+      "address": "广东省深圳市福田区福中三路市民中心A区",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%20%E6%B7%B1%E5%9C%B3%E5%8D%9A%E7%89%A9%E9%A6%86%E9%87%91%E7%94%B0%E8%B7%AF%E9%A6%86(%E5%8E%86%E5%8F%B2%E6%B0%91%E4%BF%97)",
+      "comments": []
+    },
+    "天虹购物中心(龙华店)": {
+      "rank": 3,
+      "hot": 89,
+      "address": "广东省深圳市龙华区人民路2020号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%20%E5%A4%A9%E8%99%B9%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83(%E9%BE%99%E5%8D%8E%E5%BA%97)",
+      "comments": []
+    },
+    "金泰汕头牛肉店(兴围店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "广东省深圳市宝安区福永兴围兴华路北32-1",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%20%E9%87%91%E6%B3%B0%E6%B1%95%E5%A4%B4%E7%89%9B%E8%82%89%E5%BA%97(%E5%85%B4%E5%9B%B4%E5%BA%97)",
+      "comments": []
+    },
+    "深圳市南山咖啡博物馆": {
+      "rank": 5,
+      "hot": 81,
+      "address": "广东省深圳市南山区荷兰花卉小镇C1-01",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%20%E6%B7%B1%E5%9C%B3%E5%B8%82%E5%8D%97%E5%B1%B1%E5%92%96%E5%95%A1%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "香港新发烧腊茶餐厅(书城店)": {
+      "rank": 6,
+      "hot": 77,
+      "address": "广东省深圳市罗湖区桂园街道书城路1号都市名园综合楼首层101-A2号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%20%E9%A6%99%E6%B8%AF%E6%96%B0%E5%8F%91%E7%83%A7%E8%85%8A%E8%8C%B6%E9%A4%90%E5%8E%85(%E4%B9%A6%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "鲜花店.开业花篮.发财树.绿植租摆.花卉市场": {
+      "rank": 7,
+      "hot": 74,
+      "address": "广东省深圳市宝安区沙井街道衙边社区岗胜路盈福楼A栋103",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%20%E9%B2%9C%E8%8A%B1%E5%BA%97.%E5%BC%80%E4%B8%9A%E8%8A%B1%E7%AF%AE.%E5%8F%91%E8%B4%A2%E6%A0%91.%E7%BB%BF%E6%A4%8D%E7%A7%9F%E6%91%86.%E8%8A%B1%E5%8D%89%E5%B8%82%E5%9C%BA",
+      "comments": []
+    },
+    "深圳市仙湖植物园": {
+      "rank": 8,
+      "hot": 71,
+      "address": "广东省深圳市罗湖区莲塘街道仙湖路160号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%20%E6%B7%B1%E5%9C%B3%E5%B8%82%E4%BB%99%E6%B9%96%E6%A4%8D%E7%89%A9%E5%9B%AD",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

@@ -1129,7 +1129,121 @@ window.CITY_DATA['hebei-qinhuangdao'] = {
     "desc": "购物:花鸟鱼虫 河北省秦皇岛市海港区白塔岭街道燕山大学东西门之间"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "老君顶生态旅游景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "秦皇岛博物馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "凯利购物中心",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "群珍·烤鸭·春饼(火车站店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "25号咖啡·简餐",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "新华书店眼镜",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "春雨鲜花",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "山海关古城景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "老君顶生态旅游景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "河北省秦皇岛市海港区石门寨镇秦青路西侧房庄村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%A7%A6%E7%9A%87%E5%B2%9B%20%E8%80%81%E5%90%9B%E9%A1%B6%E7%94%9F%E6%80%81%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "秦皇岛博物馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "河北省秦皇岛市海港区河北大街西段521号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E7%A7%A6%E7%9A%87%E5%B2%9B%20%E7%A7%A6%E7%9A%87%E5%B2%9B%E5%8D%9A%E7%89%A9%E9%A6%86",
+      "comments": []
+    },
+    "凯利购物中心": {
+      "rank": 3,
+      "hot": 89,
+      "address": "河北省秦皇岛市海港区太阳城35号中心广场",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A7%A6%E7%9A%87%E5%B2%9B%20%E5%87%AF%E5%88%A9%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83",
+      "comments": []
+    },
+    "群珍·烤鸭·春饼(火车站店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "河北省秦皇岛市海港区迎宾路铁新街4号(华驿精选酒店2号楼旁)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A7%A6%E7%9A%87%E5%B2%9B%20%E7%BE%A4%E7%8F%8D%C2%B7%E7%83%A4%E9%B8%AD%C2%B7%E6%98%A5%E9%A5%BC(%E7%81%AB%E8%BD%A6%E7%AB%99%E5%BA%97)",
+      "comments": []
+    },
+    "25号咖啡·简餐": {
+      "rank": 5,
+      "hot": 81,
+      "address": "河北省秦皇岛市海港区珠江到25号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A7%A6%E7%9A%87%E5%B2%9B%2025%E5%8F%B7%E5%92%96%E5%95%A1%C2%B7%E7%AE%80%E9%A4%90",
+      "comments": []
+    },
+    "新华书店眼镜": {
+      "rank": 6,
+      "hot": 77,
+      "address": "河北省秦皇岛市海港区建设大街与迎宾路交叉口西北方向107米左右",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A7%A6%E7%9A%87%E5%B2%9B%20%E6%96%B0%E5%8D%8E%E4%B9%A6%E5%BA%97%E7%9C%BC%E9%95%9C",
+      "comments": []
+    },
+    "春雨鲜花": {
+      "rank": 7,
+      "hot": 74,
+      "address": "河北省秦皇岛市海港区西港路街道西港路140号",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E7%A7%A6%E7%9A%87%E5%B2%9B%20%E6%98%A5%E9%9B%A8%E9%B2%9C%E8%8A%B1",
+      "comments": []
+    },
+    "山海关古城景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "河北省秦皇岛市山海关区东大街1号",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E7%A7%A6%E7%9A%87%E5%B2%9B%20%E5%B1%B1%E6%B5%B7%E5%85%B3%E5%8F%A4%E5%9F%8E%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };

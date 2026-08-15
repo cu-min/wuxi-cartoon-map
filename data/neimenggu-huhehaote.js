@@ -1129,7 +1129,121 @@ window.CITY_DATA['neimenggu-huhehaote'] = {
     "desc": "购物:花鸟鱼虫 内蒙古自治区呼和浩特市和林格尔县缘圆街"
   }
 ],
-  hot: [],
-  hotMap: {},
+  hot: [
+    {
+      "rank": 1,
+      "name": "九龙湾景区",
+      "hot": 98
+    },
+    {
+      "rank": 2,
+      "name": "内蒙古展览馆",
+      "hot": 93
+    },
+    {
+      "rank": 3,
+      "name": "如意河音乐广场",
+      "hot": 89
+    },
+    {
+      "rank": 4,
+      "name": "老绥元烧麦·家常菜(京能花园店)",
+      "hot": 85
+    },
+    {
+      "rank": 5,
+      "name": "iMoment一刻咖啡(金隅时代城店)",
+      "hot": 81
+    },
+    {
+      "rank": 6,
+      "name": "百城书店",
+      "hot": 77
+    },
+    {
+      "rank": 7,
+      "name": "悦君花店",
+      "hot": 74
+    },
+    {
+      "rank": 8,
+      "name": "哈素海旅游景区",
+      "hot": 71
+    }
+  ],
+  hotMap: {
+    "九龙湾景区": {
+      "rank": 1,
+      "hot": 98,
+      "address": "内蒙古自治区呼和浩特市新城区",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9%20%E4%B9%9D%E9%BE%99%E6%B9%BE%E6%99%AF%E5%8C%BA",
+      "comments": []
+    },
+    "内蒙古展览馆": {
+      "rank": 2,
+      "hot": 93,
+      "address": "内蒙古自治区呼和浩特市赛罕区乌兰察布东路街道新华东街48号",
+      "ticket": "以现场公示为准",
+      "hours": "09:00-17:00",
+      "website": "https://www.amap.com/search?query=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9%20%E5%86%85%E8%92%99%E5%8F%A4%E5%B1%95%E8%A7%88%E9%A6%86",
+      "comments": []
+    },
+    "如意河音乐广场": {
+      "rank": 3,
+      "hot": 89,
+      "address": "内蒙古自治区呼和浩特市新城区腾飞北路呼和浩特市人民政府东50米",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9%20%E5%A6%82%E6%84%8F%E6%B2%B3%E9%9F%B3%E4%B9%90%E5%B9%BF%E5%9C%BA",
+      "comments": []
+    },
+    "老绥元烧麦·家常菜(京能花园店)": {
+      "rank": 4,
+      "hot": 85,
+      "address": "内蒙古自治区呼和浩特市赛罕区鄂尔多斯东街京能花园底店(金隅时代城南)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9%20%E8%80%81%E7%BB%A5%E5%85%83%E7%83%A7%E9%BA%A6%C2%B7%E5%AE%B6%E5%B8%B8%E8%8F%9C(%E4%BA%AC%E8%83%BD%E8%8A%B1%E5%9B%AD%E5%BA%97)",
+      "comments": []
+    },
+    "iMoment一刻咖啡(金隅时代城店)": {
+      "rank": 5,
+      "hot": 81,
+      "address": "内蒙古自治区呼和浩特市赛罕区敕勒川大街51号金隅朗峰C座4层",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9%20iMoment%E4%B8%80%E5%88%BB%E5%92%96%E5%95%A1(%E9%87%91%E9%9A%85%E6%97%B6%E4%BB%A3%E5%9F%8E%E5%BA%97)",
+      "comments": []
+    },
+    "百城书店": {
+      "rank": 6,
+      "hot": 77,
+      "address": "内蒙古自治区呼和浩特市赛罕区金宇钻石-1号楼",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9%20%E7%99%BE%E5%9F%8E%E4%B9%A6%E5%BA%97",
+      "comments": []
+    },
+    "悦君花店": {
+      "rank": 7,
+      "hot": 74,
+      "address": "内蒙古自治区呼和浩特市回民区通道街街道通道南路回中对面北300米路东(附院十字路口)",
+      "ticket": "免费",
+      "hours": "10:00-22:00",
+      "website": "https://www.amap.com/search?query=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9%20%E6%82%A6%E5%90%9B%E8%8A%B1%E5%BA%97",
+      "comments": []
+    },
+    "哈素海旅游景区": {
+      "rank": 8,
+      "hot": 71,
+      "address": "内蒙古自治区呼和浩特市土默特左旗哈素乡哈素村",
+      "ticket": "以现场公示为准",
+      "hours": "全天开放",
+      "website": "https://www.amap.com/search?query=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9%20%E5%93%88%E7%B4%A0%E6%B5%B7%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA",
+      "comments": []
+    }
+  },
   types: ["景点","博物馆","商场","美食","咖啡茶饮","文创书店","花店"],
 };
