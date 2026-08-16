@@ -30,9 +30,7 @@
   <script src="local-config.js"></script>
   <!-- 全国省级元数据 -->
   <script src="cities.js"></script>
-  <!-- 主逻辑：路由 / 视图渲染 / IP 自动跳转 -->
-  <script src="app.js"></script>
-  <!-- 城市数据（每城注册到 window.CITY_DATA；data.js 为无锡手工原型数据，会被生成版覆盖，已停用） -->
+  <!-- 城市数据（每城注册到 window.CITY_DATA；data.js 为无锡手工原型数据，已被生成版取代，已停用） -->
   <script src="data/jiangsu-wuxi.js"></script>
   <script src="data/beijing-beijing.js"></script>
   <script src="data/tianjin-tianjin.js"></script>
@@ -101,5 +99,44 @@
   <script src="data/taiwan-gaoxiong.js"></script>
   <script src="data/hongkong-hongkong.js"></script>
   <script src="data/macao-macao.js"></script>
+  <!-- 主逻辑（必须在城市数据之后：IP 定位回调跳转时 CITY_DATA 才已就绪） -->
+    <script src="data/hebei-tangshan.js"></script>
+    <script src="data/hebei-handan.js"></script>
+    <script src="data/hebei-xingtai.js"></script>
+    <script src="data/hebei-baoding.js"></script>
+    <script src="data/hebei-zhangjiakou.js"></script>
+    <script src="data/hebei-langfang.js"></script>
+    <script src="data/hebei-cangzhou.js"></script>
+    <script src="data/hebei-hengshui.js"></script>
+    <script src="data/shanxi-datong.js"></script>
+    <script src="data/shanxi-yangquan.js"></script>
+    <script src="data/shanxi-changzhi.js"></script>
+    <script src="data/shanxi-jincheng.js"></script>
+    <script src="data/shanxi-shuozhou.js"></script>
+    <script src="data/shanxi-jinzhong.js"></script>
+    <script src="data/shanxi-yuncheng.js"></script>
+    <script src="data/shanxi-xinzhou.js"></script>
+    <script src="data/shanxi-linfen.js"></script>
+    <script src="data/shanxi-lvliang.js"></script>
+    <script src="data/neimenggu-baotou.js"></script>
+    <script src="data/neimenggu-wuhai.js"></script>
+    <script src="data/neimenggu-chifeng.js"></script>
+    <script src="data/neimenggu-tongliao.js"></script>
+    <script src="data/neimenggu-eerduosi.js"></script>
+    <script src="data/neimenggu-hulunbeier.js"></script>
+    <script src="data/neimenggu-bayannaoer.js"></script>
+    <script src="data/neimenggu-wulanchabu.js"></script>
+    <script src="data/neimenggu-xinganmeng.js"></script>
+    <script src="data/neimenggu-xilinguolemeng.js"></script>
+    <script src="data/neimenggu-alashanmeng.js"></script>
+    <script src="data/liaoning-anshan.js"></script>
+    <script src="data/liaoning-fushun.js"></script>
+    <script src="data/liaoning-benxi.js"></script>
+    <script src="data/liaoning-dandong.js"></script>
+    <script src="data/liaoning-jinzhou.js"></script>
+    <script src="data/liaoning-yingkou.js"></script>
+    <script src="data/liaoning-fuxin.js"></script>
+    <script src="data/liaoning-liaoyang.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -2,3 +2,7 @@
 
 # 本地私有配置（含真实 API Key，禁止入库）
 local-config.js
+
+# 批量任务进度文件（本地状态，不入库）
+scripts/.polish-progress.json
+scripts/.hot-polish-progress.json

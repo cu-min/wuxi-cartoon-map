@@ -92,6 +92,9 @@ const SCENE_EMOJI = [
 // 黑名单：这些词出现即视为无效 POI（售票处/停车场等）
 const BLACKLIST = ['售票处', '停车场', '卫生间', '洗手间', '入口', '出口', '服务中心', '游客中心', '公交站', '地铁站', '招商', '广告', '租售'];
 
+// 通用类别词集合：名字剥掉括号后等于其中之一 → 视为无辨识度（与 app.js / clean-generic-names.js 保持同步）
+const GENERIC_NAMES = new Set(['超市', '商店', '便利店', '小卖部', '百货商店', '购物中心', '商场', '购物广场', '菜市场', '农贸市场', '水果店', '花店', '书店', '书城', '文具店', '咖啡', '咖啡厅', '咖啡店', 'cafe', 'café', 'coffee', '奶茶店', '茶饮店', '茶楼', '茶室', '美食城', '美食广场', '餐厅', '饭店', '餐馆', '快餐店', '小吃店', '药店', '药房', '诊所', '理发店', '美发店', '银行', '加油站', '宾馆', '旅馆', '招待所', '洗浴中心', '网吧', '网咖', '台球厅', '棋牌室', '健身房', '瑜伽馆', '母婴店', '服装店', '童装店', '鞋店', '手机店', '打印店', '图文店', '照相馆', '影楼', '宠物店', '宠物医院', '洗衣店', '干洗店', '房产中介', '停车场', '公共厕所', '厕所', '公园', '广场', '博物馆', '美术馆', '图书馆', '电影院', '剧院', '游乐场', '动物园', '植物园', '景区', '景点', '寺庙', '教堂', '民宿', '青年旅舍', '青旅', '酒吧', '游泳馆', '体育馆', '运动场', 'ktv', 'atm']);
+
 function pickEmoji(type, category) {
   const c = category || '';
   if (type === '景点' || type === '博物馆') {
@@ -155,6 +158,9 @@ function filterPois(rawList) {
     if (!name || seen.has(name)) continue;
     if (name.length > 28) continue;                    // 超长名大概率是广告位/转让信息
     if (BLACKLIST.some(b => name.includes(b))) continue;
+    // 纯通用类别词当店名（"超市"/"cafe"/"花店"）：无辨识度，剔除；纯英文名/短名保留
+    const bare = name.replace(/[（(][^）)]*[）)]/g, '').trim().toLowerCase();
+    if (GENERIC_NAMES.has(bare)) continue;
     const lat = parseFloat((p.location || {}).lat);
     const lng = parseFloat((p.location || {}).lng);
     if (!(lat > 3 && lat < 54 && lng > 73 && lng < 136)) continue; // 中国范围粗校验
@@ -214,7 +220,8 @@ window.CITY_DATA['${outKey}'] = {
   const indexHtml = path.join(__dirname, '..', 'index.html');
   let html = fs.readFileSync(indexHtml, 'utf8');
   if (!html.includes(`data/${outKey}.js`)) {
-    html = html.replace('</body>', `  <script src="data/${outKey}.js"></script>\n</body>`);
+    // 注册到 app.js 之前（app.js 必须在所有城市数据之后执行，IP 定位跳转才不落空）
+    html = html.replace('<script src="app.js"></script>', `  <script src="data/${outKey}.js"></script>\n  <script src="app.js"></script>`);
     fs.writeFileSync(indexHtml, html, 'utf8');
     return { outFile, outKey, types, registered: true };
   }
