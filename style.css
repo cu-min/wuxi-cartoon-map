@@ -248,7 +248,7 @@ html, body {
   top: 84px;
   left: 16px;
   z-index: 1000;
-  width: 268px;
+  width: 320px;
   max-height: calc(100% - 140px);
   display: flex;
   flex-direction: column;
@@ -263,8 +263,13 @@ html, body {
   background: linear-gradient(135deg, #ffd3b5, #ffe7d6);
   border-bottom: 2px solid #ffc49b;
   display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hot-nav {
+  display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
 }
 .hot-back-home {
   flex: 0 0 auto;
@@ -280,7 +285,26 @@ html, body {
   flex-shrink: 0;
 }
 .hot-back-home:hover { background: #fff4ec; }
-.hot-titles { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.hot-loc {
+  background: #fff;
+  border: 1.5px solid #ffc49b;
+  border-radius: 14px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #b06a4a;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.hot-loc:hover { background: #fff4ec; color: #e8693a; }
+.hot-titles {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
 .hot-toggle {
   flex: 0 0 auto;
   color: #b06a4a;
@@ -292,12 +316,15 @@ html, body {
   font-size: 16px;
   font-weight: 800;
   color: #e8693a;
+  white-space: nowrap;
 }
 .hot-sub {
   display: block;
   font-size: 11px;
   color: #b06a4a;
-  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .hot-list {
   overflow-y: auto;
@@ -354,6 +381,16 @@ html, body {
 .hp-field .v { flex: 1; }
 .hp-field .v a { color: #e8693a; text-decoration: none; }
 .hp-field .v a:hover { text-decoration: underline; }
+/* 导航操作区：链接做成小胶囊按钮，手机上好点 */
+.hp-nav { display: flex; flex-wrap: wrap; gap: 6px; }
+.hp-nav a {
+  display: inline-block; padding: 3px 10px; border-radius: 12px;
+  border: 1px solid #ffd3b5; background: #fff7f0; color: #e8693a;
+  font-weight: 700; text-decoration: none;
+}
+.hp-nav a:hover { background: #ffeee2; text-decoration: none; }
+.hp-nav a.hp-nav-go { background: #ff6b6b; border-color: #ff6b6b; color: #fff; }
+.hp-nav a.hp-nav-go:hover { background: #f55c5c; }
 
 .hp-comments-title { font-size: 13px; font-weight: 800; color: #e8693a; margin: 10px 0 6px; }
 .hp-comments-empty { font-size: 12px; color: #b9a08e; margin: 10px 0 4px; text-align: center; }
@@ -458,6 +495,9 @@ html, body {
   color: #e8693a;
   background: linear-gradient(135deg, #ffd3b5, #ffe7d6);
   border-bottom: 2px solid #ffc49b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .city-list {
   overflow-y: auto;
@@ -614,14 +654,14 @@ html, body {
     top: auto;
     bottom: 8px;
     width: auto;
-    max-height: 42vh;
+    max-height: 55vh;
     border-radius: 16px;
   }
   .hot-header {
     cursor: pointer;
   }
   .hot-panel.collapsed {
-    max-height: 46px;
+    max-height: 78px;
     overflow: hidden;
   }
 
@@ -636,7 +676,7 @@ html, body {
     gap: 4px;
   }
   body[data-view="city"] .legend {
-    bottom: 56px;
+    bottom: 92px;
   }
   .legend button {
     padding: 4px 10px;
@@ -650,4 +690,9 @@ html, body {
     font-size: 12px;
     padding: 8px 16px;
   }
+
+  /* 热度榜弹窗：窄屏收紧，长简介完整可读 */
+  .hot-popup { min-width: 200px; max-width: 250px; }
+  .hot-popup .hp-desc { font-size: 12px; }
+  .hp-nav a { padding: 4px 12px; font-size: 12px; }
 }

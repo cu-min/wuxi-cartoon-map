@@ -13,6 +13,13 @@ const $ = s => document.querySelector(s);
 // HTML 转义：POI 名称/评论等外部数据进 innerHTML 前必须过这个
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
+// 纯通用类别词当店名的（如"超市"、"cafe"）：无辨识度，地图和榜单都不展示
+const GENERIC_NAMES = new Set(['超市', '商店', '便利店', '小卖部', '百货商店', '购物中心', '商场', '购物广场', '菜市场', '农贸市场', '水果店', '花店', '书店', '书城', '文具店', '咖啡', '咖啡厅', '咖啡店', 'cafe', 'café', 'coffee', '奶茶店', '茶饮店', '茶楼', '茶室', '美食城', '美食广场', '餐厅', '饭店', '餐馆', '快餐店', '小吃店', '药店', '药房', '诊所', '理发店', '美发店', '银行', '加油站', '宾馆', '旅馆', '招待所', '洗浴中心', '网吧', '网咖', '台球厅', '棋牌室', '健身房', '瑜伽馆', '母婴店', '服装店', '童装店', '鞋店', '手机店', '打印店', '图文店', '照相馆', '影楼', '宠物店', '宠物医院', '洗衣店', '干洗店', '房产中介', '停车场', '公共厕所', '厕所', '公园', '广场', '博物馆', '美术馆', '图书馆', '电影院', '剧院', '游乐场', '动物园', '植物园', '景区', '景点', '寺庙', '教堂', '民宿', '青年旅舍', '青旅', '酒吧', '游泳馆', '体育馆', '运动场', 'ktv', 'atm']);
+function isGenericName(name) {
+  const n = String(name || '').replace(/[（(][^）)]*[）)]/g, '').trim().toLowerCase();
+  return GENERIC_NAMES.has(n);
+}
+
 // 已覆盖城市索引：从已加载的 CITY_DATA 动态派生（惰性，调用时实时计算）
 // 数据文件被 index.html 引入 → 城市自动上线，无需手动维护注册表
 function getCoveredCities() {
@@ -241,10 +248,11 @@ async function buildCityPanel(prov, currentCityName) {
   // 直辖市（北京/天津/上海/重庆）下辖的是"区县"，其他省是"下辖城市"
   const isMunicipality = [110000, 120000, 310000, 500000].includes(prov.adcode);
   const subtitle = isMunicipality ? '下辖区县' : '下辖城市';
-  panel.innerHTML = `<div class="city-panel-title">🏙️ ${prov.name} · ${subtitle}</div><div class="city-list"><div class="city-loading">加载中…</div></div>`;
+  panel.innerHTML = `<div class="city-panel-title"><a class="hot-back-home panel-back" href="#/" title="返回全国总览">‹ 全国</a><span>🏙️ ${esc(prov.name)} · ${subtitle}</span></div><div class="city-list"><div class="city-loading">加载中…</div></div>`;
   $('#view').appendChild(panel);
-  // 标题点击折叠/展开（移动端底部抽屉）
+  // 标题点击折叠/展开（移动端底部抽屉）；返回按钮不触发折叠
   panel.querySelector('.city-panel-title').onclick = () => panel.classList.toggle('collapsed');
+  panel.querySelector('.panel-back').onclick = e => e.stopPropagation();
   try {
     const geo = await getProvGeo(prov.adcode);
     const listEl = panel.querySelector('.city-list');
@@ -387,9 +395,8 @@ function renderCity(cityKey) {
   setViewUI(autoLocateNotice || ('📍 ' + data.name));
   autoLocateNotice = null;
 
-  // 左侧"下辖城市"列表（点击省份里的城市直接进城市视图时也要保留可跳转的面板）
+  // 城市视图只保留热度榜面板（省份城市列表由省视图承载，避免左侧重叠）
   const prov = PROVINCES.find(p => p.key === data.province);
-  if (prov) buildCityPanel(prov, data.name);
 
   map.setView(data.coord, data.zoom || 12);
   renderCityMap(data);
@@ -412,8 +419,8 @@ function drawCityBorders(prov, cityName) {
 }
 
 function renderCityMap(city) {
-  const SHOPS = city.shops || [];
-  const HOT = city.hot || [];
+  const SHOPS = (city.shops || []).filter(s => !isGenericName(s.name));
+  const HOT = (city.hot || []).filter(h => !isGenericName(h.name));
   const HOT_MAP = city.hotMap || {};
   const TYPES = city.types || [...new Set(SHOPS.map(s => s.type))];
 
@@ -490,6 +497,9 @@ function renderCityMap(city) {
         <div class="hp-c-likes">👍 ${c.likes}</div>
       </div>`).join('');
 
+    // 高德导航跳转：手机唤起高德APP导航，桌面打开高德网页版导航（腾讯/高德坐标同为GCJ-02，可直接用）
+    const navUrl = `https://uri.amap.com/navigation?to=${shop.lng},${shop.lat},${encodeURIComponent(shop.name)}&mode=car&policy=1&coordinate=gaode&callnative=1&src=wuxi-cartoon-map`;
+
     return `
       <div class="hot-popup">
         <div class="hp-top">
@@ -497,12 +507,15 @@ function renderCityMap(city) {
           <div class="hp-name">${esc(shop.name)}</div>
           <span class="hp-tag">🔥 热度第${h.rank} · ${esc(String(h.hot))}</span>
         </div>
-        <div class="hp-desc">${esc(shop.desc)}</div>
+        <div class="hp-desc">${esc(h.longDesc || shop.desc)}</div>
         <div class="hp-fields">
           <div class="hp-field"><span class="k">📍 地址</span><span class="v">${esc(h.address)}</span></div>
           <div class="hp-field"><span class="k">🎫 门票</span><span class="v">${esc(h.ticket)}</span></div>
           <div class="hp-field"><span class="k">🕘 时间</span><span class="v">${esc(h.hours)}</span></div>
-          <div class="hp-field"><span class="k">🔗 导航</span><span class="v">${h.website ? `<a href="${esc(h.website)}" target="_blank" rel="noopener">在高德地图查看 ↗</a>` : '暂无'}</span></div>
+          ${h.duration ? `<div class="hp-field"><span class="k">⏱️ 游玩</span><span class="v">${esc(h.duration)}</span></div>` : ''}
+          ${h.price ? `<div class="hp-field"><span class="k">💰 人均</span><span class="v">${esc(h.price)}</span></div>` : ''}
+          ${h.bestTime ? `<div class="hp-field"><span class="k">🌤️ 最佳</span><span class="v">${esc(h.bestTime)}</span></div>` : ''}
+          <div class="hp-field"><span class="k">🚗 导航</span><span class="v hp-nav"><a class="hp-nav-go" href="${esc(navUrl)}" target="_blank" rel="noopener">高德导航 ↗</a>${h.website ? `<a href="${esc(h.website)}" target="_blank" rel="noopener">地图查看 ↗</a>` : ''}</span></div>
         </div>
         ${comments
           ? '<div class="hp-comments-title">💬 用户评价</div>' + comments
@@ -521,25 +534,26 @@ function renderCityMap(city) {
   });
 
   // ---------- 今日热度榜 ----------
+  const provName = (PROVINCES.find(p => p.key === city.province) || {}).name || '省份';
   const panel = document.createElement('aside');
   panel.className = 'hot-panel';
   panel.innerHTML = `
     <div class="hot-header">
-      <a class="hot-back-home" href="#/" title="返回全国总览">🏠 全国</a>
-      <span class="hot-titles">
+      <div class="hot-nav">
+        <a class="hot-back-home" href="#/" title="返回全国总览">‹ 全国</a>
+        <a class="hot-loc" href="#/p/${city.province}" title="返回${esc(provName)}">📍 ${esc(provName)}</a>
+      </div>
+      <div class="hot-titles">
         <span class="hot-title">🔥 今日热度榜</span>
-        <span class="hot-sub">${city.name} · 实时打卡热度</span>
-      </span>
-      <span class="hot-toggle">▾</span>
+        <span class="hot-sub">${esc(city.name)} · 实时打卡热度</span>
+        <span class="hot-toggle">▾</span>
+      </div>
     </div>
     <div class="hot-list"></div>`;
   $('#view').appendChild(panel);
   // 标题点击折叠/展开（移动端底部抽屉）
   panel.querySelector('.hot-header').onclick = () => panel.classList.toggle('collapsed');
-  // 移动端默认折叠（只显示标题条）
-  if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) {
-    panel.classList.add('collapsed');
-  }
+  // 移动端与桌面端同样默认展开完整榜单，点头部可折叠
 
   HOT.forEach(item => {
     const shop = SHOPS.find(s => s.name === item.name);
