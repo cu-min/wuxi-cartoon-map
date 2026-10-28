@@ -4,25 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#ff8a5c" />
-  <title>中国卡通迷你地图 🗺️ 全国城市景点打卡热力榜</title>
-  <meta name="description" content="中国城市卡通手绘地图，精选全国105座城市的景点、美食、咖啡、文创等打卡好去处，实时热度榜一目了然，手机电脑都能玩的互动地图。" />
-  <meta name="keywords" content="中国地图,卡通地图,手绘地图,城市地图,旅游地图,景点打卡,热度榜,美食地图,咖啡地图,旅行攻略,国内旅游" />
+  <title>中国卡通迷你地图 🗺️ 全国城市景点探索参考</title>
+  <meta name="description" content="中国城市卡通手绘地图，精选全国105座城市的景点、美食、咖啡、文创等打卡好去处，精选地点参考榜一目了然，手机电脑都能玩的互动地图。" />
+  <meta name="keywords" content="中国地图,卡通地图,手绘地图,城市地图,旅游地图,景点打卡,地点参考,美食地图,咖啡地图,旅行攻略,国内旅游" />
   <meta name="author" content="wuxi-cartoon-map" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://cu-min.github.io/wuxi-cartoon-map/" />
 
   <!-- Open Graph / 社交分享 -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="中国卡通迷你地图 🗺️ 全国城市景点打卡热力榜" />
-  <meta property="og:description" content="精选全国105座城市的景点、美食、咖啡、文创打卡好去处，实时热度榜一目了然。" />
+  <meta property="og:title" content="中国卡通迷你地图 🗺️ 全国城市景点探索参考" />
+  <meta property="og:description" content="精选全国105座城市的景点、美食、咖啡、文创打卡好去处，精选地点参考榜一目了然。" />
   <meta property="og:url" content="https://cu-min.github.io/wuxi-cartoon-map/" />
   <meta property="og:site_name" content="中国卡通迷你地图" />
   <meta property="og:locale" content="zh_CN" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="中国卡通迷你地图 🗺️ 全国城市景点打卡热力榜" />
-  <meta name="twitter:description" content="精选全国105座城市的景点、美食、咖啡、文创打卡好去处，实时热度榜一目了然。" />
+  <meta name="twitter:title" content="中国卡通迷你地图 🗺️ 全国城市景点探索参考" />
+  <meta name="twitter:description" content="精选全国105座城市的景点、美食、咖啡、文创打卡好去处，精选地点参考榜一目了然。" />
 
   <!-- 结构化数据：告诉搜索引擎这是什么网站 -->
   <script type="application/ld+json">
@@ -30,7 +30,7 @@
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "中国卡通迷你地图",
-    "description": "中国城市卡通手绘地图，精选全国城市景点、美食、咖啡、文创打卡好去处，实时热度榜一目了然。",
+    "description": "中国城市卡通手绘地图，精选全国城市景点、美食、咖啡、文创打卡好去处，精选地点参考榜一目了然。",
     "url": "https://cu-min.github.io/wuxi-cartoon-map/",
     "applicationCategory": "TravelApplication",
     "operatingSystem": "Any",
@@ -38,138 +38,31 @@
   }
   </script>
 
-  <!-- Leaflet CDN -->
+  <!-- Leaflet 1.9.4 自托管，避免 CDN 故障造成空白页；许可见 vendor/leaflet/LICENSE -->
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+    href="vendor/leaflet/leaflet.css"
   />
-  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- 地图底图（全局复用，视图切换只增删图层） -->
-  <div id="map"></div>
+  <div id="map" role="region" aria-label="城市互动地图"></div>
 
   <!-- 动态视图层：全国总览 / 省级视图 / 城市视图 的 UI 都渲染在这里 -->
   <div id="view"></div>
 
   <!-- 轻提示 -->
-  <div id="toast" class="toast"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
   <!-- 配置（IP 定位 key 等） -->
   <script src="config.js"></script>
-  <!-- 本地私有配置（真实 key，已被 gitignore，不入库） -->
-  <script src="local-config.js"></script>
-  <!-- 全国省级元数据 -->
+  <!-- 全国省级元数据与轻量城市目录；POI 进入城市后按需加载 -->
   <script src="cities.js"></script>
-  <!-- 城市数据（每城注册到 window.CITY_DATA；data.js 为无锡手工原型数据，已被生成版取代，已停用） -->
-  <script src="data/jiangsu-wuxi.js"></script>
-  <script src="data/beijing-beijing.js"></script>
-  <script src="data/tianjin-tianjin.js"></script>
-  <script src="data/shanghai-shanghai.js"></script>
-  <script src="data/chongqing-chongqing.js"></script>
-  <script src="data/hebei-shijiazhuang.js"></script>
-  <script src="data/hebei-qinhuangdao.js"></script>
-  <script src="data/hebei-chengde.js"></script>
-  <script src="data/shanxi-taiyuan.js"></script>
-  <script src="data/shanxi-pingyao.js"></script>
-  <script src="data/neimenggu-huhehaote.js"></script>
-  <script src="data/liaoning-shenyang.js"></script>
-  <script src="data/liaoning-dalian.js"></script>
-  <script src="data/jilin-changchun.js"></script>
-  <script src="data/heilongjiang-haerbin.js"></script>
-  <script src="data/jiangsu-nanjing.js"></script>
-  <script src="data/jiangsu-suzhou.js"></script>
-  <script src="data/jiangsu-yangzhou.js"></script>
-  <script src="data/zhejiang-hangzhou.js"></script>
-  <script src="data/zhejiang-ningbo.js"></script>
-  <script src="data/zhejiang-jiaxing.js"></script>
-  <script src="data/zhejiang-shaoxing.js"></script>
-  <script src="data/anhui-hefei.js"></script>
-  <script src="data/anhui-huangshan.js"></script>
-  <script src="data/fujian-fuzhou.js"></script>
-  <script src="data/fujian-xiamen.js"></script>
-  <script src="data/jiangxi-nanchang.js"></script>
-  <script src="data/jiangxi-jingdezhen.js"></script>
-  <script src="data/shandong-jinan.js"></script>
-  <script src="data/shandong-qingdao.js"></script>
-  <script src="data/shandong-yantai.js"></script>
-  <script src="data/shandong-taian.js"></script>
-  <script src="data/shandong-weihai.js"></script>
-  <script src="data/henan-zhengzhou.js"></script>
-  <script src="data/henan-kaifeng.js"></script>
-  <script src="data/henan-luoyang.js"></script>
-  <script src="data/hubei-wuhan.js"></script>
-  <script src="data/hunan-changsha.js"></script>
-  <script src="data/hunan-zhangjiajie.js"></script>
-  <script src="data/guangdong-guangzhou.js"></script>
-  <script src="data/guangdong-shenzhen.js"></script>
-  <script src="data/guangdong-zhuhai.js"></script>
-  <script src="data/guangdong-foshan.js"></script>
-  <script src="data/guangdong-dongguan.js"></script>
-  <script src="data/guangdong-zhongshan.js"></script>
-  <script src="data/guangxi-nanning.js"></script>
-  <script src="data/guangxi-guilin.js"></script>
-  <script src="data/guangxi-beihai.js"></script>
-  <script src="data/hainan-haikou.js"></script>
-  <script src="data/hainan-sanya.js"></script>
-  <script src="data/sichuan-chengdu.js"></script>
-  <script src="data/sichuan-leshan.js"></script>
-  <script src="data/guizhou-guiyang.js"></script>
-  <script src="data/yunnan-kunming.js"></script>
-  <script src="data/yunnan-lijiang.js"></script>
-  <script src="data/yunnan-xishuangbanna.js"></script>
-  <script src="data/yunnan-dali.js"></script>
-  <script src="data/xizang-lasa.js"></script>
-  <script src="data/shaanxi-xian.js"></script>
-  <script src="data/gansu-lanzhou.js"></script>
-  <script src="data/gansu-dunhuang.js"></script>
-  <script src="data/qinghai-xining.js"></script>
-  <script src="data/ningxia-yinchuan.js"></script>
-  <script src="data/xinjiang-wulumuqi.js"></script>
-  <script src="data/taiwan-taibei.js"></script>
-  <script src="data/taiwan-gaoxiong.js"></script>
-  <script src="data/hongkong-hongkong.js"></script>
-  <script src="data/macao-macao.js"></script>
-  <!-- 主逻辑（必须在城市数据之后：IP 定位回调跳转时 CITY_DATA 才已就绪） -->
-    <script src="data/hebei-tangshan.js"></script>
-    <script src="data/hebei-handan.js"></script>
-    <script src="data/hebei-xingtai.js"></script>
-    <script src="data/hebei-baoding.js"></script>
-    <script src="data/hebei-zhangjiakou.js"></script>
-    <script src="data/hebei-langfang.js"></script>
-    <script src="data/hebei-cangzhou.js"></script>
-    <script src="data/hebei-hengshui.js"></script>
-    <script src="data/shanxi-datong.js"></script>
-    <script src="data/shanxi-yangquan.js"></script>
-    <script src="data/shanxi-changzhi.js"></script>
-    <script src="data/shanxi-jincheng.js"></script>
-    <script src="data/shanxi-shuozhou.js"></script>
-    <script src="data/shanxi-jinzhong.js"></script>
-    <script src="data/shanxi-yuncheng.js"></script>
-    <script src="data/shanxi-xinzhou.js"></script>
-    <script src="data/shanxi-linfen.js"></script>
-    <script src="data/shanxi-lvliang.js"></script>
-    <script src="data/neimenggu-baotou.js"></script>
-    <script src="data/neimenggu-wuhai.js"></script>
-    <script src="data/neimenggu-chifeng.js"></script>
-    <script src="data/neimenggu-tongliao.js"></script>
-    <script src="data/neimenggu-eerduosi.js"></script>
-    <script src="data/neimenggu-hulunbeier.js"></script>
-    <script src="data/neimenggu-bayannaoer.js"></script>
-    <script src="data/neimenggu-wulanchabu.js"></script>
-    <script src="data/neimenggu-xinganmeng.js"></script>
-    <script src="data/neimenggu-xilinguolemeng.js"></script>
-    <script src="data/neimenggu-alashanmeng.js"></script>
-    <script src="data/liaoning-anshan.js"></script>
-    <script src="data/liaoning-fushun.js"></script>
-    <script src="data/liaoning-benxi.js"></script>
-    <script src="data/liaoning-dandong.js"></script>
-    <script src="data/liaoning-jinzhou.js"></script>
-    <script src="data/liaoning-yingkou.js"></script>
-    <script src="data/liaoning-fuxin.js"></script>
-    <script src="data/liaoning-liaoyang.js"></script>
+  <script src="city-catalog.js"></script>
+  <script src="city-loader.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

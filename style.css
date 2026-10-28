@@ -7,18 +7,11 @@ html, body {
   font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
 }
 
-/* 去掉 Leaflet 地图元素点击/聚焦时的默认黑色矩形焦点框 */
-.leaflet-container,
-.leaflet-container *,
-.leaflet-container *:focus,
-.leaflet-container *:focus-visible {
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent;
-}
-.leaflet-interactive:focus,
-.leaflet-interactive:focus-visible {
-  outline: none !important;
-}
+/* 保留键盘焦点，可见且不影响触控。 */
+:focus-visible { outline: 3px solid #23679b; outline-offset: 3px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+[hidden] { display: none !important; }
 
 #map {
   position: absolute;
@@ -695,4 +688,38 @@ html, body {
   .hot-popup { min-width: 200px; max-width: 250px; }
   .hot-popup .hp-desc { font-size: 12px; }
   .hp-nav a { padding: 4px 12px; font-size: 12px; }
+}
+
+/* 原有卡通视觉下的语义控件与可达性补强 */
+button.city-item, button.hot-item {
+  border: 0; background: transparent; text-align: left; width: 100%;
+  flex-shrink: 0; min-height: 44px;
+}
+button.city-item:hover, button.hot-item:hover { background: #fff1e6; }
+button.city-panel-title { border: 0; border-bottom: 2px solid #ffc49b; text-align: left; cursor: pointer; }
+.panel-disclosure, button.hot-titles { border: 0; background: transparent; padding: 0; color: inherit; cursor: pointer; text-align: left; min-height: 44px; }
+.panel-disclosure { font-weight: 800; }
+button.hot-titles { width: 100%; flex-wrap: wrap; align-items: center; }
+.hot-list, .city-list { min-height: 0; overscroll-behavior: contain; }
+.data-note { margin: 6px 8px 10px; color: #76523d; font-size: 12px; line-height: 1.5; }
+.route-status { position: absolute; top: 20%; left: 50%; transform: translateX(-50%); max-width: 85%; width: 320px; box-sizing: border-box; padding: 20px; background: #fffaf6; border: 3px solid #ff9d6f; border-radius: 18px; color: #6b5542; text-align: center; }
+.route-status button, .route-status a { display: inline-block; padding: 12px; color: #8d4428; }
+.route-status h1 { font-size: 20px; }
+.hot-panel.collapsed .hot-list, .city-panel.collapsed .city-list { display: none; }
+.leaflet-popup-content { overflow-wrap: anywhere; }
+@media (max-width: 768px) {
+  body[data-view="city"] .legend { top: 62px; bottom: auto; left: 8px; right: 8px; transform: none; max-width: none; justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; padding: 4px; }
+  .legend button { flex-shrink: 0; min-height: 44px; }
+  .hot-panel, .city-panel { bottom: max(8px, env(safe-area-inset-bottom)); }
+  .hot-panel { max-height: 42dvh; }
+  .hot-panel.collapsed, .city-panel.collapsed { max-height: none; }
+  .hot-title { font-size: 15px; }
+  .hot-sub { font-size: 11px; }
+  .hot-header { gap: 2px; padding: 8px 12px; }
+  .back-home, .hot-back-home, .hot-loc { min-height: 24px; display: inline-flex; align-items: center; }
+  .toast { bottom: auto; top: 122px; }
+  .leaflet-control-attribution { max-width: 80vw; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }

@@ -6,3 +6,7 @@ local-config.js
 # 批量任务进度文件（本地状态，不入库）
 scripts/.polish-progress.json
 scripts/.hot-polish-progress.json
+
+# Local dependencies and test output
+node_modules/
+test-results/
