@@ -216,16 +216,10 @@ window.CITY_DATA['${outKey}'] = {
 `;
   fs.writeFileSync(outFile, code, 'utf8');
 
-  // 自动注册 1：index.html（幂等）
-  const indexHtml = path.join(__dirname, '..', 'index.html');
-  let html = fs.readFileSync(indexHtml, 'utf8');
-  if (!html.includes(`data/${outKey}.js`)) {
-    // 注册到 app.js 之前（app.js 必须在所有城市数据之后执行，IP 定位跳转才不落空）
-    html = html.replace('<script src="app.js"></script>', `  <script src="data/${outKey}.js"></script>\n  <script src="app.js"></script>`);
-    fs.writeFileSync(indexHtml, html, 'utf8');
-    return { outFile, outKey, types, registered: true };
-  }
-  return { outFile, outKey, types, registered: false };
+  // Refresh only lightweight metadata. Never inject eager POI scripts into HTML:
+  // the city router loads individual data files through city-loader.js.
+  require('./generate-city-catalog')();
+  return { outFile, outKey, types, registered: true };
 }
 
 // ---------- 单个城市完整流程 ----------
@@ -287,7 +281,7 @@ async function runCity(cfg) {
   shops.forEach(s => { perType[s.type] = (perType[s.type] || 0) + 1; });
 
   const { outFile, outKey, types, registered } = writeCityData(cfg, shops);
-  console.log(`    ✅ ${outFile}（共 ${shops.length} 个：${Object.entries(perType).map(([t, n]) => `${t}×${n}`).join('、')}${registered ? '，已注册 index.html' : ''}）`);
+  console.log(`    ✅ ${outFile}（共 ${shops.length} 个：${Object.entries(perType).map(([t, n]) => `${t}×${n}`).join('、')}${registered ? '，已更新城市目录' : ''}）`);
   return { cfg, ok: true, count: shops.length, types, dropped: filtered.length - shops.length };
 }
 
